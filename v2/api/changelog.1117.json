@@ -1,0 +1,56 @@
+{
+   "method_id":1117,
+   "method_url":"/api/changelog.{format}",
+   "method_name":"API Changelog",
+   "service_id":223,
+   "service_name":"api",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled": true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns list of changes made to the API",
+   "additional_notes":[
+      "Calling this method does not affect usage"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/api/changelog.json",
+      "https://api.uwaterloo.ca/v2/api/channgelog.xml",
+      "https://api.uwaterloo.ca/v2/api/changelog.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"date",
+         "description":"Y-m-d date of published changes",
+         "type":"string"
+      },
+      {
+         "field":"changes",
+         "description":"List of published changes",
+         "type":"list"
+      }
+   ]
+}
