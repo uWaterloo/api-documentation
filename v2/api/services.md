@@ -100,9 +100,9 @@ GET /api/services.{format}
 GET /api/services.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/api/services.json**
-- **http://api.uwaterloo.ca/v2/api/services.xml**
-- **http://api.uwaterloo.ca/v2/api/services.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/api/services.json**
+- **https://api.uwaterloo.ca/v2/api/services.xml**
+- **https://api.uwaterloo.ca/v2/api/services.json?callback=myResponse**
 
 
 ## Response
@@ -157,8 +157,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":3772,
-    "timestamp":1381898708,
+    "requests":3798,
+    "timestamp":1381933867,
     "status":200,
     "message":"Request successful",
     "method_id":1081,
@@ -171,7 +171,7 @@ Any value can be `null`
     {
       "service_id":223,
       "service_name":"api",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/api",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/api",
       "methods":[
         {
           "method_id":1081,
@@ -198,7 +198,7 @@ Any value can be `null`
     {
       "service_id":227,
       "service_name":"server",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/server",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/server",
       "methods":[
         {
           "method_id":1087,
@@ -217,7 +217,7 @@ Any value can be `null`
     {
       "service_id":229,
       "service_name":"resources",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/resources",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/resources",
       "methods":[
         {
           "method_id":1123,
@@ -226,13 +226,33 @@ Any value can be `null`
         {
           "method_id":1129,
           "method_url":"\/infosessions.{format}"
+        },
+        {
+          "method_id":1229,
+          "method_url":"\/academics\/groups.{format}"
+        },
+        {
+          "method_id":1231,
+          "method_url":"\/academics\/organizations.{format}"
+        },
+        {
+          "method_id":1237,
+          "method_url":"\/academics\/subjects.{format}"
+        },
+        {
+          "method_id":1249,
+          "method_url":"\/academics\/terms.{format}"
+        },
+        {
+          "method_id":1259,
+          "method_url":"\/academics\/instructions.{format}"
         }
       ]
     },
     {
       "service_id":239,
       "service_name":"courses",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/courses",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/courses",
       "methods":[
         {
           "method_id":1153,
@@ -255,7 +275,7 @@ Any value can be `null`
     {
       "service_id":241,
       "service_name":"terms",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/terms",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/terms",
       "methods":[
         {
           "method_id":1187,
@@ -270,7 +290,7 @@ Any value can be `null`
     {
       "service_id":257,
       "service_name":"buildings",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/buildings",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/buildings",
       "methods":[
         {
           "method_id":1213,
@@ -287,36 +307,9 @@ Any value can be `null`
       ]
     },
     {
-      "service_id":263,
-      "service_name":"quest",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/quest",
-      "methods":[
-        {
-          "method_id":1229,
-          "method_url":"\/groups.{format}"
-        },
-        {
-          "method_id":1231,
-          "method_url":"\/organizations.{format}"
-        },
-        {
-          "method_id":1237,
-          "method_url":"\/subjects.{format}"
-        },
-        {
-          "method_id":1249,
-          "method_url":"\/terms.{format}"
-        },
-        {
-          "method_id":1259,
-          "method_url":"\/instructions.{format}"
-        }
-      ]
-    },
-    {
       "service_id":269,
       "service_name":"foodservices",
-      "service_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices",
+      "service_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices",
       "methods":[
         {
           "method_id":1277,

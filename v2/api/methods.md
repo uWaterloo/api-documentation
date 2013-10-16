@@ -100,9 +100,9 @@ GET /api/methods.{format}
 GET /api/methods.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/api/methods.json**
-- **http://api.uwaterloo.ca/v2/api/methods.xml**
-- **http://api.uwaterloo.ca/v2/api/methods.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/api/methods.json**
+- **https://api.uwaterloo.ca/v2/api/methods.xml**
+- **https://api.uwaterloo.ca/v2/api/methods.json?callback=myResponse**
 
 
 ## Response
@@ -150,8 +150,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":3773,
-    "timestamp":1381898741,
+    "requests":3799,
+    "timestamp":1381933890,
     "status":200,
     "message":"Request successful",
     "method_id":1103,
@@ -163,7 +163,7 @@ Any value can be `null`
   "data":[
     {
       "method_id":1081,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/api\/services.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/api\/services.{format}",
       "service_id":223,
       "service_name":"api",
       "parameters":[
@@ -172,7 +172,7 @@ Any value can be `null`
     },
     {
       "method_id":1087,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/server\/time.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/server\/time.{format}",
       "service_id":227,
       "service_name":"server",
       "parameters":[
@@ -181,7 +181,7 @@ Any value can be `null`
     },
     {
       "method_id":1091,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/server\/codes.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/server\/codes.{format}",
       "service_id":227,
       "service_name":"server",
       "parameters":[
@@ -190,7 +190,7 @@ Any value can be `null`
     },
     {
       "method_id":1093,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/server\/admin.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/server\/admin.{format}",
       "service_id":227,
       "service_name":"server",
       "parameters":[
@@ -199,7 +199,7 @@ Any value can be `null`
     },
     {
       "method_id":1097,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/api\/usage.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/api\/usage.{format}",
       "service_id":223,
       "service_name":"api",
       "parameters":[
@@ -208,7 +208,7 @@ Any value can be `null`
     },
     {
       "method_id":1103,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/api\/methods.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/api\/methods.{format}",
       "service_id":223,
       "service_name":"api",
       "parameters":[
@@ -217,7 +217,7 @@ Any value can be `null`
     },
     {
       "method_id":1109,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/api\/versions.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/api\/versions.{format}",
       "service_id":223,
       "service_name":"api",
       "parameters":[
@@ -226,7 +226,7 @@ Any value can be `null`
     },
     {
       "method_id":1117,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/api\/changelog.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/api\/changelog.{format}",
       "service_id":223,
       "service_name":"api",
       "parameters":[
@@ -235,7 +235,7 @@ Any value can be `null`
     },
     {
       "method_id":1123,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/resources\/printers.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/printers.{format}",
       "service_id":229,
       "service_name":"resources",
       "parameters":[
@@ -244,7 +244,7 @@ Any value can be `null`
     },
     {
       "method_id":1129,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/resources\/infosessions.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/infosessions.{format}",
       "service_id":229,
       "service_name":"resources",
       "parameters":[
@@ -253,7 +253,7 @@ Any value can be `null`
     },
     {
       "method_id":1153,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/courses\/{department}.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/courses\/{department}.{format}",
       "service_id":239,
       "service_name":"courses",
       "parameters":[
@@ -263,7 +263,7 @@ Any value can be `null`
     },
     {
       "method_id":1163,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/courses\/{department}\/{number}.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/courses\/{department}\/{number}.{format}",
       "service_id":239,
       "service_name":"courses",
       "parameters":[
@@ -274,7 +274,7 @@ Any value can be `null`
     },
     {
       "method_id":1171,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/courses\/{department}\/{number}\/schedule.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/courses\/{department}\/{number}\/schedule.{format}",
       "service_id":239,
       "service_name":"courses",
       "parameters":[
@@ -285,7 +285,7 @@ Any value can be `null`
     },
     {
       "method_id":1181,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/courses\/{subject}\/{number}\/prerequisites.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/courses\/{subject}\/{number}\/prerequisites.{format}",
       "service_id":239,
       "service_name":"courses",
       "parameters":[
@@ -296,7 +296,7 @@ Any value can be `null`
     },
     {
       "method_id":1187,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/terms\/{term}\/examschedule.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/terms\/{term}\/examschedule.{format}",
       "service_id":241,
       "service_name":"terms",
       "parameters":[
@@ -306,7 +306,7 @@ Any value can be `null`
     },
     {
       "method_id":1193,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/terms\/{term}\/{subject}\/{number}\/schedule.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/terms\/{term}\/{subject}\/{number}\/schedule.{format}",
       "service_id":241,
       "service_name":"terms",
       "parameters":[
@@ -318,7 +318,7 @@ Any value can be `null`
     },
     {
       "method_id":1213,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/buildings\/list.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/buildings\/list.{format}",
       "service_id":257,
       "service_name":"buildings",
       "parameters":[
@@ -327,7 +327,7 @@ Any value can be `null`
     },
     {
       "method_id":1217,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/buildings\/{building}.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/buildings\/{building}.{format}",
       "service_id":257,
       "service_name":"buildings",
       "parameters":[
@@ -337,7 +337,7 @@ Any value can be `null`
     },
     {
       "method_id":1223,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/buildings\/{building}\/{room}\/courses.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/buildings\/{building}\/{room}\/courses.{format}",
       "service_id":257,
       "service_name":"buildings",
       "parameters":[
@@ -348,52 +348,52 @@ Any value can be `null`
     },
     {
       "method_id":1229,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/quest\/groups.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/academics\/groups.{format}",
       "service_id":263,
-      "service_name":"quest",
+      "service_name":"resources",
       "parameters":[
         "format"
       ]
     },
     {
       "method_id":1231,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/quest\/organizations.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/academics\/organizations.{format}",
       "service_id":263,
-      "service_name":"quest",
+      "service_name":"resources",
       "parameters":[
         "format"
       ]
     },
     {
       "method_id":1237,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/quest\/subjects.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/academics\/subjects.{format}",
       "service_id":263,
-      "service_name":"quest",
+      "service_name":"resources",
       "parameters":[
         "format"
       ]
     },
     {
       "method_id":1249,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/quest\/terms.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/academics\/terms.{format}",
       "service_id":263,
-      "service_name":"quest",
+      "service_name":"resources",
       "parameters":[
         "format"
       ]
     },
     {
       "method_id":1259,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/quest\/instructions.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/resources\/academics\/instructions.{format}",
       "service_id":263,
-      "service_name":"quest",
+      "service_name":"resources",
       "parameters":[
         "format"
       ]
     },
     {
       "method_id":1277,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/products\/{id}.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/products\/{id}.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -403,7 +403,7 @@ Any value can be `null`
     },
     {
       "method_id":1279,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/products\/search.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/products\/search.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -412,7 +412,7 @@ Any value can be `null`
     },
     {
       "method_id":1283,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/outlets.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/outlets.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -421,7 +421,7 @@ Any value can be `null`
     },
     {
       "method_id":1289,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/watcard.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/watcard.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -430,7 +430,7 @@ Any value can be `null`
     },
     {
       "method_id":1291,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/menu.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/menu.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -442,7 +442,7 @@ Any value can be `null`
     },
     {
       "method_id":1297,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/notes.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/notes.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -454,7 +454,7 @@ Any value can be `null`
     },
     {
       "method_id":1301,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/announcements.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/{year}\/{week}\/{id}\/announcements.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -466,7 +466,7 @@ Any value can be `null`
     },
     {
       "method_id":1303,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/menu.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/menu.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -475,7 +475,7 @@ Any value can be `null`
     },
     {
       "method_id":1307,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/notes.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/notes.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -484,7 +484,7 @@ Any value can be `null`
     },
     {
       "method_id":1319,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/announcements.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/announcements.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[
@@ -493,7 +493,7 @@ Any value can be `null`
     },
     {
       "method_id":1321,
-      "method_url":"http:\/\/api.uwaterloo.ca\/v2\/foodservices\/diets.{format}",
+      "method_url":"https:\/\/api.uwaterloo.ca\/v2\/foodservices\/diets.{format}",
       "service_id":269,
       "service_name":"foodservices",
       "parameters":[

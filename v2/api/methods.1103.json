@@ -19,9 +19,9 @@
    ],
    "information_steward":"UW OpenData",
    "request_examples":[
-      "http://api.uwaterloo.ca/v2/api/methods.json",
-      "http://api.uwaterloo.ca/v2/api/methods.xml",
-      "http://api.uwaterloo.ca/v2/api/methods.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/api/methods.json",
+      "https://api.uwaterloo.ca/v2/api/methods.xml",
+      "https://api.uwaterloo.ca/v2/api/methods.json?callback=myResponse"
    ],
    "response_formats":[
       "json",

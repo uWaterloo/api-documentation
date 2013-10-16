@@ -1,4 +1,4 @@
-[![] (http://api.uwaterloo.ca/static/banner.png)](https://api.uwaterloo.ca)
+[![] (https://api.uwaterloo.ca/static/banner.png)](https://api.uwaterloo.ca)
 
 
 The University of Waterloo API allows anyone to build applications using data from the uWaterloo websites.
@@ -12,9 +12,9 @@ If you find an error in the documentation, file an issue or send a pull request.
 All calls are made to the following URL with the required parameters for a given service.
 
 ```
-http://api.uwaterloo.ca/v2/
+https://api.uwaterloo.ca/v2/
 ```
-In order to make an API call, you must have a valid [API Key](http://api.uwaterloo.ca/#!/keygen).
+In order to make an API call, you must have a valid [API Key](https://api.uwaterloo.ca/#!/keygen).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
 ## Endpoints
@@ -44,20 +44,17 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/resources/printers]()**
 - **[/resources/infosessions]()**
+- **[/academics/groups]()**
+- **[/resources/academics/subjects]()**
+- **[/resources/academics/terms]()**
+- **[/resources/academics/organizations]()**
+- **[/resources/academics/instructions]()**
 
 ### Building
 
 - **[/buildings/list]()**
 - **[/buildings/{building_acronym}]()**
 - **[/buildings/{building_acronym}/{room_number}/courses]()**
-
-### Quest
-
-- **[/quest/groups]()**
-- **[/quest/subjects]()**
-- **[/quest/terms]()**
-- **[/quest/organizations]()**
-- **[/quest/instructions]()**
 
 ### API
 
