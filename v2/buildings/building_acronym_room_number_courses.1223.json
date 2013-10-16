@@ -1,0 +1,145 @@
+{
+  "method_id":1223,
+  "method_url":"/v2/buildings/{building}/{room}/courses.{format}",
+  "method_name":"Courses in a Classroom",
+  "service_id":257,
+  "service_name":"buildings",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"Every hour on weekdays",
+  "cache_time_s":0,
+  "data_type":"Scraped",
+  "data_source":[
+    "http://www.adm.uwaterloo.ca/infocour/CIR/SA/under.html"
+  ],
+  "method_description":"This method gives out the all the courses offered in a given classroom.",
+  "additional_notes":[
+    "Usage won't increase if there is no data returned",
+    "Information regarding description of parameters is available here: https://uwaterloo.ca/quest/undergraduate-students/schedule-of-classes-definitions"
+  ],
+  "information_steward":"University Registrar",
+  "request_examples":[
+    "https://api.uwaterloo.ca/v2/buildings/MC/2038/courses.json",
+    "https://api.uwaterloo.ca/v2/buildings/MC/2038/courses.xml",
+    "https://api.uwaterloo.ca/v2/buildings/MC/2038/courses.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"building",
+      "description":"Building code",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"room",
+      "description":"Room number",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"format",
+      "description":"Output format",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"key",
+      "description":"Your API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"class_number",
+      "description":"Class Number",
+      "type":"integer"
+    },
+    {
+      "field":"subject",
+      "description":"Course subject code",
+      "type":"string"
+    },
+    {
+      "field":"catalog_number",
+      "description":"Catalog number",
+      "type":"string"
+    },
+    {
+      "field":"title",
+      "description":"Course title",
+      "type":"string"
+    },
+    {
+      "field":"section",
+      "description":"Course section number",
+      "type":"string"
+    },
+    {
+      "field":"weekdays",
+      "description":"Course class days",
+      "type":"string"
+    },
+    {
+      "field":"start_time",
+      "description":"Start time",
+      "type":"string"
+    },
+    {
+      "field":"end_time",
+      "description":"End time",
+      "type":"string"
+    },
+    {
+      "field":"start_date",
+      "description":"Start date",
+      "type":"string"
+    },
+    {
+      "field":"end_date",
+      "description":"End date",
+      "type":"string"
+    },
+    {
+      "field":"enrollment_total",
+      "description":"Number of students currently enrolled in the section",
+      "type":"integer"
+    },
+    {
+      "field":"instructors",
+      "description":"List of instructors the individual meet",
+      "type":"array"
+    },
+    {
+      "field":"building",
+      "description":"Building code of building where the individual meet is held",
+      "type":"string"
+    },
+    {
+      "field":"room",
+      "description":"Room where the individual meet is held",
+      "type":"string"
+    },
+    {
+      "field":"term",
+      "description":"Particular 4-month period within which sessions are defined",
+      "type":"integer"
+    },
+    {
+      "field":"last_updated",
+      "description":"Server time at last update (in ISO 8601 format)",
+      "type":"string"
+    }
+  ]
+}
