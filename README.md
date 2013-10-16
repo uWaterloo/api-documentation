@@ -1,4 +1,4 @@
-![YouWaterlooBanner] (http://api.uwaterloo.ca/static/banner.png)
+[![] (http://api.uwaterloo.ca/static/banner.png)](https://api.uwaterloo.ca)
 
 
 The University of Waterloo API allows anyone to build applications using data from the uWaterloo websites.
