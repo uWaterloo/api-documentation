@@ -1,0 +1,182 @@
+{
+   "method_id":1291,
+   "method_url":"/foodservices/{year}/{week}/menu.{format}",
+   "method_name":"Weekly Food Menu",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "http://foodservices.uwaterloo.ca"
+   ],
+   "method_description":"This method returns the given week and year's food menu.",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "We cannot modify the data from this method"
+   ],
+   "information_steward":"UW FoodServices",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/foodservices/2013/12/menu.json",
+      "https://api.uwaterloo.ca/v2/foodservices/2013/22/menu.xml",
+      "https://api.uwaterloo.ca/v2/foodservices/2013/15/menu.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"year",
+         "description":"The year of menu to be requested",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"week",
+         "description":"The week number of the menu to be requested",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"date",
+         "description":"Menu date object",
+         "type":"object",
+         "children":[
+            {
+               "field":"week",
+               "description":"Requested week",
+               "type":"integer"
+            },
+            {
+               "field":"year",
+               "description":"Requested year",
+               "type":"integer"
+            },
+            {
+               "field":"start",
+               "description":"Starting day of the menu (Y-m-d)",
+               "type":"string"
+            },
+            {
+               "field":"end",
+               "description":"Ending day of the menu (Y-m-d)",
+               "type":"string"
+            }
+         ]
+      },
+      {
+         "field":"outlets",
+         "description":"Available outlets",
+         "type":"list",
+         "children":[
+            {
+               "field":"outlet_name",
+               "description":"Name of the outlet",
+               "type":"string"
+            },
+            {
+               "field":"outlet_id",
+               "description":"Foodservices ID for the outlet",
+               "type":"integer"
+            },
+            {
+               "field":"menu",
+               "description":"The outlet menu list",
+               "type":"list",
+               "children":[
+                  {
+                     "field":"date",
+                     "description":"Date of the menu (Y-m-d)",
+                     "type":"string"
+                  },
+                  {
+                     "field":"day",
+                     "description":"Day of the week",
+                     "type":"string"
+                  },
+                  {
+                     "field":"meals",
+                     "description":"All the meals for the day",
+                     "type":"object",
+                     "children":[
+                        {
+                           "field":"lunch",
+                           "description":"Lunch menu items",
+                           "type":"list",
+                           "children":[
+                              {
+                                 "field":"product_name",
+                                 "description":"Food item name",
+                                 "type":"string"
+                              },
+                              {
+                                 "field":"diet_type",
+                                 "description":"Type of diet",
+                                 "type":"string"
+                              },
+                              {
+                                 "field":"product_id",
+                                 "description":"Food item ID",
+                                 "type":"integer"
+                              }
+                           ]
+                        },
+                        {
+                           "field":"dinner",
+                           "description":"Dinner menu",
+                           "type":"list",
+                           "children":[
+                              {
+                                 "field":"product_name",
+                                 "description":"Food item name",
+                                 "type":"string"
+                              },
+                              {
+                                 "field":"diet_type",
+                                 "description":"Type of Diet",
+                                 "type":"string"
+                              },
+                              {
+                                 "field":"product_id",
+                                 "description":"Food item ID",
+                                 "type":"integer"
+                              }
+                           ]
+                        },
+                        {
+                           "field":"notes",
+                           "description":"Additional announcements for the day",
+                           "type":"string"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

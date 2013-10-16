@@ -22,16 +22,16 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Food Services
 
-- **[/foodservices/menu]()**
-- **[/foodservices/notes]()**
-- **[/foodservices/announcements]()**
-- **[/foodservices/diets]()**
-- **[/foodservices/outlets]()**
-- **[/foodservices/watcard]()**
-- **[/foodservices/products/{product_id}]()**
-- **[/foodservices/{year}/{week}/menu]()**
-- **[/foodservices/{year}/{week}/notes]()**
-- **[/foodservices/{year}/{week}/announcements]()**
+- **[/foodservices/menu](v2/foodservices/menu.md)**
+- **[/foodservices/notes](v2/foodservices/notes.md)**
+- **[/foodservices/announcements](v2/foodservices/announcements.md)**
+- **[/foodservices/diets](v2/foodservices/diets.md)**
+- **[/foodservices/outlets](v2/foodservices/outlets.md)**
+- **[/foodservices/watcard](v2/foodservices/watcard.md)**
+- **[/foodservices/products/{product_id}](v2/foodservices/products_product_id.md)**
+- **[/foodservices/{year}/{week}/menu](v2/foodservices/year_week_menu.md)**
+- **[/foodservices/{year}/{week}/notes](v2/foodservices/year_week_notes.md)**
+- **[/foodservices/{year}/{week}/announcements](v2/foodservices/year_week_announcements.md)**
 
 ### Course
 
