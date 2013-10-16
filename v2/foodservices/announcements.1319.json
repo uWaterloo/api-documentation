@@ -1,0 +1,58 @@
+{
+   "method_id":1319,
+   "method_url":"/foodservices/announcements.{format}",
+   "method_name":"Food Services Menu Announcements",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://uwaterloo.ca/food-services/"
+   ],
+   "method_description":"This method returns additional announcements regarding food served in the current week",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "We cannot modify the data from this method",
+      "The results are only for this current week (where the week starts on Monday)"
+   ],
+   "information_steward":"Food Services",
+   "request_examples":[
+      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.json",
+      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.xml",
+      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"date",
+         "description":"Advertisement date object",
+         "type":"object"
+      },
+      {
+         "field":"ad_text",
+         "description":"Advertisement text",
+         "type":"string"
+      }
+   ]
+}
