@@ -1,0 +1,202 @@
+{
+   "method_id":1277,
+   "method_url":"/foodservices/products/{product_id}.{format}",
+   "method_name":"FoodServices Product Details",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"On request (lib)",
+   "cache_time_s":0,
+   "data_type":"Direct DB connection",
+   "data_source":[
+      "https://uwaterloo.ca/food-services"
+   ],
+   "method_description":"This method returns a product's nutritional information",
+   "additional_notes":[
+      "Usage won't increase if there is no data returned"
+   ],
+   "information_steward":"FoodServices",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/foodservices/products/1386.json",
+      "https://api.uwaterloo.ca/v2/foodservices/products/1386.xml",
+      "https://api.uwaterloo.ca/v2/foodservices/products/1386.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"product_id",
+         "description":"Valid product ID from menu",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"product_id",
+         "description":"Food item's numeric id",
+         "type":"integer"
+      },
+      {
+         "field":"product_name",
+         "description":"Name of the food item",
+         "type":"string"
+      },
+      {
+         "field":"ingredients",
+         "description":"Food ingredients",
+         "type":"string"
+      },
+      {
+         "field":"serving_size",
+         "description":"Item's service size (in grams or whole)",
+         "type":"string"
+      },
+      {
+         "field":"serving_size_ml",
+         "description":"Serving size in milliliters",
+         "type":"integer"
+      },
+      {
+         "field":"serving_size_g",
+         "description":"Serving size in grams",
+         "type":"integer"
+      },
+      {
+         "field":"calories",
+         "description":"Food calorie count",
+         "type":"integer"
+      },
+      {
+         "field":"total_fat_g",
+         "description":"Total fat in grams",
+         "type":"integer"
+      },
+      {
+         "field":"total_fat_percent",
+         "description":"Total fat in percentage",
+         "type":"integer"
+      },
+      {
+         "field":"fat_saturated_g",
+         "description":"Total saturated fat in grams",
+         "type":"integer"
+      },
+      {
+         "field":"fat_saturated_percent",
+         "description":"Total saturated fat in percentage",
+         "type":"integer"
+      },
+      {
+         "field":"fat_trans_g",
+         "description":"Total trans fat in grams",
+         "type":"integer"
+      },
+      {
+         "field":"fat_trans_percent",
+         "description":"Total trans fat in percentage",
+         "type":"integer"
+      },
+      {
+         "field":"cholesterol_mg",
+         "description":"Total cholesterol in milligrams",
+         "type":"integer"
+      },
+      {
+         "field":"sodium_mg",
+         "description":"Sodiumm in milligrams",
+         "type":"integer"
+      },
+      {
+         "field":"sodium_percent",
+         "description":"Sodium in percentage",
+         "type":"integer"
+      },
+      {
+         "field":"carbo_g",
+         "description":"Total carbohydrates in grams",
+         "type":"integer"
+      },
+      {
+         "field":"carbo_percent",
+         "description":"Carbohydrates as percentage",
+         "type":"integer"
+      },
+      {
+         "field":"carbo_fibre_g",
+         "description":"Carbohydrate fibres in grams",
+         "type":"integer"
+      },
+      {
+         "field":"carbo_fibre_percent",
+         "description":"Carbohydrates fibers as percentage",
+         "type":"integer"
+      },
+      {
+         "field":"carbo_sugars_g",
+         "description":"Carbohydrate sugar in grams",
+         "type":"integer"
+      },
+      {
+         "field":"protein_g",
+         "description":"Total protein in grams",
+         "type":"integer"
+      },
+      {
+         "field":"vitamin_a_percent",
+         "description":"Total vitamin A percentage",
+         "type":"integer"
+      },
+      {
+         "field":"vitamin_c_percent",
+         "description":"Total vitamin C percentage",
+         "type":"integer"
+      },
+      {
+         "field":"calcium_percent",
+         "description":"Total calcium percentage",
+         "type":"integer"
+      },
+      {
+         "field":"iron_percent",
+         "description":"Total iron percentage",
+         "type":"integer"
+      },
+      {
+         "field":"micro_nutrients",
+         "description":"Micro nutrients in item",
+         "type":"string"
+      },
+      {
+         "field":"tips",
+         "description":"Any eating tips for the imte",
+         "type":"string"
+      },
+      {
+         "field":"diet_id",
+         "description":"Foodservices given diet id",
+         "type":"integer"
+      },
+      {
+         "field":"diet_type",
+         "description":"String representation of the diet_id",
+         "type":"string"
+      }
+   ]
+}
