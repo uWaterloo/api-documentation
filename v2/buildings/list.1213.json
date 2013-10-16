@@ -1,0 +1,100 @@
+{
+  "method_id":1213,
+  "method_url":"/buildings/list.{format}",
+  "method_name":"Buildings",
+  "service_id":257,
+  "service_name":"buildings",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"When updated by the steward/via github pull request",
+  "cache_time_s":0,
+  "data_type":"CSV",
+  "data_source":[
+    "https://github.com/uWaterloo/Datasets/blob/master/Buildings/Buildings.csv"
+  ],
+  "method_description":"This method returns a list of official building names, their unique number and their lat/long coordinates.",
+  "additional_notes":[
+    "Usage won't increase if there is no data returned",
+    "This data is community curated on github."
+  ],
+  "information_steward":"Institution of Analysis & Planning (IAP)",
+  "request_examples":[
+    "https://api.uwaterloo.ca/v2/buildings/list.json",
+    "https://api.uwaterloo.ca/v2/buildings/list.xml",
+    "https://api.uwaterloo.ca/v2/buildings/list.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"format",
+      "description":"Output format",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"key",
+      "description":"Your API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"building_id",
+      "description":"Unique building number",
+      "type":"integer"
+    },
+    {
+      "field":"building_code",
+      "description":"Official building name",
+      "type":"string"
+    },
+    {
+      "field":"alternate_names",
+      "description":"Alternate building names",
+      "type":"array"
+    },
+    {
+      "field":"latitude",
+      "description":"Latitude of building location",
+      "type":"float"
+    },
+    {
+      "field":"longitude",
+      "description":"Longitude of building location",
+      "type":"float"
+    },
+    {
+      "field":"building_sections",
+      "description":"List of building sections",
+      "type":"array",
+      "children":[
+        {
+          "field":"section_name",
+          "description":"Name of section",
+          "type":"array"
+        },
+        {
+          "field":"latitude",
+          "description":"Latitude of building section location",
+          "type":"float"
+        },
+        {
+          "field":"longitude",
+          "description":"Longitude of building section location",
+          "type":"float"
+        }
+      ]
+    }
+  ]
+}

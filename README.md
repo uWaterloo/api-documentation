@@ -55,9 +55,9 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Building
 
-- **[/buildings/list]()**
-- **[/buildings/{building_acronym}]()**
-- **[/buildings/{building_acronym}/{room_number}/courses]()**
+- **[/buildings/list](v2/buildings/list.md)**
+- **[/buildings/{building_acronym}](v2/buildings/building_acronym.md)**
+- **[/buildings/{building_acronym}/{room_number}/courses](v2/buildings/building_acronym_room_number_courses.md)**
 
 ### API
 
