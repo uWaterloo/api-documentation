@@ -1,0 +1,72 @@
+{
+   "method_id":1283,
+   "method_url":"/foodservices/outlets.{format}",
+   "method_name":"Food Services Outlets",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://uwaterloo.ca/food-services/"
+   ],
+   "method_description":"This method returns a list of all outlets and their unique IDs, names and breakfast/lunch/dinner meal service indicators",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "We cannot modify the data from this method"
+   ],
+   "information_steward":"Food Services",
+   "request_examples":[
+      "http://api.uwaterloo.ca/public/v2/foodservices/outlets.json",
+      "http://api.uwaterloo.ca/public/v2/foodservices/outlets.xml",
+      "http://api.uwaterloo.ca/public/v2/foodservices/outlets.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"outlet_id",
+         "description":"Outlet ID number",
+         "type":"integer"
+      },
+      {
+         "field":"outlet_name",
+         "description":"Outlet name",
+         "type":"string"
+      },
+      {
+         "field":"has_breakfast",
+         "description":"If serves breakfast",
+         "type":"boolean"
+      },
+      {
+         "field":"has_lunch",
+         "description":"If serves lunch",
+         "type":"boolean"
+      },
+      {
+         "field":"has_dinner",
+         "description":"If serves dinner",
+         "type":"boolean"
+      }
+   ]
+}
