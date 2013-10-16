@@ -45,10 +45,13 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/resources/printers]()**
 - **[/resources/infosessions]()**
 - **[/academics/groups]()**
-- **[/resources/academics/subjects]()**
-- **[/resources/academics/terms]()**
-- **[/resources/academics/organizations]()**
-- **[/resources/academics/instructions]()**
+
+## Definition and Codes
+
+- **[/codes/subjects]()**
+- **[/codes/terms]()**
+- **[/codes/organizations]()**
+- **[/codes/instructions]()**
 
 ### Building
 
