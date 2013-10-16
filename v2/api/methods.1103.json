@@ -1,0 +1,71 @@
+{
+   "method_id":1103,
+   "method_url":"/api/methods.{format}",
+   "method_name":"API Methods List",
+   "service_id":223,
+   "service_name":"api",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns all api endpoint methods available to use",
+   "additional_notes":[
+      "Usage won't increase for calling this method"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "http://api.uwaterloo.ca/v2/api/methods.json",
+      "http://api.uwaterloo.ca/v2/api/methods.xml",
+      "http://api.uwaterloo.ca/v2/api/methods.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"method_id",
+         "description":"API assigned method ID",
+         "type":"integer"
+      },
+      {
+         "field":"method_url",
+         "description":"API assigned method endpoint url",
+         "type":"string"
+      },
+      {
+         "field":"service_id",
+         "description":"API assigned method's parent service's id",
+         "type":"integer"
+      },
+      {
+         "field":"service_name",
+         "description":"API assigned method's parent service's name",
+         "type":"string"
+      },
+      {
+         "field":"parameters",
+         "description":"String of acceptable method parameters",
+         "type":"list"
+      }
+   ]
+}
