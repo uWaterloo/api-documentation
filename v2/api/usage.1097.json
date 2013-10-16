@@ -1,0 +1,72 @@
+{
+   "method_id":1097,
+   "method_url":"/api/usage.{format}",
+   "method_name":"API Usage Stats",
+   "service_id":223,
+   "service_name":"api",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled": true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns user's api usage statistics",
+   "additional_notes":[
+      "Calling this method does not affect usage"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/api/usage.json",
+      "https://api.uwaterloo.ca/v2/api/usage.xml",
+      "https://api.uwaterloo.ca/v2/api/usage.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"name",
+         "description":"Developer's registered name",
+         "type":"string"
+      },
+      {
+         "field":"api_key",
+         "description":"Developer assigned API key",
+         "type":"string"
+      },
+      {
+         "field":"monthly_calls",
+         "description":"Total calls made by the given key for the current month",
+         "type":"integer"
+      },
+      {
+         "field":"total_calls",
+         "description":"Total calls made by the given key",
+         "type":"integer"
+      }
+   ]
+}
