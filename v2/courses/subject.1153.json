@@ -1,0 +1,93 @@
+{
+   "method_id":1153,
+   "method_url":"/courses/{subject}.{format}",
+   "method_name":"Subject Listings",
+   "service_id":239,
+   "service_name":"courses",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://ugradcalendar.uwaterloo.ca/",
+      "http://gradcalendar.uwaterloo.ca/"
+   ],
+   "method_description":"This method returns all the coures offered under a given subject",
+   "additional_notes":[
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/courses/MATH.json",
+      "https://api.uwaterloo.ca/v2/courses/MATH.xml",
+      "https://api.uwaterloo.ca/v2/courses/MATH.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"subject",
+         "description":"Valid uWaterloo subject name",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"course_id",
+         "description":"Registrar assigned course ID",
+         "type":"string"
+      },
+      {
+         "field":"subject",
+         "description":"Requested subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Registrar assigned class number",
+         "type":"string"
+      },
+      {
+         "field":"title",
+         "description":"Class name and title",
+         "type":"string"
+      },
+      {
+         "field":"units",
+         "description":"Credit count for the mentioned course",
+         "type":"number"
+      },
+      {
+         "field":"description",
+         "description":"Brief course description",
+         "type":"string"
+      },
+      {
+         "field":"academic_level",
+         "description":"Undergraduate or graduate course classification",
+         "type":"string"
+      }
+   ]
+}
