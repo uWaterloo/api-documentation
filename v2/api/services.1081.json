@@ -1,0 +1,84 @@
+{
+   "method_id":1081,
+   "method_url":"/api/services.{format}",
+   "method_name":"API Services List",
+   "service_id":223,
+   "service_name":"api",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns all api services available to use",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "http://api.uwaterloo.ca/v2/api/services.json",
+      "http://api.uwaterloo.ca/v2/api/services.xml",
+      "http://api.uwaterloo.ca/v2/api/services.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"service_id",
+         "description":"API assigned service ID",
+         "type":"integer"
+      },
+      {
+         "field":"service_name",
+         "description":"API assigned service name",
+         "type":"string"
+      },
+      {
+         "field":"service_url",
+         "description":"API assigned service endpoint url",
+         "type":"string"
+      },
+      {
+         "field":"methods",
+         "description":"Available outlets",
+         "type":"list",
+         "children":[
+            {
+               "field":"method_id",
+               "description":"API assigned method under service id",
+               "type":"string"
+            },
+            {
+               "field":"method_url",
+               "description":"API assigned method endpoint udner service",
+               "type":"string"
+            }
+         ]
+      }
+   ]
+}
