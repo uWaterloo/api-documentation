@@ -5,7 +5,7 @@
    "service_id":223,
    "service_name":"api",
    "request_protocol":"GET",
-   "is_authenticated":false,
+   "is_authenticated":true,
    "is_enabled": true,
    "update_frequency":"Every request (live)",
    "cache_time_s":0,

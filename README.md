@@ -60,9 +60,9 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/api/services](v2/api/services.md)**
 - **[/api/methods](v2/api/methods.md)**
-- **[/api/usage]()**
-- **[/api/versions]()**
-- **[/api/changelog]()**
+- **[/api/usage](v2/api/usage.md)**
+- **[/api/versions](v2/api/versions.md)**
+- **[/api/changelog](v2/api/changelog.md)**
 
 ### Server
 

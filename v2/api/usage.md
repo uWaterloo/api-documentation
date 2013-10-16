@@ -21,7 +21,7 @@ GET /api/usage.{format}
     <td><b>Request Protocol</b></td>
     <td>GET</td>
     <td><b>Requires API Key</b></td>
-    <td>No</td>
+    <td>Yes</td>
   </tr>
   <tr>
     <td><b>Method ID</b></td>
@@ -152,7 +152,7 @@ Any value can be `null`
 {
   "meta":{
     "requests":86,
-    "timestamp":1381934535,
+    "timestamp":1381934735,
     "status":200,
     "message":"Request successful",
     "method_id":1097,
@@ -165,7 +165,7 @@ Any value can be `null`
     "name":"Kartik Talwar",
     "api_key":"853dfe5b299a7ab7f34d6a92b2339175",
     "monthly_calls":86,
-    "total_calls":61
+    "total_calls":62
   }
 }
 ```
