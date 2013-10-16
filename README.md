@@ -46,7 +46,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/resources/infosessions]()**
 - **[/academics/groups]()**
 
-### Definition and Codes
+### Definitions and Codes
 
 - **[/codes/subjects]()**
 - **[/codes/terms]()**
