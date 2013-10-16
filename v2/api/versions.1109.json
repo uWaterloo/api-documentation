@@ -1,0 +1,62 @@
+{
+   "method_id":1109,
+   "method_url":"/api/version.{format}",
+   "method_name":"API Version Listings",
+   "service_id":223,
+   "service_name":"api",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled": true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns user's api usage statistics",
+   "additional_notes":[
+      "Calling this method does not affect usage"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/api/versions.json",
+      "https://api.uwaterloo.ca/v2/api/versions.xml",
+      "https://api.uwaterloo.ca/v2/api/versions.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"version",
+         "description":"API version number",
+         "type":"float"
+      },
+      {
+         "field":"release_date",
+         "description":"Y-m-d date for version release",
+         "type":"string"
+      }
+   ]
+}
