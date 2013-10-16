@@ -1,7 +1,7 @@
 # API Version Listings
 
 ```
-GET /api/version.{format}
+GET /api/versions.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET /api/version.{format}
 ## Parameters
 
 ```
-GET /api/version.{format}
+GET /api/versions.{format}
 ```
 
 <table>
@@ -103,7 +103,7 @@ GET /api/version.{format}
 ## Examples
 
 ```
-GET /api/version.{format}
+GET /api/versions.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/api/versions.json**
@@ -142,7 +142,7 @@ Any value can be `null`
 {
   "meta":{
     "requests":86,
-    "timestamp":1381934892,
+    "timestamp":1381935303,
     "status":200,
     "message":"Request successful",
     "method_id":1109,

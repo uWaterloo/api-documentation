@@ -1,6 +1,6 @@
 {
    "method_id":1109,
-   "method_url":"/api/version.{format}",
+   "method_url":"/api/versions.{format}",
    "method_name":"API Version Listings",
    "service_id":223,
    "service_name":"api",
