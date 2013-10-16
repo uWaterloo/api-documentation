@@ -1,0 +1,57 @@
+{
+   "method_id":1289,
+   "method_url":"/foodservices/watcard.{format}",
+   "method_name":"List of all WatCard locations",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://uwaterloo.ca/food-services/"
+   ],
+   "method_description":"This method returns a list of all WatCard locations according to Food Services",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "We cannot modify the data from this method"
+   ],
+   "information_steward":"Food Services",
+   "request_examples":[
+      "http://api.uwaterloo.ca/public/v2/foodservices/watcard.json",
+      "http://api.uwaterloo.ca/public/v2/foodservices/watcard.xml",
+      "http://api.uwaterloo.ca/public/v2/foodservices/watcard.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"vendor_id",
+         "description":"Outlet ID number",
+         "type":"integer"
+      },
+      {
+         "field":"vendor_name",
+         "description":"Vendor name",
+         "type":"string"
+      }
+   ]
+}
