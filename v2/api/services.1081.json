@@ -15,7 +15,7 @@
    ],
    "method_description":"This method returns all api services available to use",
    "additional_notes":[
-      "Usage won't increase if there is not data returned"
+      "Usage won't increase if no data is returned"
    ],
    "information_steward":"UW OpenData",
    "request_examples":[
@@ -65,7 +65,7 @@
       },
       {
          "field":"methods",
-         "description":"Available outlets",
+         "description":"Available endpoints under the service",
          "type":"list",
          "children":[
             {

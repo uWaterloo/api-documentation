@@ -52,7 +52,8 @@ GET /api/services.{format}
 
 ### Notes
 
-- Usage won't increase if there is not data returned
+- Usage won't increase if no data is returned
+- Any value can be `null`
 
 
 ### Sources
@@ -136,7 +137,7 @@ GET /api/services.{format}
   <tr>
     <td><b>methods</b></td>
     <td>list</td>
-    <td>Available outlets<br><table>
+    <td>Available endpoints under the service<br><table>
   <tr>
     <td><b>method_id</b></td>
     <td>string</td>
@@ -153,15 +154,15 @@ GET /api/services.{format}
 </table>
 
 
-# Output
+## Output
 
 #### JSON
 
 ```json
 {
   "meta":{
-    "requests":3763,
-    "timestamp":1381897226,
+    "requests":3766,
+    "timestamp":1381897675,
     "status":200,
     "message":"Request successful",
     "method_id":1081,
