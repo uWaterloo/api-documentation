@@ -62,7 +62,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### API
 
 - **[/api/services](v2/api/services.md)**
-- **[/api/methods]()**
+- **[/api/methods](v2/api/methods.md)**
 - **[/api/usage]()**
 - **[/api/versions]()**
 - **[/api/changelog]()**

@@ -141,6 +141,8 @@ GET /api/methods.{format}
 </table>
 
 
+Any value can be `null`
+
 ## Output
 
 #### JSON
@@ -148,8 +150,8 @@ GET /api/methods.{format}
 ```json
 {
   "meta":{
-    "requests":3768,
-    "timestamp":1381898202,
+    "requests":3773,
+    "timestamp":1381898741,
     "status":200,
     "message":"Request successful",
     "method_id":1103,

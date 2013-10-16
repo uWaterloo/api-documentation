@@ -81,12 +81,6 @@ GET /api/services.{format}
     <td>The format of the output</td>
   </tr>
   <tr>
-    <td><b>key</b></td>
-    <td>filter</td>
-    <td><i>yes</i></td>
-    <td>Your API key</td>
-  </tr>
-  <tr>
     <td><b>callback</b></td>
     <td>filter</td>
     <td><i>no</i></td>
@@ -154,6 +148,8 @@ GET /api/services.{format}
 </table>
 
 
+Any value can be `null`
+
 ## Output
 
 #### JSON
@@ -161,8 +157,8 @@ GET /api/services.{format}
 ```json
 {
   "meta":{
-    "requests":3766,
-    "timestamp":1381897675,
+    "requests":3772,
+    "timestamp":1381898708,
     "status":200,
     "message":"Request successful",
     "method_id":1081,
