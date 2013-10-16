@@ -42,16 +42,16 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Resources
 
-- **[/resources/printers]()**
-- **[/resources/infosessions]()**
-- **[/academics/groups]()**
+- **[/resources/printers](v2/resources/printers.md)**
+- **[/resources/infosessions](v2/resources/infosessions.md)**
 
 ### Definitions and Codes
 
-- **[/codes/subjects]()**
-- **[/codes/terms]()**
-- **[/codes/organizations]()**
-- **[/codes/instructions]()**
+- **[/codes/subjects](v2/codes/subjects.md)**
+- **[/academics/groups](v2/codes/groups.md)**
+- **[/codes/organizations](v2/codes/organizations.md)**
+- **[/codes/terms](v2/codes/terms.md)**
+- **[/codes/instructions](v2/codes/instructions.md)**
 
 ### Building
 
