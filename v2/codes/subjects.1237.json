@@ -1,0 +1,57 @@
+{
+   "method_id":1237,
+   "method_url":"/codes/subjects.{format}",
+   "method_name":"Code Lookups for subjects",
+   "service_id":263,
+   "service_name":"codes",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"When updated by steward/via pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/blob/master/Quest/Subjects.csv"
+   ],
+   "method_description":"This method returns a list of all code lookups for subjects.",
+   "additional_notes":[
+      "Usage won't increase if there is no data returned",
+      "This data is community curated on github"
+   ],
+   "information_steward":"Institution of Analysis & Planning (IAP)",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/codes/subjects.json",
+      "https://api.uwaterloo.ca/v2/codes/subjects.xml",
+      "https://api.uwaterloo.ca/v2/codes/subjects.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"subject",
+         "description":"Subject",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Description of subject",
+         "type":"string"
+      }
+   ]
+}
