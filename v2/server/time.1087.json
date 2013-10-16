@@ -1,0 +1,66 @@
+{
+   "method_id":1087,
+   "method_url":"/server/time.{format}",
+   "method_name":"Server Time",
+   "service_id":227,
+   "service_name":"server",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled": true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Language computed",
+   "data_source":[
+      "https://api.uwaterloo.ca"
+   ],
+   "method_description":"This method returns time information about the srver",
+   "additional_notes":[
+      "Calling this method does not affect usage"
+   ],
+   "information_steward":"UW OpenData",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/server/time.json",
+      "https://api.uwaterloo.ca/v2/server/time.xml",
+      "https://api.uwaterloo.ca/v2/server/time.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"timestamp",
+         "description":"Current UNIX timestamp",
+         "type":"integer"
+      },
+      {
+         "field":"datetime",
+         "description":"ISO8601 compatible current server timestamp",
+         "type":"string"
+      },
+      {
+         "field":"timezone",
+         "description":"Current server timezone",
+         "type":"string"
+      },
+      {
+         "field":"key_reset_time",
+         "description":"UNIX timestamp of when the api call quota will reset",
+         "type":"integer"
+      }
+   ]
+}

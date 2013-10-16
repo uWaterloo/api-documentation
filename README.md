@@ -66,8 +66,8 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Server
 
-- **[/server/time]()**
-- **[/server/codes]()**
+- **[/server/time](v2/server/time.md)**
+- **[/server/codes](v2/server/codes.md)**
 
 
 ## Contributing
