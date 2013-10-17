@@ -46,7 +46,7 @@
     {
       "field":"building_id",
       "description":"Unique building number",
-      "type":"integer"
+      "type":"string"
     },
     {
       "field":"building_code",

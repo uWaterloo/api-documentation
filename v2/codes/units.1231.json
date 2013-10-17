@@ -1,7 +1,7 @@
 {
    "method_id":1231,
-   "method_url":"/codes/organizations.{format}",
-   "method_name":"Code Lookups for Organizations",
+   "method_url":"/codes/units.{format}",
+   "method_name":"Code Lookups for Organizational Units",
    "service_id":263,
    "service_name":"codes",
    "request_protocol":"GET",
@@ -20,9 +20,9 @@
    ],
    "information_steward":"Institution of Analysis & Planning (IAP)",
    "request_examples":[
-      "https://api.uwaterloo.ca/v2/codes/organizations.json",
-      "https://api.uwaterloo.ca/v2/codes/organizations.xml",
-      "https://api.uwaterloo.ca/v2/codes/organizations.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/codes/units.json",
+      "https://api.uwaterloo.ca/v2/codes/units.xml",
+      "https://api.uwaterloo.ca/v2/codes/units.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
@@ -44,8 +44,8 @@
    ],
    "response_fields":[
       {
-         "field":"organization",
-         "description":"Organization",
+         "field":"unit",
+         "description":"Organizational Unit",
          "type":"string"
       },
       {

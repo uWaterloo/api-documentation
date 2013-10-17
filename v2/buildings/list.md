@@ -122,7 +122,7 @@ GET /buildings/list.{format}
   </tr>
   <tr>
     <td><b>building_id</b></td>
-    <td>integer</td>
+    <td>string</td>
     <td>Unique building number</td>
   </tr>
   <tr>

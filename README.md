@@ -48,8 +48,8 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Definitions and Codes
 
 - **[/codes/subjects](v2/codes/subjects.md)**
-- **[/academics/groups](v2/codes/groups.md)**
-- **[/codes/organizations](v2/codes/organizations.md)**
+- **[/codes/groups](v2/codes/groups.md)**
+- **[/codes/units](v2/codes/units.md)**
 - **[/codes/terms](v2/codes/terms.md)**
 - **[/codes/instructions](v2/codes/instructions.md)**
 

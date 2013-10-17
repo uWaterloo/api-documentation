@@ -1,7 +1,7 @@
-# Code Lookups for Organizations
+# Code Lookups for Organizational Units
 
 ```
-GET /codes/organizations.{format}
+GET /codes/units.{format}
 ```
 
 ## Description
@@ -65,7 +65,7 @@ GET /codes/organizations.{format}
 ## Parameters
 
 ```
-GET /codes/organizations.{format}
+GET /codes/units.{format}
 ```
 
 <table>
@@ -98,12 +98,12 @@ GET /codes/organizations.{format}
 ## Examples
 
 ```
-GET /codes/organizations.{format}
+GET /codes/units.{format}
 ```
 
-- **https://api.uwaterloo.ca/v2/codes/organizations.json**
-- **https://api.uwaterloo.ca/v2/codes/organizations.xml**
-- **https://api.uwaterloo.ca/v2/codes/organizations.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/codes/units.json**
+- **https://api.uwaterloo.ca/v2/codes/units.xml**
+- **https://api.uwaterloo.ca/v2/codes/units.json?callback=myResponse**
 
 
 ## Response
@@ -115,9 +115,9 @@ GET /codes/organizations.{format}
     <td><b>Value Description</b></td>
   </tr>
   <tr>
-    <td><b>organization</b></td>
+    <td><b>unit</b></td>
     <td>string</td>
-    <td>Organization</td>
+    <td>Organizational Unit</td>
   </tr>
   <tr>
     <td><b>description</b></td>
@@ -136,8 +136,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":126,
-    "timestamp":1381958128,
+    "requests":144,
+    "timestamp":1382021198,
     "status":200,
     "message":"Request successful",
     "method_id":1231,
@@ -148,283 +148,283 @@ Any value can be `null`
   },
   "data":[
     {
-      "organization":"ACC",
+      "unit":"ACC",
       "description":"School of Accounting & Finance"
     },
     {
-      "organization":"AHS",
+      "unit":"AHS",
       "description":"Applied Health Sciences"
     },
     {
-      "organization":"AHSDEAN",
+      "unit":"AHSDEAN",
       "description":"Dean of Applied Health Sciences"
     },
     {
-      "organization":"AMATH",
+      "unit":"AMATH",
       "description":"Applied Mathematics"
     },
     {
-      "organization":"ANTH",
+      "unit":"ANTH",
       "description":"Anthropology"
     },
     {
-      "organization":"ARCH",
+      "unit":"ARCH",
       "description":"School of Architecture"
     },
     {
-      "organization":"ART",
+      "unit":"ART",
       "description":"Arts"
     },
     {
-      "organization":"ARTSDEAN",
+      "unit":"ARTSDEAN",
       "description":"Dean of Arts"
     },
     {
-      "organization":"BIOL",
+      "unit":"BIOL",
       "description":"Biology"
     },
     {
-      "organization":"CBET",
+      "unit":"CBET",
       "description":"Conrad Business, Entrepreneurship & Technology"
     },
     {
-      "organization":"CECS",
+      "unit":"CECS",
       "description":"Coop Education & Career Action"
     },
     {
-      "organization":"CGC",
+      "unit":"CGC",
       "description":"Conrad Grebel College"
     },
     {
-      "organization":"CHE",
+      "unit":"CHE",
       "description":"Chemical Engineering"
     },
     {
-      "organization":"CHEM",
+      "unit":"CHEM",
       "description":"Chemistry"
     },
     {
-      "organization":"CIVE",
+      "unit":"CIVE",
       "description":"Civil & Environmental Engineering"
     },
     {
-      "organization":"CLASSICS",
+      "unit":"CLASSICS",
       "description":"Classical Studies"
     },
     {
-      "organization":"CO",
+      "unit":"CO",
       "description":"Combinatorics & Optimization"
     },
     {
-      "organization":"CS",
+      "unit":"CS",
       "description":"Computer Science - Cheriton School"
     },
     {
-      "organization":"DANCE",
+      "unit":"DANCE",
       "description":"Dance"
     },
     {
-      "organization":"DRAMA",
+      "unit":"DRAMA",
       "description":"Drama & Speech Communication"
     },
     {
-      "organization":"EARTH",
+      "unit":"EARTH",
       "description":"Earth & Environmental Sciences"
     },
     {
-      "organization":"ECE",
+      "unit":"ECE",
       "description":"Electrical & Computer Engineering"
     },
     {
-      "organization":"ECON",
+      "unit":"ECON",
       "description":"Economics"
     },
     {
-      "organization":"ENG",
+      "unit":"ENG",
       "description":"Engineering"
     },
     {
-      "organization":"ENGDEAN",
+      "unit":"ENGDEAN",
       "description":"Dean of Engineering"
     },
     {
-      "organization":"ENGL",
+      "unit":"ENGL",
       "description":"English Language & Literature"
     },
     {
-      "organization":"ENV",
+      "unit":"ENV",
       "description":"Environment"
     },
     {
-      "organization":"ENVDEAN",
+      "unit":"ENVDEAN",
       "description":"Dean of Environment"
     },
     {
-      "organization":"ERS",
+      "unit":"ERS",
       "description":"Environment & Resource Studies"
     },
     {
-      "organization":"FINE",
+      "unit":"FINE",
       "description":"Fine Arts"
     },
     {
-      "organization":"FR",
+      "unit":"FR",
       "description":"French Studies"
     },
     {
-      "organization":"GEOE",
+      "unit":"GEOE",
       "description":"Geological Engineering"
     },
     {
-      "organization":"GEOG",
+      "unit":"GEOG",
       "description":"Geography & Environmental Management"
     },
     {
-      "organization":"GERSLAV",
+      "unit":"GERSLAV",
       "description":"Germanic & Slavic Studies"
     },
     {
-      "organization":"GRAD",
+      "unit":"GRAD",
       "description":"Graduate Studies"
     },
     {
-      "organization":"GRADDEAN",
+      "unit":"GRADDEAN",
       "description":"Graduate Dean"
     },
     {
-      "organization":"HIST",
+      "unit":"HIST",
       "description":"History"
     },
     {
-      "organization":"HLTHGERON",
+      "unit":"HLTHGERON",
       "description":"School of Public Health Science"
     },
     {
-      "organization":"ICR",
+      "unit":"ICR",
       "description":"Institute for Computer Research"
     },
     {
-      "organization":"IS",
+      "unit":"IS",
       "description":"Independent Studies"
     },
     {
-      "organization":"KIN",
+      "unit":"KIN",
       "description":"Kinesiology"
     },
     {
-      "organization":"MAT",
+      "unit":"MAT",
       "description":"Math"
     },
     {
-      "organization":"MATHDEAN",
+      "unit":"MATHDEAN",
       "description":"Dean of Mathematics"
     },
     {
-      "organization":"ME",
+      "unit":"ME",
       "description":"Mechanical & Mechatronics Engineering"
     },
     {
-      "organization":"MSCI",
+      "unit":"MSCI",
       "description":"Management Sciences"
     },
     {
-      "organization":"OPTOM",
+      "unit":"OPTOM",
       "description":"School of Optometry & Vision Science"
     },
     {
-      "organization":"PHARM",
+      "unit":"PHARM",
       "description":"School of Pharmacy"
     },
     {
-      "organization":"PHIL",
+      "unit":"PHIL",
       "description":"Philosophy"
     },
     {
-      "organization":"PHYS",
+      "unit":"PHYS",
       "description":"Physics & Astronomy"
     },
     {
-      "organization":"PLAN",
+      "unit":"PLAN",
       "description":"School of Planning"
     },
     {
-      "organization":"PMATH",
+      "unit":"PMATH",
       "description":"Pure Mathematics"
     },
     {
-      "organization":"PSCI",
+      "unit":"PSCI",
       "description":"Political Science"
     },
     {
-      "organization":"PSYCH",
+      "unit":"PSYCH",
       "description":"Psychology"
     },
     {
-      "organization":"REC",
+      "unit":"REC",
       "description":"Recreation & Leisure Studies"
     },
     {
-      "organization":"REN",
+      "unit":"REN",
       "description":"Renison University College"
     },
     {
-      "organization":"RS",
+      "unit":"RS",
       "description":"Religious Studies"
     },
     {
-      "organization":"SCI",
+      "unit":"SCI",
       "description":"Science"
     },
     {
-      "organization":"SCIDEAN",
+      "unit":"SCIDEAN",
       "description":"Dean of Science Office"
     },
     {
-      "organization":"SEED",
+      "unit":"SEED",
       "description":"School of Environment, Enterprise & Development"
     },
     {
-      "organization":"SOC",
+      "unit":"SOC",
       "description":"Sociology & Legal Studies"
     },
     {
-      "organization":"SPAN",
+      "unit":"SPAN",
       "description":"Spanish & Latin American Studies"
     },
     {
-      "organization":"STATACTSC",
+      "unit":"STATACTSC",
       "description":"Statistics & Actuarial Science"
     },
     {
-      "organization":"STJ",
+      "unit":"STJ",
       "description":"St Jerome's University"
     },
     {
-      "organization":"STP",
+      "unit":"STP",
       "description":"St Paul's University College"
     },
     {
-      "organization":"STV",
+      "unit":"STV",
       "description":"Society, Technology & Values"
     },
     {
-      "organization":"SYDE",
+      "unit":"SYDE",
       "description":"Systems Design Engineering"
     },
     {
-      "organization":"THC",
+      "unit":"THC",
       "description":"Theatre Centre"
     },
     {
-      "organization":"UW",
+      "unit":"UW",
       "description":"University of Waterloo"
     },
     {
-      "organization":"VPA",
+      "unit":"VPA",
       "description":"Interdisciplinary Studies"
     },
     {
-      "organization":"WS",
+      "unit":"WS",
       "description":"Women's Studies"
     }
   ]
