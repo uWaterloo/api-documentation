@@ -1,0 +1,82 @@
+{
+   "method_id":1123,
+   "method_url":"/resoruces/printers.{format}",
+   "method_name":"List of Campus Printer",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"When updated by pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/tree/master/Printers"
+   ],
+   "method_description":"This method returns a list of printer on campus", 
+   "additional_notes":[
+      "Usage won't increase if there is no data returned",
+      "This data is community curated on github"
+   ],
+   "information_steward":"Institution of Analysis & Planning (IAP)",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/printers.json",
+      "https://api.uwaterloo.ca/v2/resources/printers.xml",
+      "https://api.uwaterloo.ca/v2/resources/printers.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"printer",
+         "description":"Name of the printer",
+         "type":"string"
+      },
+      {
+         "field":"ad",
+         "description":"Printers active directory id",
+         "type":"string"
+      },
+      {
+         "field":"server",
+         "description":"Printer server name",
+         "type":"string"
+      },
+      {
+         "field":"comment",
+         "description":"Additional comments on the printer",
+         "type":"string"
+      },
+      {
+         "field":"driver",
+         "description":"Printer driver information",
+         "type":"string"
+      },
+      {
+         "field":"room",
+         "description":"Printer's physical room location",
+         "type":"string"
+      },
+      {
+         "field":"faculty",
+         "description":"Faculty the printer belongs to",
+         "type":"string"
+      }
+   ]
+}
