@@ -18,7 +18,7 @@
       "Usage won't increase if there is no data returned",
       "This data is community curated on github"
    ],
-   "information_steward":"Institution of Analysis & Planning (IAP)",
+   "information_steward":"IST",
    "request_examples":[
       "https://api.uwaterloo.ca/v2/resources/printers.json",
       "https://api.uwaterloo.ca/v2/resources/printers.xml",
