@@ -116,14 +116,19 @@ GET /codes/groups.{format}
     <td><b>Value Description</b></td>
   </tr>
   <tr>
-    <td><b>group</b></td>
+    <td><b>group_code</b></td>
     <td>string</td>
-    <td>Group</td>
+    <td>Group Code</td>
   </tr>
   <tr>
-    <td><b>description</b></td>
+    <td><b>group_short_name</b></td>
     <td>string</td>
-    <td>Description of group</td>
+    <td>Group Short Name</td>
+  </tr>
+  <tr>
+    <td><b>group_full_name</b></td>
+    <td>string</td>
+    <td>Full group name</td>
   </tr>
 </table>
 
@@ -137,8 +142,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":124,
-    "timestamp":1381958079,
+    "requests":145,
+    "timestamp":1382023751,
     "status":200,
     "message":"Request successful",
     "method_id":1229,
@@ -149,60 +154,74 @@ Any value can be `null`
   },
   "data":[
     {
-      "group":"AHS",
-      "description":"Applied Health Sciences"
+      "group_code":"AHS",
+      "group_short_name":"Applied Health Sciences",
+      "group_full_name":"Faculty of Applied Health Sciences"
     },
     {
-      "group":"ART",
-      "description":"Arts"
+      "group_code":"ART",
+      "group_short_name":"Arts",
+      "group_full_name":"Faculty of Arts"
     },
     {
-      "group":"CGC",
-      "description":"Conrad Grebel College"
+      "group_code":"CGC",
+      "group_short_name":"Conrad Grebel",
+      "group_full_name":"Conrad Grebel University College"
     },
     {
-      "group":"ENG",
-      "description":"Engineering"
+      "group_code":"ENG",
+      "group_short_name":"Engineering",
+      "group_full_name":"Faculty of Engineering"
     },
     {
-      "group":"ENV",
-      "description":"Environment"
+      "group_code":"ENV",
+      "group_short_name":"Environment",
+      "group_full_name":"Faculty of Environment"
     },
     {
-      "group":"GRAD",
-      "description":"Graduate Studies"
+      "group_code":"GRAD",
+      "group_short_name":"Graduate Studies",
+      "group_full_name":"Graduate Studies"
     },
     {
-      "group":"IS",
-      "description":"Independent Studies"
+      "group_code":"IS",
+      "group_short_name":"Independent Studies",
+      "group_full_name":"Independent Studies"
     },
     {
-      "group":"MAT",
-      "description":"Mathematics"
+      "group_code":"MAT",
+      "group_short_name":"Mathematics",
+      "group_full_name":"Faculty of Mathematics"
     },
     {
-      "group":"REN",
-      "description":"Renison University College"
+      "group_code":"REN",
+      "group_short_name":"Renison",
+      "group_full_name":"Renison University College"
     },
     {
-      "group":"SCI",
-      "description":"Science"
+      "group_code":"SCI",
+      "group_short_name":"Science",
+      "group_full_name":"Faculty of Science"
     },
     {
-      "group":"STJ",
-      "description":"St Jerome's University"
+      "group_code":"STJ",
+      "group_short_name":"St. Jeromes",
+      "group_full_name":"St. Jerome's University"
     },
     {
-      "group":"STP",
-      "description":"St Paul's University College"
+      "group_code":"STP",
+      "group_short_name":"St. Pauls",
+      "group_full_name":"St. Paul's University College"
     },
     {
-      "group":"THL",
-      "description":"Theology"
+      "group_code":"THL",
+      "group_short_name":"Theology",
+      "group_full_name":"Theology"
     },
     {
-      "group":"VPA",
-      "description":"Interdisciplinary Studies"
+      "group_code":"VPA",
+      "group_short_name":"Interdisciplinary",
+      "group_full_name":"Interdisciplinary Studies"
     }
   ]
 }

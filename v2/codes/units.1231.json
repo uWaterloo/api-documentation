@@ -44,13 +44,23 @@
    ],
    "response_fields":[
       {
-         "field":"unit",
-         "description":"Organizational Unit",
+         "field":"unit_code",
+         "description":"Organizational Unit code",
          "type":"string"
       },
       {
-         "field":"description",
-         "description":"Description of group",
+         "field":"group_code",
+         "description":"Unit's parent group",
+         "type":"string"
+      },
+      {
+         "field":"unit_short_name",
+         "description":"Organizational Units short name",
+         "type":"string"
+      },
+      {
+         "field":"unit_full_name",
+         "description":"Units full name",
          "type":"string"
       }
    ]

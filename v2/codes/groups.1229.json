@@ -45,13 +45,18 @@
    ],
    "response_fields":[
       {
-         "field":"group",
-         "description":"Group",
+         "field":"group_code",
+         "description":"Group Code",
          "type":"string"
       },
       {
-         "field":"description",
-         "description":"Description of group",
+         "field":"group_short_name",
+         "description":"Group Short Name",
+         "type":"string"
+      },
+      {
+         "field":"group_full_name",
+         "description":"Full group name",
          "type":"string"
       }
    ]
