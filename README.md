@@ -45,6 +45,11 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/courses/{subject}/{catalog_number}/schedule](v2/courses/subject_catalog_number_schedule.md)**
 - **[/courses/{subject}/{catalog_number}/prerequisites](v2/courses/subject_catalog_number_prerequisites.md)**
 
+### Terms
+
+- **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
+
+
 ### Resources
 
 - **[/resources/printers](v2/resources/printers.md)**
