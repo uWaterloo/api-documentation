@@ -1,0 +1,117 @@
+{
+   "method_id":1367,
+   "method_url":"/courses/{subject}/{catalog_number}/examschedule.{format}",
+   "method_name":"Exam Schedule",
+   "service_id":239,
+   "service_name":"cpirses",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Once a day",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/blob/master/ExamSchedule/1139ExamSchedule.csv"
+   ],
+   "method_description":"This method returns a given course's exam schedule",
+   "additional_notes":[
+      "The CSV file on github is generated through the registrar's office"
+   ],
+   "information_steward":"Registrar's Office",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/courses/CS/486/examschedule.json",
+      "https://api.uwaterloo.ca/v2/courses/CS/486/examschedule.xml",
+      "https://api.uwaterloo.ca/v2/courses/CS/486/examschedule.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"subject",
+         "description":"Valid uWaterloo subject name",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"catalog_number",
+         "description":"Valid uWaterloo coure number",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"term",
+         "description":"Four digit term representation",
+         "is_required":false,
+         "type":"filter"
+      },
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"course",
+         "description":"Full course name (subject and catalog number)",
+         "type":"string"
+      },
+      {
+         "field":"sections",
+         "description":"Exam schedule for all sections of the course",
+         "type":"list",
+         "children" : [
+            {
+              "field" : "section",
+              "description" : "Exam section number",
+              "type" : "string"
+            },
+            {
+              "field" : "day",
+              "description" : "Day of the exam",
+              "type" : "string"
+            },
+            {
+              "field" : "date",
+              "description" : "ISO8601 exam date representation",
+              "type" : "string"
+            },
+            {
+              "field" : "start_time",
+              "description" : "Exam starting time",
+              "type" : "string"
+            },
+            {
+              "field" : "end_time",
+              "description" : "Exam ending time",
+              "type" : "string"
+            },
+            {
+              "field" : "location",
+              "description" : "Exam location",
+              "type" : "string"
+            },
+            {
+              "field" : "notes",
+              "description" : "Additional notes regarding the section",
+              "type" : "string"
+            }
+         ]
+      }
+   ]
+}
