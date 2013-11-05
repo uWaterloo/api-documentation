@@ -32,6 +32,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/foodservices/announcements](v2/foodservices/announcements.md)**
 - **[/foodservices/diets](v2/foodservices/diets.md)**
 - **[/foodservices/outlets](v2/foodservices/outlets.md)**
+- **[/foodservices/locations](v2/foodservices/locations.md)**
 - **[/foodservices/watcard](v2/foodservices/watcard.md)**
 - **[/foodservices/products/{product_id}](v2/foodservices/products_product_id.md)**
 - **[/foodservices/{year}/{week}/menu](v2/foodservices/year_week_menu.md)**
