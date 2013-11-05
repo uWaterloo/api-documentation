@@ -1,0 +1,83 @@
+{
+   "method_id":1409,
+   "method_url":"/terms/list.{format}",
+   "method_name":"Terms Listings",
+   "service_id":241,
+   "service_name":"terms",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"On request",
+   "cache_time_s":0,
+   "data_type":"Time computed",
+   "data_source":[
+   ],
+   "method_description":"This method returns the current, previous and next term's id along with a list of terms in the past year and the next year",
+   "additional_notes":[
+   ],
+   "information_steward":"UW API",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/terms/list.json",
+      "https://api.uwaterloo.ca/v2/terms/list.xml",
+      "https://api.uwaterloo.ca/v2/terms/list.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"current_term",
+         "description":"Current Term's numerical value",
+         "type":"integer"
+      },
+      {
+         "field":"previous_term",
+         "description":"Previous term's numerical value",
+         "type":"integer"
+      },
+      {
+         "field":"next_term",
+         "description":"Upcoming term's numerical value",
+         "type":"integer"
+      },
+      {
+         "field":"listings",
+         "description":"Term listings by year",
+         "type": "object",
+         "children" : [
+            {
+              "field" : "{year}",
+              "description" : "First item is previous year, second is current, last is next year",
+              "type" : "list",
+              "children" : [
+                {
+                  "field" : "id",
+                  "description" : "Term's numeric ID",
+                  "type" : "integer"
+                },
+                {
+                  "field" : "name",
+                  "description" : "Parsed term name (human readable)",
+                  "type" : "string"
+                }
+              ]
+            }
+         ]
+      }
+   ]
+}

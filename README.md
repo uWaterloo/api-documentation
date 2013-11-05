@@ -49,6 +49,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Terms
 
 - **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
+- **[/terms/list](v2/terms/list.md)**
 
 
 ### Resources
