@@ -102,9 +102,9 @@ GET /foodservices/notes.{format}
 GET /foodservices/notes.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/foodservices/notes.json**
-- **http://api.uwaterloo.ca/public/v2/foodservices/notes.xml**
-- **http://api.uwaterloo.ca/public/v2/foodservices/notes.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/notes.json**
+- **http://api.uwaterloo.ca/v2/foodservices/notes.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/notes.json?callback=myResponse**
 
 
 ## Response

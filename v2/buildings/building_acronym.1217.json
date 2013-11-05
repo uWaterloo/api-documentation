@@ -20,9 +20,9 @@
   ],
   "information_steward":"Institution of Analysis & Planning (IAP)",
   "request_examples":[
-    "http://api.uwaterloo.ca/public/v2/buildings/MHR.json",
-    "http://api.uwaterloo.ca/public/v2/buildings/MHR.xml",
-    "http://api.uwaterloo.ca/public/v2/buildings/MHR.json?callback=myResponse"
+    "http://api.uwaterloo.ca/v2/buildings/MHR.json",
+    "http://api.uwaterloo.ca/v2/buildings/MHR.xml",
+    "http://api.uwaterloo.ca/v2/buildings/MHR.json?callback=myResponse"
   ],
   "response_formats":[
     "json",

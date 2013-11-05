@@ -101,9 +101,9 @@ GET /buildings/{building_code}.{format}
 GET /buildings/{building_code}.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/buildings/MHR.json**
-- **http://api.uwaterloo.ca/public/v2/buildings/MHR.xml**
-- **http://api.uwaterloo.ca/public/v2/buildings/MHR.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/buildings/MHR.json**
+- **http://api.uwaterloo.ca/v2/buildings/MHR.xml**
+- **http://api.uwaterloo.ca/v2/buildings/MHR.json?callback=myResponse**
 
 
 ## Response

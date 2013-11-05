@@ -101,9 +101,9 @@ GET /foodservices/diets.{format}
 GET /foodservices/diets.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/foodservices/diets.json**
-- **http://api.uwaterloo.ca/public/v2/foodservices/diets.xml**
-- **http://api.uwaterloo.ca/public/v2/foodservices/diets.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/diets.json**
+- **http://api.uwaterloo.ca/v2/foodservices/diets.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/diets.json?callback=myResponse**
 
 
 ## Response

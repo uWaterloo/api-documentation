@@ -101,9 +101,9 @@ GET /foodservices/watcard.{format}
 GET /foodservices/watcard.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/foodservices/watcard.json**
-- **http://api.uwaterloo.ca/public/v2/foodservices/watcard.xml**
-- **http://api.uwaterloo.ca/public/v2/foodservices/watcard.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/watcard.json**
+- **http://api.uwaterloo.ca/v2/foodservices/watcard.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/watcard.json?callback=myResponse**
 
 
 ## Response

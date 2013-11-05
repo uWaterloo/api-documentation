@@ -102,9 +102,9 @@ GET /foodservices/announcements.{format}
 GET /foodservices/announcements.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/foodservices/announcements.json**
-- **http://api.uwaterloo.ca/public/v2/foodservices/announcements.xml**
-- **http://api.uwaterloo.ca/public/v2/foodservices/announcements.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/announcements.json**
+- **http://api.uwaterloo.ca/v2/foodservices/announcements.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/announcements.json?callback=myResponse**
 
 
 ## Response

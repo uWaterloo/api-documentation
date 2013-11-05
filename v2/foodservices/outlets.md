@@ -101,9 +101,9 @@ GET /foodservices/outlets.{format}
 GET /foodservices/outlets.{format}
 ```
 
-- **http://api.uwaterloo.ca/public/v2/foodservices/outlets.json**
-- **http://api.uwaterloo.ca/public/v2/foodservices/outlets.xml**
-- **http://api.uwaterloo.ca/public/v2/foodservices/outlets.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/outlets.json**
+- **http://api.uwaterloo.ca/v2/foodservices/outlets.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/outlets.json?callback=myResponse**
 
 
 ## Response

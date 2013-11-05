@@ -21,9 +21,9 @@
    ],
    "information_steward":"Food Services",
    "request_examples":[
-      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.json",
-      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.xml",
-      "http://api.uwaterloo.ca/public/v2/foodservices/announcements.json?callback=myResponse"
+      "http://api.uwaterloo.ca/v2/foodservices/announcements.json",
+      "http://api.uwaterloo.ca/v2/foodservices/announcements.xml",
+      "http://api.uwaterloo.ca/v2/foodservices/announcements.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
