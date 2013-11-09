@@ -52,6 +52,7 @@ GET /courses/{subject}/{catalog_number}/schedule.{format}
 
 ### Notes
 
+- By default, only schedules for the current term will be returned if the [`term` parameter](#parameters) is not given
 - Any value can be `null`
 
 
