@@ -149,7 +149,7 @@
       },
       {
          "field":"reserves",
-         "description":"Course specific enrollemnt reserveation data",
+         "description":"Course specific enrollment reservation data",
          "type":"object",
          "children":  [
            {

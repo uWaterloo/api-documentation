@@ -221,7 +221,7 @@ GET /courses/{subject}/{catalog_number}/schedule.{format}
   <tr>
     <td><b>reserves</b></td>
     <td>object</td>
-    <td>Course specific enrollemnt reserveation data<br><table>
+    <td>Course specific enrollment reservation data<br><table>
   <tr>
     <td><b>reserve_group</b></td>
     <td>string</td>
