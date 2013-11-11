@@ -1,0 +1,55 @@
+{
+   "method_id":1423,
+   "method_url":"/events/holidays.{format}",
+   "method_name":"Annual Holidays",
+   "service_id":271,
+   "service_name":"events",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every year",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+    "https://github.com/uWaterloo/Datasets/blob/master/Holidays/holidays.csv"
+   ],
+   "method_description":"This method returns a list of holidays for the current year",
+   "additional_notes":[
+   ],
+   "information_steward":"UW API",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/events/holidays.json",
+      "https://api.uwaterloo.ca/v2/events/holidays.xml",
+      "https://api.uwaterloo.ca/v2/events/holidays.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"name",
+         "description":"Name of the holiday",
+         "type":"string"
+      },
+      {
+         "field":"date",
+         "description":"Y-m-d formatted holiday date",
+         "type":"date"
+      }
+   ]
+}
