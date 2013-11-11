@@ -2,7 +2,7 @@
 
 
 The University of Waterloo API allows anyone to build applications using data from the uWaterloo websites.
-The API currently features more than 30 methods of accessing various datasets accross the University network.
+The API currently features more than 30 methods of accessing various datasets across the University network.
 
 If you find an error in the documentation, file an issue or send a pull request.
 

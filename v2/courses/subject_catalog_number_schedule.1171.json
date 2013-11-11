@@ -16,6 +16,7 @@
    ],
    "method_description":"This method returns the class schedule for a given course and term",
    "additional_notes":[
+      "By default, only schedules for the current term will be returned if the [`term` parameter](#parameters) is not given"
    ],
    "information_steward":"Registrar",
    "request_examples":[
@@ -148,7 +149,7 @@
       },
       {
          "field":"reserves",
-         "description":"Course specific enrollemnt reserveation data",
+         "description":"Course specific enrollment reservation data",
          "type":"object",
          "children":  [
            {
