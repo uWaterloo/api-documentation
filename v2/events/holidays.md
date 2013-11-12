@@ -21,7 +21,7 @@ GET /events/holidays.{format}
     <td><b>Request Protocol</b></td>
     <td>GET</td>
     <td><b>Requires API Key</b></td>
-    <td>Yes</td>
+    <td>No</td>
   </tr>
   <tr>
     <td><b>Method ID</b></td>
@@ -134,8 +134,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":4908,
-    "timestamp":1384293117,
+    "requests":159,
+    "timestamp":1384293231,
     "status":200,
     "message":"Request successful",
     "method_id":1423,

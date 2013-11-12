@@ -5,7 +5,7 @@
    "service_id":271,
    "service_name":"events",
    "request_protocol":"GET",
-   "is_authenticated":true,
+   "is_authenticated":false,
    "is_enabled": true,
    "update_frequency":"Every year",
    "cache_time_s":0,
