@@ -13,7 +13,7 @@
    "data_source":[
     "https://github.com/uWaterloo/Datasets/blob/master/Holidays/holidays.csv"
    ],
-   "method_description":"This method returns a list of holidays for the current year",
+   "method_description":"This method returns a list of university holidays starting from 2012",
    "additional_notes":[
    ],
    "information_steward":"UW API",

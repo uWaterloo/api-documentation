@@ -6,7 +6,7 @@ GET /events/holidays.{format}
 
 ## Description
 
-> This method returns a list of holidays for the current year
+> This method returns a list of university holidays starting from 2012
 
 ## Summary
 
@@ -134,8 +134,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":4867,
-    "timestamp":1384192338,
+    "requests":4908,
+    "timestamp":1384293117,
     "status":200,
     "message":"Request successful",
     "method_id":1423,
@@ -145,6 +145,62 @@ Any value can be `null`
     }
   },
   "data":[
+    {
+      "name":"New Year's Day",
+      "date":"2012-01-02"
+    },
+    {
+      "name":"Family Day",
+      "date":"2012-02-20"
+    },
+    {
+      "name":"Good Friday",
+      "date":"2012-04-06"
+    },
+    {
+      "name":"Victoria Day",
+      "date":"2012-05-21"
+    },
+    {
+      "name":"Canada Day",
+      "date":"2012-07-02"
+    },
+    {
+      "name":"Civic Holiday",
+      "date":"2012-08-06"
+    },
+    {
+      "name":"Labour Day",
+      "date":"2012-09-03"
+    },
+    {
+      "name":"Thanksgiving",
+      "date":"2012-10-08"
+    },
+    {
+      "name":"Christmas",
+      "date":"2012-12-25"
+    },
+    {
+      "name":"Boxing Day",
+      "date":"2012-12-26"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2012-12-24"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2012-12-27"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2012-12-28"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2012-12-31"
+    },
     {
       "name":"New Year's Day",
       "date":"2013-01-01"
@@ -200,6 +256,126 @@ Any value can be `null`
     {
       "name":"Additional Days",
       "date":"2013-12-31"
+    },
+    {
+      "name":"New Year's Day",
+      "date":"2014-01-01"
+    },
+    {
+      "name":"Family Day",
+      "date":"2014-02-17"
+    },
+    {
+      "name":"Good Friday",
+      "date":"2014-04-18"
+    },
+    {
+      "name":"Victoria Day",
+      "date":"2014-05-19"
+    },
+    {
+      "name":"Canada Day",
+      "date":"2014-07-01"
+    },
+    {
+      "name":"Civic Holiday",
+      "date":"2014-08-04"
+    },
+    {
+      "name":"Labour Day",
+      "date":"2014-09-01"
+    },
+    {
+      "name":"Thanksgiving",
+      "date":"2014-10-13"
+    },
+    {
+      "name":"Christmas",
+      "date":"2014-12-25"
+    },
+    {
+      "name":"Boxing Day",
+      "date":"2014-12-26"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2014-06-30"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2014-12-24"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2014-12-29"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2014-12-30"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2014-12-31"
+    },
+    {
+      "name":"New Year's Day",
+      "date":"2015-01-01"
+    },
+    {
+      "name":"Family Day",
+      "date":"2015-02-16"
+    },
+    {
+      "name":"Good Friday",
+      "date":"2015-04-03"
+    },
+    {
+      "name":"Victoria Day",
+      "date":"2015-05-18"
+    },
+    {
+      "name":"Canada Day",
+      "date":"2015-07-01"
+    },
+    {
+      "name":"Civic Holiday",
+      "date":"2015-08-03"
+    },
+    {
+      "name":"Labour Day",
+      "date":"2015-09-07"
+    },
+    {
+      "name":"Thanksgiving",
+      "date":"2015-10-12"
+    },
+    {
+      "name":"Christmas",
+      "date":"2015-12-25"
+    },
+    {
+      "name":"Boxing Day",
+      "date":"2015-12-28"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2015-01-02"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2015-12-24"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2015-12-29"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2015-12-30"
+    },
+    {
+      "name":"Additional Days",
+      "date":"2015-12-31"
     }
   ]
 }
