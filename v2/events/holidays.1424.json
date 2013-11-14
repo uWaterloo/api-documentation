@@ -20,11 +20,13 @@
    "request_examples":[
       "https://api.uwaterloo.ca/v2/events/holidays.json",
       "https://api.uwaterloo.ca/v2/events/holidays.xml",
+      "https://api.uwaterloo.ca/v2/events/holidays.ics",
       "https://api.uwaterloo.ca/v2/events/holidays.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
-      "xml"
+      "xml",
+      "ics"
    ],
    "method_parameters":[
       {

@@ -91,6 +91,7 @@ GET /events/holidays.{format}
 
 - json
 - xml
+- ics
 
 
 ## Examples
@@ -101,6 +102,7 @@ GET /events/holidays.{format}
 
 - **https://api.uwaterloo.ca/v2/events/holidays.json**
 - **https://api.uwaterloo.ca/v2/events/holidays.xml**
+- **https://api.uwaterloo.ca/v2/events/holidays.ics**
 - **https://api.uwaterloo.ca/v2/events/holidays.json?callback=myResponse**
 
 
@@ -134,8 +136,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":159,
-    "timestamp":1384293231,
+    "requests":161,
+    "timestamp":1384449847,
     "status":200,
     "message":"Request successful",
     "method_id":1423,
