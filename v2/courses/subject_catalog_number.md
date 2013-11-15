@@ -25,7 +25,7 @@ GET /courses/{subject}/{catalog_number}.{format}
   </tr>
   <tr>
     <td><b>Method ID</b></td>
-    <td>1163</td>
+    <td>1447</td>
     <td><b>Enabled</b></td>
     <td>Yes</td>
   </tr>
@@ -285,11 +285,11 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":93,
-    "timestamp":1381938795,
+    "requests":319,
+    "timestamp":1384542748,
     "status":200,
     "message":"Request successful",
-    "method_id":1163,
+    "method_id":1447,
     "version":2.07,
     "method":{
       

@@ -1,5 +1,5 @@
 {
-   "method_id":1163,
+   "method_id":1447,
    "method_url":"/courses/{subject}/{catalog_number}.{format}",
    "method_name":"Course Information",
    "service_id":239,
