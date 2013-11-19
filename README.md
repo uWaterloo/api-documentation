@@ -43,6 +43,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/courses/{course_id}](v2/courses/course_id.md)**
 - **[/courses/{subject}](v2/courses/subject.md)**
+- **[/courses/{class_number}/schedule](v2/courses/class_number_schedule.md)**
 - **[/courses/{subject}/{catalog_number}](v2/courses/subject_catalog_number.md)**
 - **[/courses/{subject}/{catalog_number}/schedule](v2/courses/subject_catalog_number_schedule.md)**
 - **[/courses/{subject}/{catalog_number}/prerequisites](v2/courses/subject_catalog_number_prerequisites.md)**

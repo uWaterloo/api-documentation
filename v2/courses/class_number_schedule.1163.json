@@ -1,0 +1,269 @@
+{
+   "method_id":1163,
+   "method_url":"/courses/{class_number}/schedule.{format}",
+   "method_name":"Course Schedule by Class Number",
+   "service_id":239,
+   "service_name":"courses",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every hour",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://ugradcalendar.uwaterloo.ca/",
+      "http://gradcalendar.uwaterloo.ca/"
+   ],
+   "method_description":"This method returns the class schedule for a given course and term",
+   "additional_notes":[
+      "By default, only schedules for the current term will be returned if the [`term` parameter](#parameters) is not given"
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/courses/5377/schedule.json",
+      "https://api.uwaterloo.ca/v2/courses/5377/schedule.xml",
+      "https://api.uwaterloo.ca/v2/courses/5377/schedule.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"subject",
+         "description":"Valid uWaterloo subject name",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"catalog_number",
+         "description":"Valid uWaterloo coure number",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"term",
+         "description":"Four digit term representation",
+         "is_required":false,
+         "type":"filter"
+      },
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"subject",
+         "description":"Requested subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Registrar assigned class number",
+         "type":"string"
+      },
+      {
+         "field":"units",
+         "description":"Credit count for the mentioned course",
+         "type":"number"
+      },
+      {
+         "field":"title",
+         "description":"Class name and title",
+         "type":"string"
+      },
+      {
+         "field":"note",
+         "description":"Additional notes regarding enrollment for the given term",
+         "type":"string"
+      },
+      {
+         "field":"class_number",
+         "description":"Associated term specific class enrollment number",
+         "type":"integer"
+      },
+      {
+         "field":"section",
+         "description":"Class instruction and number",
+         "type":"string"
+      },
+      {
+         "field":"campus",
+         "description":"Name of the campus the course is being offered",
+         "type":"string"
+      },
+      {
+         "field":"associated_class",
+         "description":"Associated class id",
+         "type":"integer"
+      },
+      {
+         "field":"related_component_1",
+         "description":"Name of the related course component",
+         "type":"string"
+      },
+      {
+         "field":"related_component_2",
+         "description":"Name of the second related course component",
+         "type":"string"
+      },
+      {
+         "field":"enrollment_capacity",
+         "description":"Class enrollment capacity",
+         "type":"integer"
+      },
+      {
+         "field":"enrollment_total",
+         "description":"Total current class enrollment",
+         "type":"integer"
+      },
+      {
+         "field":"waiting_capacity",
+         "description":"Class waiting capacity",
+         "type":"integer"
+      },
+      {
+         "field":"waiting_total",
+         "description":"Total current waiting students",
+         "type":"string"
+      },
+      {
+         "field":"topic",
+         "description":"Class discussion topic",
+         "type":"string"
+      },
+      {
+         "field":"reserves",
+         "description":"Course specific enrollment reservation data",
+         "type":"object",
+         "children":  [
+           {
+             "field":"reserve_group",
+             "description":"Name of the reserved group",
+             "type":"string"
+           },
+           {
+             "field":"enrollment_capacity",
+             "description":"Total enrollment capacity of the group",
+             "type":"integer"
+           },
+           {
+             "field":"enrollment_total",
+             "description":"Total reserve enrollment",
+             "type":"integer"
+           }
+         ]
+      },
+      {
+         "field":"classes",
+         "description":"Schedule data",
+         "type":"object",
+         "children":[
+            {
+              "field":"date",
+              "description":"Date object for course schedule",
+              "type":"object",
+              "children": [
+                {
+                  "field":"start_time",
+                  "description":"24 hour class starting time",
+                  "type":"string"
+                },
+                {
+                  "field":"end_time",
+                  "description":"24 hour class ending time",
+                  "type":"string"
+                },
+                {
+                  "field":"weekdays",
+                  "description":"Weekdays the course is offered",
+                  "type":"string"
+                },
+                {
+                  "field":"start_date",
+                  "description":"Additional starting date for course",
+                  "type":"string"
+                },
+                {
+                  "field":"end_date",
+                  "description":"Additional ending date for course",
+                  "type":"string"
+                },
+                {
+                  "field":"is_tba",
+                  "description":"If the course schedule is TBA",
+                  "type":"boolean"
+                },
+                {
+                  "field":"is_cancelled",
+                  "description":"If the course is cancelled for the term",
+                  "type":"boolean"
+                },
+                {
+                  "field":"is_closed",
+                  "description":"If the course is closed for the term",
+                  "type":"boolean"
+                }
+              ]
+            },
+            {
+              "field":"location",
+              "description":"Class location details",
+              "type":"object",
+              "children": [
+                {
+                  "field":"building",
+                  "description":"Name of the building",
+                  "type":"string"
+                },
+                {
+                  "field":"room",
+                  "description":"Room number from the building",
+                  "type":"string"
+                }
+              ]
+            },
+            {
+              "field":"instructors",
+              "description":"Names of instructors teaching the course",
+              "type":"list"
+            }
+         ]
+      },
+      {
+         "field":"held_with",
+         "description":"A list of classes the course is held with",
+         "type":"list"
+      },
+      {
+         "field":"term",
+         "description":"4 digit term representation",
+         "type":"integer"
+      },
+      {
+         "field":"academic_level",
+         "description":"Undergraduate or graduate course classification",
+         "type":"string"
+      },
+      {
+         "field":"last_updated",
+         "description":"ISO8601 timestamp of when the data was last updated",
+         "type":"string"
+      }
+   ]
+}
