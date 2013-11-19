@@ -1,0 +1,134 @@
+{
+   "method_id":1451,
+   "method_url":"/weather/current.{format}",
+   "method_name":"Current Weather",
+   "service_id":277,
+   "service_name":"weather",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled" : true,
+   "update_frequency":"Every 15 minutes",
+   "cache_time_s":0,
+   "data_type":"XML Feed",
+   "data_source":[
+      "http://weather.uwaterloo.ca/waterloo_weather_station_data.xml"
+   ],
+   "method_description":"This method returns the current weather details from the University of Waterloo Weather Station. http://weather.uwaterloo.ca",
+   "additional_notes":[
+   ],
+   "information_steward":"UW Weather Station",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/weather/current.json",
+      "https://api.uwaterloo.ca/v2/weather/current.xml",
+      "https://api.uwaterloo.ca/v2/weather/current.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"latitude",
+         "description":"Station's latitude",
+         "type":"float"
+      },
+      {
+         "field":"longitude",
+         "description":"Station's longitude",
+         "type":"float"
+      },
+      {
+         "field":"elevation_m",
+         "description":"Station elevation in meters",
+         "type":"float"
+      },
+      {
+         "field":"observation_time",
+         "description":"iso8601 timestamp of weather recordings",
+         "type":"string"
+      },
+      {
+         "field":"temperature_current_c",
+         "description":"Current temperature in celsius",
+         "type":"float"
+      },
+      {
+         "field":"humidex_c",
+         "description":"Humidex temperature in celsius",
+         "type":"float"
+      },
+      {
+         "field":"windchill_c",
+         "description":"Windchill in celsius",
+         "type":"float"
+      },
+      {
+         "field":"temperature_24hr_max_c",
+         "description":"24 hour maximum temperature in celsius",
+         "type":"float"
+      },
+      {
+         "field":"temperature_24hr_min_c",
+         "description":"24 hour minimum temperature in celsius",
+         "type":"float"
+      },
+      {
+         "field":"precipitation_15min_mm",
+         "description":"Precipitation reading for 15 minute interval in mm",
+         "type":"float"
+      },
+      {
+         "field":"precipitation_1hr_mm",
+         "description":"Precipitation reading for 1 hour interval in mm",
+         "type":"float"
+      },
+      {
+         "field":"precipitation_24hr_mm",
+         "description":"Precipitation reading for every 24 hour interval in mm",
+         "type":"float"
+      },
+      {
+         "field":"relative_humidity_percent",
+         "description":"Relative humidity in percentage",
+         "type":"float"
+      },
+      {
+         "field":"dew_point_c",
+         "description":"Dew point in celsius",
+         "type":"float"
+      },
+      {
+         "field":"wind_speed_kph",
+         "description":"Wind speed in km per hour",
+         "type":"float"
+      },
+      {
+         "field":"wind_direction_degrees",
+         "description":"Wind direction in degrees",
+         "type":"float"
+      },
+      {
+         "field":"pressure_kpa",
+         "description":"Pressure in kilo Pascals",
+         "type":"float"
+      },
+      {
+         "field":"pressure_trend",
+         "description":"Word description of the current pressure trend",
+         "type":"float"
+      },
+      {
+         "field":"incoming_shortwave_radiation_wm2",
+         "description":"Incomig radiation in watts per meter square",
+         "type":"float"
+      }
+   ]
+}

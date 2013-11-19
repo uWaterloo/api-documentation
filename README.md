@@ -54,6 +54,10 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/events/holidays](v2/events/holidays.md)**
 
+### Weather
+
+- **[/weather/current](v2/weather/current.md)**
+
 ### Terms
 
 - **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
