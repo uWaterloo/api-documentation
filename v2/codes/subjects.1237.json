@@ -52,6 +52,11 @@
          "field":"description",
          "description":"Description of subject",
          "type":"string"
+      },
+      {
+         "field":"unit",
+         "description":"Subjects parent unit",
+         "type":"string"
       }
    ]
 }

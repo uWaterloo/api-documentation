@@ -124,6 +124,11 @@ GET /codes/subjects.{format}
     <td>string</td>
     <td>Description of subject</td>
   </tr>
+  <tr>
+    <td><b>unit</b></td>
+    <td>string</td>
+    <td>Subjects parent unit</td>
+  </tr>
 </table>
 
 
@@ -136,8 +141,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":127,
-    "timestamp":1381958168,
+    "requests":474,
+    "timestamp":1384886344,
     "status":200,
     "message":"Request successful",
     "method_id":1237,
@@ -149,807 +154,1023 @@ Any value can be `null`
   "data":[
     {
       "subject":"AADMS",
-      "description":"Arts Administration Specification Seminar"
+      "description":"Arts Administration Specialization Seminar",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"AB",
-      "description":"Arabic (WLU)"
+      "description":"Arabic (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"ACC",
-      "description":"Accounting"
+      "description":"Accounting",
+      "unit":"ACC"
+    },
+    {
+      "subject":"ACINTY",
+      "description":"Academic Integrity",
+      "unit":"VPA"
     },
     {
       "subject":"ACTSC",
-      "description":"Actuarial Science"
+      "description":"Actuarial Science",
+      "unit":"STATACTSC"
     },
     {
       "subject":"ADMGT",
-      "description":"Advanced Management"
+      "description":"Advanced Management",
+      "unit":"CBET"
     },
     {
       "subject":"AES",
-      "description":"Applied Environmental Studies"
+      "description":"Applied Environmental Studies",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"AFM",
-      "description":"Accounting & Financial Management"
+      "description":"Accounting and Financial Managment",
+      "unit":"ACC"
     },
     {
       "subject":"AHS",
-      "description":"Applied Health Sciences"
+      "description":"Applied Health Sciences",
+      "unit":"AHSDEAN"
     },
     {
       "subject":"AMATH",
-      "description":"Applied Mathematics"
+      "description":"Applied Mathematics",
+      "unit":"AMATH"
     },
     {
       "subject":"ANTH",
-      "description":"Anthropology"
+      "description":"Anthropology",
+      "unit":"ANTH"
     },
     {
       "subject":"APHYS",
-      "description":"Applied Physics"
+      "description":"Applied Physics",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"APPLS",
-      "description":"Applied Language Studies"
+      "description":"Applied Language Studies",
+      "unit":"REN"
     },
     {
       "subject":"ARBUS",
-      "description":"Arts and Business"
+      "description":"Arts and Business",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"ARCH",
-      "description":"Architecture"
+      "description":"Architecture",
+      "unit":"ARCH"
     },
     {
       "subject":"ARCHL",
-      "description":"Archeology (WLU)"
+      "description":"Archeology (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"ART",
-      "description":"Art"
+      "description":"Art",
+      "unit":"FINE"
     },
     {
       "subject":"ARTS",
-      "description":"Arts"
+      "description":"Arts",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"ASIAN",
-      "description":"Asian Studies"
+      "description":"Asian Studies",
+      "unit":"REN"
     },
     {
       "subject":"ASTRN",
-      "description":"Astronomy (WLU)"
+      "description":"Astronomy (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"AVIA",
-      "description":"Aviation"
+      "description":"Aviation",
+      "unit":"VPA"
     },
     {
       "subject":"BE",
-      "description":"Business Entrepreneurship"
+      "description":"Business Entrepreneurship",
+      "unit":"CBET"
     },
     {
       "subject":"BET",
-      "description":"Business, Entrepreneurship & Technology"
+      "description":"Business, Entrepreneurship and Technology",
+      "unit":"CBET"
     },
     {
       "subject":"BIOL",
-      "description":"Biology"
+      "description":"Biology",
+      "unit":"BIOL"
     },
     {
       "subject":"BME",
-      "description":"Biomedical Engineering"
+      "description":"Biomedical Engineering",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"BOT",
-      "description":"Botany"
+      "description":"Botany (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"BUS",
-      "description":"Business"
+      "description":"Business",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"CCIV",
-      "description":"Classical Civilization"
+      "description":"Classical Civilization",
+      "unit":"CLASSICS"
     },
     {
       "subject":"CDNST",
-      "description":"Canadian Studies"
+      "description":"Canadian Studies",
+      "unit":"STP"
     },
     {
       "subject":"CEDEV",
-      "description":"Children's Education & Development"
+      "description":"Children's Education & Development (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"CHE",
-      "description":"Chemical Engineering"
+      "description":"Chemical Engineering",
+      "unit":"CHE"
     },
     {
       "subject":"CHEM",
-      "description":"Chemistry"
+      "description":"Chemistry",
+      "unit":"CHEM"
     },
     {
       "subject":"CHINA",
-      "description":"Chinese"
+      "description":"Chinese",
+      "unit":"REN"
     },
     {
       "subject":"CIVE",
-      "description":"Civil Engineering"
+      "description":"Civil Engineering",
+      "unit":"CIVE"
     },
     {
       "subject":"CLAS",
-      "description":"Classical Studies"
+      "description":"Classical Studies",
+      "unit":"CLASSICS"
     },
     {
       "subject":"CM",
-      "description":"Computational Mathematics"
+      "description":"Computational Mathematics",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"CMW",
-      "description":"Church Music and Worship"
+      "description":"Church Music and Worship",
+      "unit":"CGC"
     },
     {
       "subject":"CO",
-      "description":"Combinatorics & Optimization"
+      "description":"Combinatorics and Optimization",
+      "unit":"CO"
     },
     {
       "subject":"COGSCI",
-      "description":"Cognitive Science"
+      "description":"Cognitive Science",
+      "unit":"GRAD"
     },
     {
       "subject":"COMM",
-      "description":"Commerce"
+      "description":"Commerce",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"COMPT",
-      "description":"Computing (WLU)"
+      "description":"Computing (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"COMST",
-      "description":"Communication Studies (WLU)"
+      "description":"Communication Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"CONST",
-      "description":"Contemporary Studies (WLU)"
+      "description":"Contemporary Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"COOP",
-      "description":"Co-op"
+      "description":"Co-op",
+      "unit":"CECS"
     },
     {
       "subject":"CROAT",
-      "description":"Croatian"
+      "description":"Croatian",
+      "unit":"GERSLAV"
     },
     {
       "subject":"CS",
-      "description":"Computer Science"
+      "description":"Computer Science",
+      "unit":"CS"
     },
     {
       "subject":"CT",
-      "description":"Catholic Thought"
+      "description":"Catholic Thought",
+      "unit":"STJ"
     },
     {
       "subject":"CULMG",
-      "description":"Cultural Management"
+      "description":"Cultural Management",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"CULT",
-      "description":"Cultural Studies"
+      "description":"Cultural Studies",
+      "unit":"VPA"
     },
     {
       "subject":"DAC",
-      "description":"Digital Arts Communication"
+      "description":"Digital Arts Communication",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"DANCE",
-      "description":"Dance"
+      "description":"Dance",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"DEI",
-      "description":"Digital Experience Innovation"
+      "description":"Digital Experience Innovation",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"DES",
-      "description":"Design"
+      "description":"Design",
+      "unit":"SYDE"
     },
     {
       "subject":"DEVIS",
-      "description":"Development & International Studies (WLU)"
+      "description":"Development & International Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"DM",
-      "description":"Design and Manufacturing"
+      "description":"Design and Manufacturing",
+      "unit":"ME"
     },
     {
       "subject":"DRAMA",
-      "description":"Drama"
+      "description":"Drama",
+      "unit":"DRAMA"
     },
     {
       "subject":"DUTCH",
-      "description":"Dutch"
+      "description":"Dutch",
+      "unit":"GERSLAV"
     },
     {
       "subject":"EARTH",
-      "description":"Earth Science"
+      "description":"Earth Science",
+      "unit":"EARTH"
     },
     {
       "subject":"EASIA",
-      "description":"East Asian Studies"
+      "description":"East Asian Studies",
+      "unit":"REN"
+    },
+    {
+      "subject":"EBUS",
+      "description":"Environment and Business",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"ECE",
-      "description":"Electrical & Computer Engineering"
+      "description":"Electrical and Computer Engineering",
+      "unit":"ECE"
     },
     {
       "subject":"ECON",
-      "description":"Economics"
+      "description":"Economics",
+      "unit":"ECON"
     },
     {
       "subject":"EFAS",
-      "description":"English for Academic Success"
+      "description":"English for Academic Success",
+      "unit":"REN"
     },
     {
       "subject":"ELE",
-      "description":"Electrical Engineering"
+      "description":"Electrical Engineering",
+      "unit":"ECE"
     },
     {
       "subject":"ELPE",
-      "description":"English Language Prof Exam"
+      "description":"English Language Proficiency Examination",
+      "unit":"VPA"
     },
     {
       "subject":"ENBUS",
-      "description":"Environment and Business"
+      "description":"Environment and Business",
+      "unit":"SEED"
     },
     {
       "subject":"ENGL",
-      "description":"English"
+      "description":"English",
+      "unit":"ENGL"
     },
     {
       "subject":"ENVE",
-      "description":"Environmental Engineering"
+      "description":"Environmental Engineering",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"ENVS",
-      "description":"Environmental Studies"
+      "description":"Environmental Studies",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"ERS",
-      "description":"Environment & Resource Studies"
+      "description":"Environment and Resource Studies",
+      "unit":"ERS"
     },
     {
       "subject":"ESL",
-      "description":"English as a Second Language"
+      "description":"English as a Second Language",
+      "unit":"REN"
+    },
+    {
+      "subject":"EVSY",
+      "description":"Environment and Society",
+      "unit":"VPA"
     },
     {
       "subject":"FILM",
-      "description":"Film (WLU)"
+      "description":"Film (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"FINAN",
-      "description":"Finance"
+      "description":"Finance",
+      "unit":"ACC"
     },
     {
       "subject":"FINE",
-      "description":"Fine Arts"
+      "description":"Fine Arts",
+      "unit":"FINE"
     },
     {
       "subject":"FR",
-      "description":"French Studies"
+      "description":"French Studies",
+      "unit":"FR"
     },
     {
       "subject":"FRCS",
-      "description":"French Cultural Studies"
+      "description":"French Cultural Studies",
+      "unit":"FR"
     },
     {
       "subject":"GBDA",
-      "description":"Global Business & Digital Arts"
+      "description":"Global Business and Digital Arts",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"GEMCC",
-      "description":"Geography & Environment. Management, Climate Change"
+      "description":"Geography and Environmental Mgmt, Climate Change",
+      "unit":"GEOG"
     },
     {
       "subject":"GENE",
-      "description":"General Engineering"
+      "description":"General Engineering",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"GEOE",
-      "description":"Geological Engineering"
+      "description":"Geological Engineering",
+      "unit":"CIVE"
     },
     {
       "subject":"GEOG",
-      "description":"Geography"
+      "description":"Geography",
+      "unit":"GEOG"
     },
     {
       "subject":"GEOL",
-      "description":"Geology (WLU)"
+      "description":"Geology (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"GER",
-      "description":"German"
+      "description":"German",
+      "unit":"GERSLAV"
     },
     {
       "subject":"GERON",
-      "description":"Gerontology"
+      "description":"Gerontology",
+      "unit":"HLTHGERON"
     },
     {
       "subject":"GGOV",
-      "description":"Global Governance"
+      "description":"Global Governance",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"GLOBAL",
-      "description":"Global Studies (WLU)"
+      "description":"Global Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"GRAD",
-      "description":"Continuing Graduate Studies"
+      "description":"Continuing Graduate Studies",
+      "unit":"GRADDEAN"
     },
     {
       "subject":"GRK",
-      "description":"Greek"
+      "description":"Greek",
+      "unit":"CLASSICS"
     },
     {
       "subject":"GS",
-      "description":"Graduate Studies"
+      "description":"Graduate Studies",
+      "unit":"GRADDEAN"
     },
     {
       "subject":"HEBRW",
-      "description":"Hebrew (WLU)"
+      "description":"Hebrew (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"HIST",
-      "description":"History"
+      "description":"History",
+      "unit":"HIST"
     },
     {
       "subject":"HLTH",
-      "description":"Health Studies"
+      "description":"Health Studies",
+      "unit":"HLTHGERON"
     },
     {
       "subject":"HRCS",
-      "description":"Human Relations & Counselling Studies"
+      "description":"Human Relations & Counselling Studies",
+      "unit":"PSYCH"
     },
     {
       "subject":"HRM",
-      "description":"Human Resources Management"
+      "description":"Human Resources Management",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"HS",
-      "description":"High School"
+      "description":"High School",
+      "unit":"VPA"
     },
     {
       "subject":"HSG",
-      "description":"Health Studies and Gerontology"
+      "description":"Health Studies and Gerontology",
+      "unit":"HLTHGERON"
     },
     {
       "subject":"HUMSC",
-      "description":"Human Sciences"
+      "description":"Human Sciences",
+      "unit":"STJ"
     },
     {
       "subject":"HUNGN",
-      "description":"Hungarian"
+      "description":"Hungarian",
+      "unit":"GERSLAV"
     },
     {
       "subject":"IFS",
-      "description":"Inter-Faculty Studies"
+      "description":"Inter-Faculty Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"INDEV",
-      "description":"International Development"
+      "description":"International Development",
+      "unit":"SEED"
     },
     {
       "subject":"INTEG",
-      "description":"Integrated Studies"
+      "description":"Integrated Studies",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"INTERN",
-      "description":"Internship"
+      "description":"Internship",
+      "unit":"VPA"
     },
     {
       "subject":"INTST",
-      "description":"International Studies"
+      "description":"International Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"INTTS",
-      "description":"International Trade Seminars"
+      "description":"International Trade Seminars",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"IS",
-      "description":"Independent Studies"
+      "description":"Independent Studies",
+      "unit":"IS"
     },
     {
       "subject":"ISS",
-      "description":"Interdisciplinary Social Sciences"
+      "description":"Interdisciplinary Social Sciences",
+      "unit":"REN"
     },
     {
       "subject":"ITAL",
-      "description":"Italian"
+      "description":"Italian",
+      "unit":"STJ"
     },
     {
       "subject":"ITALST",
-      "description":"Italian Studies"
+      "description":"Italian Studies",
+      "unit":"STJ"
     },
     {
       "subject":"JAPAN",
-      "description":"Japanese"
+      "description":"Japanese",
+      "unit":"REN"
     },
     {
       "subject":"JS",
-      "description":"Jewish Studies"
+      "description":"Jewish Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"KIN",
-      "description":"Kinesiology"
+      "description":"Kinesiology",
+      "unit":"KIN"
     },
     {
       "subject":"KOREA",
-      "description":"Korean"
+      "description":"Korean",
+      "unit":"REN"
     },
     {
       "subject":"KPE",
-      "description":"Kinesiology & Physical Education (WLU)"
+      "description":"Kinesiology and Physical Education (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"LANG",
-      "description":"Language (WLU)"
+      "description":"Language (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"LAT",
-      "description":"Latin"
+      "description":"Latin",
+      "unit":"CLASSICS"
     },
     {
       "subject":"LATAM",
-      "description":"Latin American Studies"
+      "description":"Latin American Studies",
+      "unit":"SPAN"
     },
     {
       "subject":"LED",
-      "description":"Local Economic Development"
+      "description":"Local Economic Development",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"LS",
-      "description":"Legal Studies"
+      "description":"Legal Studies",
+      "unit":"SOC"
     },
     {
       "subject":"LSC",
-      "description":"Legal Studies and Criminology"
+      "description":"Legal Studies and Criminology",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"MATBUS",
-      "description":"Mathematical Business"
+      "description":"Mathematical Business",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"MATH",
-      "description":"Mathematics"
+      "description":"Mathematics",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"ME",
-      "description":"Mechanical Engineering"
+      "description":"Mechanical Engineering",
+      "unit":"ME"
     },
     {
       "subject":"MEDST",
-      "description":"Media Studies (WLU)"
+      "description":"Media Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"MEDVL",
-      "description":"Medieval Studies"
+      "description":"Medieval Studies",
+      "unit":"CLASSICS"
     },
     {
       "subject":"MENV",
-      "description":"Man Environment"
+      "description":"Man Environment",
+      "unit":"ERS"
     },
     {
       "subject":"MES",
-      "description":"Middle Eastern Studies"
+      "description":"Middle Eastern Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"MI",
-      "description":"Mediterranean Studies (WLU)"
+      "description":"Mediterranean Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"MISC",
-      "description":"Miscellaneous"
+      "description":"Miscellaneous",
+      "unit":"VPA"
     },
     {
       "subject":"MNS",
-      "description":"Materials and Nano-Sciences"
+      "description":"Materials and Nano-Sciences",
+      "unit":"CHEM"
     },
     {
       "subject":"MSCI",
-      "description":"Management Sciences"
+      "description":"Management Sciences",
+      "unit":"MSCI"
     },
     {
       "subject":"MSE",
-      "description":"Management & Systems Engineering"
+      "description":"Management & Systems",
+      "unit":"SYDE"
     },
     {
       "subject":"MTE",
-      "description":"Mechatronics Engineering"
+      "description":"Mechatronics Engineering",
+      "unit":"ME"
     },
     {
       "subject":"MTHEL",
-      "description":"Mathematics Elective"
+      "description":"Mathematics Elective",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"MUSIC",
-      "description":"Music"
+      "description":"Music",
+      "unit":"CGC"
     },
     {
       "subject":"NANO",
-      "description":"Nanotechnology"
+      "description":"Nanotechnology",
+      "unit":"GRAD"
     },
     {
       "subject":"NATST",
-      "description":"Native Studies"
+      "description":"Native Studies",
+      "unit":"STP"
     },
     {
       "subject":"NE",
-      "description":"Nanotechnology Engineering"
+      "description":"Nanotechnology Engineering",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"NES",
-      "description":"Near Eastern Studies (WLU)"
+      "description":"Near Eastern Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"OPTOM",
-      "description":"Optometry"
+      "description":"Optometry",
+      "unit":"OPTOM"
     },
     {
       "subject":"PACS",
-      "description":"Peace & Conflict Studies"
+      "description":"Peace and Conflict Studies",
+      "unit":"CGC"
     },
     {
       "subject":"PAS",
-      "description":"Personnel & Admininstration Studies"
+      "description":"Personnel & Administration Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"PD",
-      "description":"Professional Development"
+      "description":"Professional Development",
+      "unit":"VPA"
     },
     {
       "subject":"PDARCH",
-      "description":"Professional Development for Architect"
+      "description":"Professional Development for Architecture Students",
+      "unit":"ARCH"
     },
     {
       "subject":"PDENG",
-      "description":"Professional Development for Engineers"
+      "description":"Professional Development for Engineering Students",
+      "unit":"ENGDEAN"
     },
     {
       "subject":"PDPHRM",
-      "description":"Professional Development for Pharmacy"
+      "description":"Professional Development for Pharmacy Students",
+      "unit":"PHARM"
     },
     {
       "subject":"PED",
-      "description":"Physical Education (WLU)"
+      "description":"Physical Education (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"PERST",
-      "description":"Personnel Studies"
+      "description":"Personnel Studies",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"PHARM",
-      "description":"Pharmacy"
+      "description":"Pharmacy",
+      "unit":"PHARM"
     },
     {
       "subject":"PHIL",
-      "description":"Philosophy"
+      "description":"Philosophy",
+      "unit":"PHIL"
     },
     {
       "subject":"PHS",
-      "description":"Public Health Sciences"
+      "description":"Public Health Sciences",
+      "unit":"HLTHGERON"
     },
     {
       "subject":"PHYS",
-      "description":"Physics"
+      "description":"Physics",
+      "unit":"PHYS"
     },
     {
       "subject":"PLAN",
-      "description":"Planning"
+      "description":"Planning",
+      "unit":"PLAN"
     },
     {
       "subject":"PMATH",
-      "description":"Pure Mathematics"
+      "description":"Pure Mathematics",
+      "unit":"PMATH"
     },
     {
       "subject":"POLSH",
-      "description":"Polish"
+      "description":"Polish",
+      "unit":"GERSLAV"
     },
     {
       "subject":"PORT",
-      "description":"Portuguese"
+      "description":"Portuguese",
+      "unit":"SPAN"
     },
     {
       "subject":"PS",
-      "description":"Public Service"
+      "description":"Public Serivce",
+      "unit":"ARTSDEAN"
     },
     {
       "subject":"PSCI",
-      "description":"Political Science"
+      "description":"Political Science",
+      "unit":"PSCI"
     },
     {
       "subject":"PSYCH",
-      "description":"Psychology"
+      "description":"Psychology",
+      "unit":"PSYCH"
     },
     {
       "subject":"QIC",
-      "description":"Quantum Info & Computation"
+      "description":"Quantum Information and Computation",
+      "unit":"GRAD"
     },
     {
       "subject":"REC",
-      "description":"Recreation & Leisure Studies"
+      "description":"Recreation and Leisure Studies",
+      "unit":"REC"
     },
     {
       "subject":"REES",
-      "description":"Russian & Eastern European Studies"
+      "description":"Russian and Eastern European Studies",
+      "unit":"GERSLAV"
     },
     {
       "subject":"RELC",
-      "description":"Religion & Culture (WLU)"
+      "description":"Religion & Culture (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"RS",
-      "description":"Religious Studies"
+      "description":"Religious Studies",
+      "unit":"RS"
     },
     {
       "subject":"RUSS",
-      "description":"Russian"
+      "description":"Russian",
+      "unit":"GERSLAV"
     },
     {
       "subject":"SCBUS",
-      "description":"Science and Business"
+      "description":"Science and Business",
+      "unit":"SCIDEAN"
     },
     {
       "subject":"SCI",
-      "description":"Science"
+      "description":"Science",
+      "unit":"SCIDEAN"
     },
     {
       "subject":"SDS",
-      "description":"Social Development Studies"
+      "description":"Social Development Studies",
+      "unit":"REN"
     },
     {
       "subject":"SE",
-      "description":"Software Engineering"
+      "description":"Software Engineering",
+      "unit":"VPA"
     },
     {
       "subject":"SEQ",
-      "description":"Co-op Sequence"
+      "description":"Co-op Sequence",
+      "unit":"MATHDEAN"
     },
     {
       "subject":"SI",
-      "description":"Studies in Islam"
+      "description":"Studies in Islam",
+      "unit":"REN"
     },
     {
       "subject":"SIPAR",
-      "description":"Studies in Personality & Religion"
+      "description":"Studies in Personality & Religion",
+      "unit":"STP"
     },
     {
       "subject":"SMF",
-      "description":"Sexuality, Marriage & Family"
+      "description":"Sexuality, Marriage and the Family",
+      "unit":"STJ"
     },
     {
       "subject":"SOC",
-      "description":"Sociology"
+      "description":"Sociology",
+      "unit":"SOC"
     },
     {
       "subject":"SOCIN",
-      "description":"Social Innovation"
+      "description":"Social Innovation",
+      "unit":"SEED"
     },
     {
       "subject":"SOCWK",
-      "description":"Social Work"
+      "description":"Social Work (Social Development Studies)",
+      "unit":"REN"
     },
     {
       "subject":"SOCWL",
-      "description":"Social Welfare (WLU)"
+      "description":"Social Welfare (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"SPAN",
-      "description":"Spanish"
+      "description":"Spanish",
+      "unit":"SPAN"
     },
     {
       "subject":"SPCOM",
-      "description":"Speech Communication"
+      "description":"Speech Communication",
+      "unit":"DRAMA"
     },
     {
       "subject":"SPD",
-      "description":"Spirituality & Personal Development"
+      "description":"Spirituality and Personal Development",
+      "unit":"STP"
     },
     {
       "subject":"STAT",
-      "description":"Statistics"
+      "description":"Statistics",
+      "unit":"STATACTSC"
     },
     {
       "subject":"STV",
-      "description":"Society, Technology & Values"
+      "description":"Society, Technology and Values",
+      "unit":"STV"
     },
     {
       "subject":"SUSM",
-      "description":"Sustainability Management"
+      "description":"Sustainability Management",
+      "unit":"SEED"
     },
     {
       "subject":"SWK",
-      "description":"Social Work"
+      "description":"Social Work",
+      "unit":"AHSDEAN"
     },
     {
       "subject":"SWREN",
-      "description":"Social Work (BSW)"
+      "description":"Social Work (Bachelor of Social Work)",
+      "unit":"REN"
     },
     {
       "subject":"SYDE",
-      "description":"Systems Design Engineering"
+      "description":"Systems Design Engineering",
+      "unit":"SYDE"
     },
     {
       "subject":"TAX",
-      "description":"Taxation"
+      "description":"Taxation",
+      "unit":"ACC"
     },
     {
       "subject":"THTRE",
-      "description":"Theatre (WLU)"
+      "description":"Theatre (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"TN",
-      "description":"Theoretical Neuroscience"
+      "description":"Theoretical Neuroscience",
+      "unit":"GRAD"
     },
     {
       "subject":"TOUR",
-      "description":"Tourism"
+      "description":"Tourism",
+      "unit":"ENVDEAN"
     },
     {
       "subject":"TPM",
-      "description":"Technical Presentation Milestone"
+      "description":"Technical Presentation Milestone",
+      "unit":"ECE"
     },
     {
       "subject":"TPPE",
-      "description":"Tech Presentation Proficiency Examination"
+      "description":"Technical Presentation Proficiency Requirement",
+      "unit":"ECE"
     },
     {
       "subject":"TS",
-      "description":"Theological Studies"
+      "description":"Theological Studies",
+      "unit":"CGC"
     },
     {
       "subject":"UKRAN",
-      "description":"Ukrainian"
+      "description":"Ukrainian",
+      "unit":"GERSLAV"
     },
     {
       "subject":"UN",
-      "description":"Nuclear Engineering"
+      "description":"Nuclear Engineering",
+      "unit":"CIVE"
     },
     {
       "subject":"UNIV",
-      "description":"University"
+      "description":"University",
+      "unit":"VPA"
     },
     {
       "subject":"URBAN",
-      "description":"Urban Studies (WLU)"
+      "description":"Urban Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"UU",
-      "description":"Interdisciplinary Studies (WLU)"
+      "description":"University Interdisciplinary Studies (WLU)",
+      "unit":"VPA"
     },
     {
       "subject":"VCULT",
-      "description":"Visual Culture"
+      "description":"Visual Culture",
+      "unit":"FINE"
     },
     {
       "subject":"WATER",
-      "description":"WATER"
+      "description":"Water",
+      "unit":"GRAD"
     },
     {
       "subject":"WHMIS",
-      "description":"Workplace Hazardous Materials Information System"
+      "description":"Workplace Hazardous Materials Information Systems",
+      "unit":"SCIDEAN"
     },
     {
       "subject":"WKRPT",
-      "description":"Work Report"
+      "description":"Work-term Report",
+      "unit":"CECS"
     },
     {
       "subject":"WS",
-      "description":"Women's Studies"
+      "description":"Women's Studies",
+      "unit":"WS"
     },
     {
       "subject":"ZOOL",
-      "description":"Zoology"
+      "description":"Zoology (WLU)",
+      "unit":"VPA"
     }
   ]
 }
