@@ -1,0 +1,70 @@
+{
+   "method_id":1481,
+   "method_url":"/v2/resources/tutors.{format}",
+   "method_name":"List of student tutors available",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"As the data updates by SSO",
+   "cache_time_s":0,
+   "data_type":"Direct feed",
+   "data_source":[
+   ],
+   "method_description":"This method returns a list of all the tutors available to help for a course for a given term",
+   "additional_notes":[
+      "Usage won't increase if there is no data returned"
+   ],
+   "information_steward":"SSO",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/tutors.json",
+      "https://api.uwaterloo.ca/v2/resources/tutors.xml",
+      "https://api.uwaterloo.ca/v2/resources/tutors.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"subject",
+         "description":"Subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Course catalog number",
+         "type":"string"
+      },
+      {
+         "field":"title",
+         "description":"Course title",
+         "type":"string"
+      },
+      {
+         "field":"tutors_count",
+         "description":"Total number of tutors available for that course",
+         "type":"integer"
+      },
+      {
+         "field":"contact_url",
+         "description":"Link to get tutor contact details",
+         "type":"string"
+      }
+   ]
+}

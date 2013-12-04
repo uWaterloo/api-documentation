@@ -69,6 +69,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Resources
 
 - **[/resources/printers](v2/resources/printers.md)**
+- **[/resources/tutors](v2/resources/tutors.md)**
 - **[/resources/infosessions](v2/resources/infosessions.md)**
 
 ### Definitions and Codes
