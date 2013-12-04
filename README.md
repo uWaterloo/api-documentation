@@ -2,15 +2,13 @@
 
 
 The University of Waterloo API allows anyone to build applications using data from the uWaterloo websites.
-The API currently features more than 30 methods of accessing various datasets across the University network.
+The API currently features more than 40 methods of accessing various datasets across the University network.
 
 If you find an error in the documentation, file an issue or send a pull request.
 
-## License
-- <a href="https://uwaterloo.ca/open-data/university-waterloo-open-data-license-agreement-v1">University of Waterloo Open Data Licensing (ODL) Agreement v1</a>
-
 ## Disclaimer
-- Review the 'No Warranty' section of the University of Waterloo ODL before using this data. If building services upon this data, please inform your users of the inherent risks (as a best practice).
+
+Review the 'No Warranty' section of the University of Waterloo ODL before using this data. If building services upon this data, please inform your users of the inherent risks (as a best practice).
 
 ## Accessing the API
 
@@ -133,4 +131,6 @@ If you have any inquiries or suggestions, please feel free to contact us at [ope
 
 Please consider subscribing to our [mailing list](https://lists.uwaterloo.ca/mailman/listinfo/opendata) in order to receive updates on the API and follow discussions.
 
+## License
+- <a href="https://uwaterloo.ca/open-data/university-waterloo-open-data-license-agreement-v1">University of Waterloo Open Data Licensing (ODL) Agreement v1</a>
 
