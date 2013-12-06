@@ -27,11 +27,11 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/foodservices/menu](v2/foodservices/menu.md)**
 - **[/foodservices/notes](v2/foodservices/notes.md)**
-- **[/foodservices/announcements](v2/foodservices/announcements.md)**
 - **[/foodservices/diets](v2/foodservices/diets.md)**
 - **[/foodservices/outlets](v2/foodservices/outlets.md)**
 - **[/foodservices/locations](v2/foodservices/locations.md)**
 - **[/foodservices/watcard](v2/foodservices/watcard.md)**
+- **[/foodservices/announcements](v2/foodservices/announcements.md)**
 - **[/foodservices/products/{product_id}](v2/foodservices/products_product_id.md)**
 - **[/foodservices/{year}/{week}/menu](v2/foodservices/year_week_menu.md)**
 - **[/foodservices/{year}/{week}/notes](v2/foodservices/year_week_notes.md)**
@@ -39,14 +39,15 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Course
 
-- **[/courses/{course_id}](v2/courses/course_id.md)**
 - **[/courses/{subject}](v2/courses/subject.md)**
+- **[/courses/{course_id}](v2/courses/course_id.md)**
 - **[/courses/{class_number}/schedule](v2/courses/class_number_schedule.md)**
 - **[/courses/{subject}/{catalog_number}](v2/courses/subject_catalog_number.md)**
 - **[/courses/{subject}/{catalog_number}/schedule](v2/courses/subject_catalog_number_schedule.md)**
 - **[/courses/{subject}/{catalog_number}/prerequisites](v2/courses/subject_catalog_number_prerequisites.md)**
 - **[/courses/{subject}/{catalog_number}/examschedule](v2/courses/subject_catalog_number_examschedule.md)**
-- [See Terms endpoint for bulk data](https://github.com/uWaterloo/api-documentation#terms)
+- [See **Terms** endpoint for bulk data](https://github.com/uWaterloo/api-documentation#terms)
+- [See **Codes** endpoint for subject listings](https://github.com/uWaterloo/api-documentation#definitions-and-codes)
 
 ### Events
 
@@ -58,24 +59,24 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Terms
 
-- **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
 - **[/terms/list](v2/terms/list.md)**
-- **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
-- **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
+- **[/terms/{term_id}/examschedule](v2/terms/term_examschedule.md)**
+- **[/terms/{term_id}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
+- **[/terms/{term_id}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
 
 
 ### Resources
 
-- **[/resources/printers](v2/resources/printers.md)**
 - **[/resources/tutors](v2/resources/tutors.md)**
+- **[/resources/printers](v2/resources/printers.md)**
 - **[/resources/infosessions](v2/resources/infosessions.md)**
 
 ### Definitions and Codes
 
-- **[/codes/subjects](v2/codes/subjects.md)**
-- **[/codes/groups](v2/codes/groups.md)**
 - **[/codes/units](v2/codes/units.md)**
 - **[/codes/terms](v2/codes/terms.md)**
+- **[/codes/groups](v2/codes/groups.md)**
+- **[/codes/subjects](v2/codes/subjects.md)**
 - **[/codes/instructions](v2/codes/instructions.md)**
 
 ### Building
@@ -86,9 +87,9 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### API
 
+- **[/api/usage](v2/api/usage.md)**
 - **[/api/services](v2/api/services.md)**
 - **[/api/methods](v2/api/methods.md)**
-- **[/api/usage](v2/api/usage.md)**
 - **[/api/versions](v2/api/versions.md)**
 - **[/api/changelog](v2/api/changelog.md)**
 
