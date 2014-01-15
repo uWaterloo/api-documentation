@@ -193,7 +193,7 @@ GET /weather/current.{format}
   </tr>
   <tr>
     <td><b>pressure_trend</b></td>
-    <td>float</td>
+    <td>string</td>
     <td>Word description of the current pressure trend</td>
   </tr>
   <tr>
