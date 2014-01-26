@@ -154,13 +154,13 @@
                                  "type":"integer"
                               }
                            ]
-                        },
-                        {
-                           "field":"notes",
-                           "description":"Additional announcements for the day",
-                           "type":"string"
                         }
                      ]
+                  },
+                  {
+                     "field":"notes",
+                     "description":"Additional announcements for the day",
+                     "type":"string"
                   }
                ]
             }
