@@ -217,13 +217,13 @@ GET /foodservices/menu.{format}
 </table>
 </td>
   </tr>
-  <tr>
+</table>
+</td>
+<tr>
     <td><b>notes</b></td>
     <td>string</td>
     <td>Additional announcements for the day</td>
   </tr>
-</table>
-</td>
   </tr>
 </table>
 </td>
