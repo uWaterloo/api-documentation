@@ -173,7 +173,7 @@ Any value can be `null`
     },
     {
       "abbreviation":"LEC",
-      "description":"Leture"
+      "description":"Lecture"
     },
     {
       "abbreviation":"ORL",
