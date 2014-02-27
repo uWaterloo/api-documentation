@@ -58,7 +58,7 @@ GET /courses/{subject}/{catalog_number}/examschedule.{format}
 
 ### Sources
 
-- https://github.com/uWaterloo/Datasets/blob/master/ExamSchedule/1139ExamSchedule.csv
+- https://github.com/uWaterloo/Datasets/blob/master/ExamSchedule/
 
 
 ## Parameters
