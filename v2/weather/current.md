@@ -189,7 +189,7 @@ GET /weather/current.{format}
   <tr>
     <td><b>pressure_kpa</b></td>
     <td>float</td>
-    <td>Pressure in kilo Pascals</td>
+    <td>Pressure in kilopascals</td>
   </tr>
   <tr>
     <td><b>pressure_trend</b></td>
@@ -199,7 +199,7 @@ GET /weather/current.{format}
   <tr>
     <td><b>incoming_shortwave_radiation_wm2</b></td>
     <td>float</td>
-    <td>Incomig radiation in watts per meter square</td>
+    <td>Incoming radiation in watts per meter square</td>
   </tr>
 </table>
 
