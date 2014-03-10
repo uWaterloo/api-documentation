@@ -101,9 +101,9 @@ GET /foodservices/locations.{format}
 GET /foodservices/locations.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/locations.json**
-- **http://api.uwaterloo.ca/v2/foodservices/locations.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/locations.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/foodservices/locations.json**
+- **https://api.uwaterloo.ca/v2/foodservices/locations.xml**
+- **https://api.uwaterloo.ca/v2/foodservices/locations.json?callback=myResponse**
 
 
 ## Response
