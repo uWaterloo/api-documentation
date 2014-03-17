@@ -20,6 +20,10 @@ https://api.uwaterloo.ca/v2/
 In order to make an API call, you must have a valid [API Key](https://api.uwaterloo.ca/#!/keygen).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
+## Client Libraries
+
+* [UWaterlooAPI](https://bitbucket.org/amjoconn/uwaterlooapi) (Python)
+
 ## Endpoints
 
 
