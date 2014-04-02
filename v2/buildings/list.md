@@ -6,7 +6,7 @@ GET /buildings/list.{format}
 
 ## Description
 
-> This method returns a list of official building names, their unique number and their lat/long coordinates.
+> This method returns a list of official building names, codes, numbers, and their lat/long coordinates.
 
 ## Summary
 
@@ -123,12 +123,17 @@ GET /buildings/list.{format}
   <tr>
     <td><b>building_id</b></td>
     <td>string</td>
-    <td>Unique building number</td>
+    <td>Official unique building number</td>
   </tr>
   <tr>
     <td><b>building_code</b></td>
     <td>string</td>
-    <td>Official building name</td>
+    <td>Official unique building code</td>
+  </tr>
+  <tr>
+    <td><b>building_name</b></td>
+    <td>string</td>
+    <td>Official unique building name</td>
   </tr>
   <tr>
     <td><b>alternate_names</b></td>
@@ -170,7 +175,7 @@ GET /buildings/list.{format}
 </table>
 
 
-Any value can be `null`
+Any value except building_id, building_code, and building_name can be `null`
 
 ## Output
 
