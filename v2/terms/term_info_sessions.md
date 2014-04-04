@@ -45,7 +45,7 @@ GET /terms/{term}/infosessions.{format}
     <td><b>Update Frequency</b></td>
     <td>???</td>
     <td><b>Cache Time</b></td>
-    <td>???</td>
+    <td>0 seconds</td>
   </tr>
 </table>
 
@@ -111,7 +111,7 @@ GET /terms/{term}/infosessions.{format}
 GET /terms/{term}/infosessions.{format}
 ```
 
-- **https://api.uwaterloo.ca/v2/terms/1141/infosessions.json*
+- **https://api.uwaterloo.ca/v2/terms/1141/infosessions.json**
 - **https://api.uwaterloo.ca/v2/terms/1141/infosessions.xml**
 - **https://api.uwaterloo.ca/v2/terms/1141/infosessions.json?callback=myResponse**
 
@@ -167,7 +167,7 @@ GET /terms/{term}/infosessions.{format}
   <tr>
     <td><b>programs</b></td>
     <td>string</td>
-    <td>Programs relevant to employer</td>
+    <td>Programs of study relevant to employer</td>
   </tr>
   <tr>
     <td><b>description</b></td>
