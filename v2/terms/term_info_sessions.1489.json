@@ -1,0 +1,107 @@
+{
+   "method_id":1489,
+   "method_url":"/v2/terms/{term}/infosessions.{format}",
+   "method_name":"Employer Info Sessions by Term",
+   "service_id":241,
+   "service_name":"terms",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Weekly",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://www.ceca.uwaterloo.ca/students/sessions.php"
+   ],
+   "method_description":"This method returns the schedule for employer information sessions of a given term",
+   "additional_notes":[
+   ],
+   "information_steward":"CECA",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/terms/1141/infosessions.json",
+      "https://api.uwaterloo.ca/v2/terms/1141/infosessions.xml",
+      "https://api.uwaterloo.ca/v2/terms/1141/infosessions.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"term",
+         "description":"Four digit term representation",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Information session id",
+         "type":"integer"
+      },
+      {
+         "field":"employer",
+         "description":"Name of employer hosting session",
+         "type":"string"
+      },
+      {
+         "field":"date",
+         "description":"Date of session",
+         "type":"string"
+      },
+      {
+         "field":"start_time",
+         "description":"Start time of session",
+         "type":"string"
+      },
+      {
+         "field":"end_time",
+         "description":"End time of session",
+         "type":"string"
+      },
+      {
+         "field":"location",
+         "description":"Location of session",
+         "type":"string"
+      },
+      {
+         "field":"website",
+         "description":"Employer's website",
+         "type":"string"
+      },
+      {
+         "field":"audience",
+         "description":"Target audience of session",
+         "type":"string"
+      },
+      {
+         "field":"programs",
+         "description":"Programs of study relevant to employer",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Description of employer",
+         "type":"string"
+      }
+   ]
+}
