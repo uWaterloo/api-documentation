@@ -1,6 +1,6 @@
 {
    "method_id":1489,
-   "method_url":"/v2/terms/{term}/infosessions.{format}",
+   "method_url":"/terms/{term}/infosessions.{format}",
    "method_name":"Employer Info Sessions by Term",
    "service_id":241,
    "service_name":"terms",
@@ -11,7 +11,7 @@
    "cache_time_s":0,
    "data_type":"Scraped",
    "data_source":[
-      "http://www.ceca.uwaterloo.ca/students/sessions.php"
+      "https://github.com/uWaterloo/Datasets/tree/master/EmployerInfoSessions"
    ],
    "method_description":"This method returns the schedule for employer information sessions of a given term",
    "additional_notes":[
