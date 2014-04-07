@@ -1,0 +1,97 @@
+{
+   "method_id":1129,
+   "method_url":"/resoruces/infosessions.{format}",
+   "method_name":"List of coop infosessions",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"When updated by pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/tree/master/EmployerInfoSession"
+   ],
+   "method_description":"This method returns a list of campus employer infosessions", 
+   "additional_notes":[
+      "Usage won't increase if there is no data returned",
+      "This data is community curated on github"
+   ],
+   "information_steward":"CECS",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/infosessions.json",
+      "https://api.uwaterloo.ca/v2/resources/infosessions.xml",
+      "https://api.uwaterloo.ca/v2/resources/infosessions.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Session ID",
+         "type":"string"
+      },
+      {
+         "field":"employer",
+         "description":"Name of the company/employer",
+         "type":"string"
+      },
+      {
+         "field":"date",
+         "description":"Session date",
+         "type":"string"
+      },
+      {
+         "field":"start_time",
+         "description":"Session start time",
+         "type":"string"
+      },
+      {
+         "field":"end_time",
+         "description":"Session end time",
+         "type":"string"
+      },
+      {
+         "field":"location",
+         "description":"Session campus location",
+         "type":"string"
+      },
+      {
+         "field":"website",
+         "description":"Employer's website",
+         "type":"string"
+      },
+      {
+         "field":"audience",
+         "description":"Intended student audience",
+         "type":"string"
+      },
+      {
+         "field":"programs",
+         "description":"Intended programs for student audience",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Information about the session",
+         "type":"string"
+      }
+   ]
+}
