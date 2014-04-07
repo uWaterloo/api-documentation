@@ -20,9 +20,9 @@
    ],
    "information_steward":"Faculty of Environment - MAD Lab",
    "request_examples":[
-      "https://api.uwaterloo.ca/v2/resources/infosessions.json",
-      "https://api.uwaterloo.ca/v2/resources/infosessions.xml",
-      "https://api.uwaterloo.ca/v2/resources/infosessions.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/resources/goosewatch.json",
+      "https://api.uwaterloo.ca/v2/resources/goosewatch.xml",
+      "https://api.uwaterloo.ca/v2/resources/goosewatch.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
