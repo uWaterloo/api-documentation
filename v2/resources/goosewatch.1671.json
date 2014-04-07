@@ -1,0 +1,72 @@
+{
+   "method_id":1671,
+   "method_url":"/resoruces/goosewatch.{format}",
+   "method_name":"List of geese nests",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"When updated by pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/blob/master/GooseWatch"
+   ],
+   "method_description":"This method returns a list of geese nests during their spring mating season", 
+   "additional_notes":[
+      "Usage won't increase if there is no data returned",
+      "This data is community curated on github in partnership with the Faculty of Environment's MAD Lab and http://goose-watch.uwaterloo.ca/"
+   ],
+   "information_steward":"Faculty of Environment - MAD Lab",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/infosessions.json",
+      "https://api.uwaterloo.ca/v2/resources/infosessions.xml",
+      "https://api.uwaterloo.ca/v2/resources/infosessions.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Goose Nest ID",
+         "type":"string"
+      },
+      {
+         "field":"location",
+         "description":"Human-readable description of goose nest location",
+         "type":"string"
+      },
+	  {
+         "field":"latitude",
+         "description":"Latitude of goose nest location",
+         "type":"number"
+      },
+      {
+         "field":"longitude",
+         "description":"Longitude of goose nest location",
+         "type":"number"
+      },
+      {
+         "field":"updated",
+         "description":"ISO 8601 time-stamp of last update",
+         "type":"string"
+      }
+   ]
+}
