@@ -36,6 +36,12 @@
          "type":"filter"
       },
       {
+         "parameter" : "term",
+         "description" : "Four digit term representation",
+         "is_required" : false,
+         "type" : "filter"
+      },
+      {
          "parameter":"callback",
          "description":"JSONP callback format",
          "is_required":false,

@@ -82,6 +82,12 @@ GET /resoruces/goosewatch.{format}
     <td>Your API key</td>
   </tr>
   <tr>
+    <td><b>term</b></td>
+    <td>filter</td>
+    <td><i>no</i></td>
+    <td>Four digit term representation</td>
+  </tr>
+  <tr>
     <td><b>callback</b></td>
     <td>filter</td>
     <td><i>no</i></td>
@@ -151,8 +157,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":481,
-    "timestamp":1396902528,
+    "requests":482,
+    "timestamp":1396972619,
     "status":200,
     "message":"Request successful",
     "method_id":1671,
