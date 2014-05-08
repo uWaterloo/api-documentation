@@ -11,6 +11,7 @@
    "cache_time_s":0,
    "data_type":"Direct feed",
    "data_source":[
+       "Datasets / Sites / sites.csv on https://github.com/uWaterloo/"
    ],
    "method_description":"This method returns a list of all the sites available from the uwaterloo WCMS site",
    "additional_notes":[
