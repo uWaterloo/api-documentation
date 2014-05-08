@@ -1,0 +1,60 @@
+{
+   "method_id":1523,
+   "method_url":"/v2/resources/sites.{format}",
+   "method_name":"The list of all sites available via the WCMS site",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"As new sites are created by the WCMS team",
+   "cache_time_s":0,
+   "data_type":"Direct feed",
+   "data_source":[
+   ],
+   "method_description":"This method returns a list of all the sites available from the uwaterloo WCMS site",
+   "additional_notes":[
+      "Usage won't increase if there is no data returned"
+   ],
+   "information_steward":"SSO",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/sites.json",
+      "https://api.uwaterloo.ca/v2/resources/sites.xml",
+      "https://api.uwaterloo.ca/v2/resources/sites.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"name",
+         "description":"Official name of WCMS site",
+         "type":"string"
+      },
+      {
+         "field":"slug",
+         "description":"URL Slug (part of a URL identifying the page using human-readable keywords)",
+         "type":"string"
+      },
+      {
+         "field":"url",
+         "description":"Complete Link to WCMS site",
+         "type":"string"
+      }
+   ]
+}
