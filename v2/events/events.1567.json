@@ -14,11 +14,10 @@
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
    ],
    "method_description":[
-       "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
+       "This method returns a specific event's information given an event's site slug and id"
    ],
    "additional_notes":[
-       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks",
-       "```description``` and ```description_raw``` is only returned when passing in ```id```"
+       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
    ],
    "information_steward":"Each individual site's data steward",
    "request_examples":[
@@ -40,13 +39,13 @@
       {
          "parameter":"id",
          "description":"Valid event id",
-         "is_required":false,
+         "is_required":true,
          "type":"filter"
       },
       {
          "parameter":"site",
          "description":"Valid site slug from /resources/sites",
-         "is_required":false,
+         "is_required":true,
          "type":"filter"
       },
       {
