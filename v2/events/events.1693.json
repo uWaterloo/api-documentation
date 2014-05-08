@@ -14,7 +14,7 @@
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
    ],
    "method_description":[
-       "This method returns a list of the upcomming 21 University of Waterloo events as crawled from all University WCMS sites"
+       "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
    ],
    "additional_notes":[
        "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks",
