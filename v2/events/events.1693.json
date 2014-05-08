@@ -17,16 +17,13 @@
        "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
    ],
    "additional_notes":[
-       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks",
-       "```description``` and ```description_raw``` is only returned when passing in ```id```"
+       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
    ],
-   "information_steward":"UW API",
+   "information_steward":"Each individual site's data steward",
    "request_examples":[
       "https://api.uwaterloo.ca/v2/events.json",
       "https://api.uwaterloo.ca/v2/events.xml",
-      "https://api.uwaterloo.ca/v2/events.json?callback=myResponse",
-      "https://api.uwaterloo.ca/v2/events/engineering.json",
-      "https://api.uwaterloo.ca/v2/events/engineering/1701.json"
+      "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
@@ -37,18 +34,6 @@
          "parameter":"key",
          "description":"Valid API key",
          "is_required":true,
-         "type":"filter"
-      },
-      {
-         "parameter":"id",
-         "description":"Valid event id",
-         "is_required":false,
-         "type":"filter"
-      },
-      {
-         "parameter":"slug",
-         "description":"Valid slug from /resources/sites",
-         "is_required":false,
          "type":"filter"
       },
       {
@@ -83,16 +68,6 @@
          "field":"end",
          "description":"ISO 8601 formatted end date",
          "type":"date"
-      },
-      {
-         "field":"description",
-         "description":"Event description",
-         "type":"string"
-      },
-      {
-         "field":"description_raw",
-         "description":"Raw event description",
-         "type":"string"
       },
       {
          "field":"categories",

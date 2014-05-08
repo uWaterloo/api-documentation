@@ -23,7 +23,7 @@
    "information_steward":"Each individual site's data steward",
    "request_examples":[
       "https://api.uwaterloo.ca/v2/events/engineering.json",
-      "https://api.uwaterloo.ca/v2/events/engineering/1701.json"
+      "https://api.uwaterloo.ca/v2/events/engineering/1701.json",
       "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
    ],
    "response_formats":[
