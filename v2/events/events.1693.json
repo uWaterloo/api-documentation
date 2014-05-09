@@ -1,95 +1,95 @@
 {
-   "method_id":1693,
-   "method_url":"/events.{format}",
-   "method_name":"get_global_events",
-   "service_id":271,
-   "service_name":"events",
-   "request_protocol":"GET",
-   "is_authenticated":false,
-   "is_enabled": true,
-   "update_frequency":"Realtime",
-   "cache_time_s":0,
-   "data_type":"Database",
-   "data_source":[
+  "method_id":1693,
+  "method_url":"/events.{format}",
+  "method_name":"Get Events from All Sites",
+  "service_id":271,
+  "service_name":"events",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"Realtime",
+  "cache_time_s":0,
+  "data_type":"Database",
+  "data_source":[
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
-   ],
-   "method_description":[
-       "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
-   ],
-   "additional_notes":[
-       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
-   ],
-   "information_steward":"Each individual site's data steward",
-   "request_examples":[
-      "https://api.uwaterloo.ca/v2/events.json",
-      "https://api.uwaterloo.ca/v2/events.xml",
-      "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
-   ],
-   "response_formats":[
-      "json",
-      "xml"
-   ],
-   "method_parameters":[
-       {
-         "parameter":"key",
-         "description":"Valid API key",
-         "is_required":true,
-         "type":"filter"
-      },
-      {
-         "parameter":"callback",
-         "description":"JSONP callback format",
-         "is_required":false,
-         "type":"filter"
-      }
-   ],
-   "response_fields":[
-      {
-         "field":"id",
-         "description":"Unique event id",
-         "type":"integer"
-      },
-      {
-         "field":"site",
-         "description":"Site slug from /resources/sites",
-         "type":"filter"
-      },
-      {
-         "field":"title",
-         "description":"Event title",
-         "type":"string"
-      },
-      {
-	     "field":"times",
-         "description":"The event's times",
-         "type":"object",
-         "children":[
-			{
-			   "field":"start",
-			   "description":"ISO 8601 formatted start date",
-			   "type":"date"
-            },
-            {
-               "field":"end",
-               "description":"ISO 8601 formatted end date",
-               "type":"date"
-            }
-         ]
-      },
-      {
-         "field":"type",
-         "description":"Type of event",
-         "type":"array"
-      },
-      {
-         "field":"link",
-         "description":"URL of event link",
-         "type":"string"
-      },
-      {
-         "field":"updated",
-         "description":"ISO 8601 formatted updated date",
-         "type":"date"
-      }
-   ]
+  ],
+  "method_description":[
+    "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
+  ],
+  "additional_notes":[
+    "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
+  ],
+  "information_steward":"Each individual site's data steward",
+  "request_examples":[
+    "https://api.uwaterloo.ca/v2/events.json",
+    "https://api.uwaterloo.ca/v2/events.xml",
+    "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"key",
+      "description":"Valid API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"id",
+      "description":"Unique event id",
+      "type":"integer"
+    },
+    {
+      "field":"site",
+      "description":"Site slug from /resources/sites",
+      "type":"string"
+    },
+    {
+      "field":"title",
+      "description":"Event title",
+      "type":"string"
+    },
+    {
+      "field":"times",
+      "description":"The event's times",
+      "type":"object",
+      "children":[
+        {
+          "field":"start",
+          "description":"ISO 8601 formatted start date",
+          "type":"date"
+        },
+        {
+          "field":"end",
+          "description":"ISO 8601 formatted end date",
+          "type":"date"
+        }
+      ]
+    },
+    {
+      "field":"type",
+      "description":"Type of event",
+      "type":"array"
+    },
+    {
+      "field":"link",
+      "description":"URL of event link",
+      "type":"string"
+    },
+    {
+      "field":"updated",
+      "description":"ISO 8601 formatted updated date",
+      "type":"date"
+    }
+  ]
 }
