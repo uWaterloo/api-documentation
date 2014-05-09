@@ -61,44 +61,36 @@
          "type":"string"
       },
       {
-         "field":"location",
-         "description":"Description of location in free format",
-         "type":"string"
+	     "field":"times",
+         "description":"The outlet menu list",
+         "type":"times",
+         "children":[
+			{
+			   "field":"start",
+			   "description":"ISO 8601 formatted start date",
+			   "type":"date"
+            },
+            {
+               "field":"end",
+               "description":"ISO 8601 formatted end date",
+               "type":"date"
+            }
+         ]
       },
       {
-         "field":"start",
-         "description":"ISO 8601 formatted start date",
-         "type":"date"
-      },
-      {
-         "field":"end",
-         "description":"ISO 8601 formatted end date",
-         "type":"date"
-      },
-      {
-         "field":"description",
-         "description":"Event description",
-         "type":"string"
-      },
-      {
-         "field":"description_raw",
-         "description":"Raw event description",
-         "type":"string"
-      },
-      {
-         "field":"categories",
-         "description":"Tags of all related categories",
+         "field":"type",
+         "description":"Type of event",
          "type":"array"
+      },
+      {
+         "field":"link",
+         "description":"URL of event link",
+         "type":"string"
       },
       {
          "field":"updated",
          "description":"ISO 8601 formatted updated date",
          "type":"date"
-      },
-      {
-         "field":"url",
-         "description":"URL of event link",
-         "type":"string"
       }
    ]
 }
