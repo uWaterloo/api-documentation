@@ -14,16 +14,15 @@
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
    ],
    "method_description":[
-       "This method returns a specific event's information given an event's site slug and id"
+       "This method returns a specific event's information given a site slug and id"
    ],
    "additional_notes":[
        "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
    ],
    "information_steward":"Each individual site's data steward",
    "request_examples":[
-      "https://api.uwaterloo.ca/v2/events/engineering.json",
       "https://api.uwaterloo.ca/v2/events/engineering/1701.json",
-      "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/events/engineering/1701.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
