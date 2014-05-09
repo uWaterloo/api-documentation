@@ -139,9 +139,9 @@
          "type":"array"
       },
       {
-         "field":"Type",
+         "field":"type",
          "description":"Type of event",
-         "type":"string"
+         "type":"array"
       },
       {
 	     "field":"website",

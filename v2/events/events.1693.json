@@ -50,39 +50,46 @@
          "type":"integer"
       },
       {
+         "field":"site",
+         "description":"Site slug from /resources/sites",
+         "type":"filter"
+      },
+      {
          "field":"title",
-         "description":"event title",
+         "description":"Event title",
          "type":"string"
       },
       {
-         "field":"location",
-         "description":"Description of location in free format",
-         "type":"string"
+	     "field":"times",
+         "description":"The event's times",
+         "type":"object",
+         "children":[
+			{
+			   "field":"start",
+			   "description":"ISO 8601 formatted start date",
+			   "type":"date"
+            },
+            {
+               "field":"end",
+               "description":"ISO 8601 formatted end date",
+               "type":"date"
+            }
+         ]
       },
       {
-         "field":"start",
-         "description":"ISO 8601 formatted start date",
-         "type":"date"
-      },
-      {
-         "field":"end",
-         "description":"ISO 8601 formatted end date",
-         "type":"date"
-      },
-      {
-         "field":"categories",
-         "description":"Tags of all related categories",
+         "field":"type",
+         "description":"Type of event",
          "type":"array"
+      },
+      {
+         "field":"link",
+         "description":"URL of event link",
+         "type":"string"
       },
       {
          "field":"updated",
          "description":"ISO 8601 formatted updated date",
          "type":"date"
-      },
-      {
-         "field":"url",
-         "description":"URL of event link",
-         "type":"string"
       }
    ]
 }
