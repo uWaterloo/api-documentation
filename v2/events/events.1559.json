@@ -63,7 +63,7 @@
       {
 	     "field":"times",
          "description":"The outlet menu list",
-         "type":"times",
+         "type":"object",
          "children":[
 			{
 			   "field":"start",
