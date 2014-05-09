@@ -1,0 +1,162 @@
+{
+   "method_id":1709,
+   "method_url":"news/{site}/{id}.{format}",
+   "method_name":"get_news_by_id",
+   "service_id":307,
+   "service_name":"news",
+   "request_protocol":"GET",
+   "is_authenticated":false,
+   "is_enabled": true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Database",
+   "data_source":[
+    "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
+   ],
+   "method_description":[
+       "This method returns a specific news item's information given a site's slug and id"
+   ],
+   "additional_notes":[
+       "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/news/science/881.json",
+      "https://api.uwaterloo.ca/v2/news/science/881.xml",
+      "https://api.uwaterloo.ca/v2/news/science/881.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+       {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"site",
+         "description":"Valid site slug from /resources/sites",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"id",
+         "description":"Valid news id",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Unique news id",
+         "type":"integer"
+      },
+      {
+         "field":"title",
+         "description":"News title",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"News body",
+         "type":"string"
+      },
+      {
+         "field":"description_raw",
+         "description":"Raw news body (includes HTML markup)",
+         "type":"string"
+      },
+      {
+         "field":"audience",
+         "description":"Audience targeted by news item",
+         "type":"array"
+      },
+      {
+	     "field":"image",
+         "description":"Image representing the news item",
+         "type":"object",
+         "children":[
+			{
+			   "field":"id",
+			   "description":"Unique id of image",
+			   "type":"integer"
+            },
+            {
+               "field":"file",
+               "description":"Relative link to image file path in filename.{format}",
+               "type":"string"
+            },
+            {
+               "field":"alt",
+               "description":"Image alternate text",
+               "type":"string"
+            },
+            {
+               "field":"mime",
+               "description":"Image MIME type in \"string/{format}\"",
+               "type":"string"
+            },
+            {
+               "field":"size",
+               "description":"Image file size in bytes",
+               "type":"integer"
+            },
+            {
+               "field":"width",
+               "description":"Image width in pixels",
+               "type":"integer"
+            },
+            {
+               "field":"height",
+               "description":"Image height in pixels",
+               "type":"integer"
+            },
+            {
+               "field":"url",
+               "description":"Full link to image resource",
+               "type":"string"
+            }
+         ]
+      },
+      {
+         "field":"site_id",
+         "description":"Site slug as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+         "type":"string"
+      },
+      {
+         "field":"site_name",
+         "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+         "type":"string"
+      },
+      {
+         "field":"revision_id",
+         "description":"Unique id of revision of news item",
+         "type":"integer"
+      },
+      {
+         "field":"published",
+         "description":"ISO 8601 formatted published date",
+         "type":"date"
+      },
+      {
+         "field":"updated",
+         "description":"ISO 8601 formatted updated date",
+         "type":"date"
+      },
+      {
+         "field":"link",
+         "description":"URL of news link",
+         "type":"string"
+      }
+   ]
+}
