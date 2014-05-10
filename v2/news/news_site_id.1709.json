@@ -13,9 +13,7 @@
   "data_source":[
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
   ],
-  "method_description":[
-    "This method returns a specific news item's information given a site's slug and id"
-  ],
+  "method_description":"This method returns a specific news item's information given a site's slug and id",
   "additional_notes":[
     "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
   ],

@@ -6,7 +6,7 @@ GET events/{site}/{id}.{format}
 
 ## Description
 
-> Array
+> This method returns a specific event's information given a site slug and the unique id
 
 ## Summary
 

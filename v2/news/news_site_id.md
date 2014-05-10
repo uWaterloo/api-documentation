@@ -6,7 +6,7 @@ GET news/{site}/{id}.{format}
 
 ## Description
 
-> Array
+> This method returns a specific news item's information given a site's slug and id
 
 ## Summary
 

@@ -6,7 +6,7 @@ GET news/{site}.{format}
 
 ## Description
 
-> Array
+> This method returns a list of the upcoming site's news given a site slug
 
 ## Summary
 

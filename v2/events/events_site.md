@@ -6,7 +6,7 @@ GET /events/{site}.{format}
 
 ## Description
 
-> Array
+> This method returns a list of the upcoming site events given a site slug
 
 ## Summary
 

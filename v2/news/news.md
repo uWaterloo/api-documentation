@@ -6,7 +6,7 @@ GET /news.{format}
 
 ## Description
 
-> Array
+> This method returns a list of the freshest (most recently updated) 100 University of Waterloo news items as crawled from all University WCMS sites
 
 ## Summary
 

@@ -6,7 +6,7 @@ GET /events.{format}
 
 ## Description
 
-> Array
+> This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites
 
 ## Summary
 
