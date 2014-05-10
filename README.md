@@ -55,7 +55,18 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Events
 
+- **[/events](v2/events/events.md)**
+- **[/events/{site}](v2/events/events_site.md)**
+- **[/events/{site}/{id}](v2/events/events_site_id.md)**
 - **[/events/holidays](v2/events/holidays.md)**
+
+
+### News
+
+- **[/news](v2/news/news.md)**
+- **[/news/{site}](v2/news/news_site.md)**
+- **[/news/{site}/{id}](v2/news/news_site_id.md)**
+
 
 ### Weather
 
