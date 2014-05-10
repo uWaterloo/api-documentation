@@ -1,7 +1,7 @@
 {
-  "method_id":1697,
-  "method_url":"/news.{format}",
-  "method_name":"Get News from All Sites",
+  "method_id":1699,
+  "method_url":"news/{site}.{format}",
+  "method_name":"Get Events for Site",
   "service_id":307,
   "service_name":"news",
   "request_protocol":"GET",
@@ -14,16 +14,16 @@
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
   ],
   "method_description":[
-    "This method returns a list of the freshest (most recently updated) 100 University of Waterloo news items as crawled from all University WCMS sites"
+    "This method returns a list of the upcoming site's news given a site slug"
   ],
   "additional_notes":[
-    "This is a 'realtime' feed. An item will be available on the api the second it is up using Webhooks"
+    "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
   ],
   "information_steward":"Each individual site's data steward",
   "request_examples":[
-    "https://api.uwaterloo.ca/v2/news.json",
-    "https://api.uwaterloo.ca/v2/news.xml",
-    "https://api.uwaterloo.ca/v2/news.json?callback=myResponse"
+    "https://api.uwaterloo.ca/v2/news/engineering.json",
+    "https://api.uwaterloo.ca/v2/news/science.xml",
+    "https://api.uwaterloo.ca/v2/news/engineering.json?callback=myResponse"
   ],
   "response_formats":[
     "json",
@@ -35,6 +35,12 @@
       "description":"Valid API key",
       "is_required":true,
       "type":"filter"
+    },
+    {
+      "parameter":"site",
+      "description":"Valid site slug from /resources/sites",
+      "is_required":true,
+      "type":"input"
     },
     {
       "parameter":"callback",
@@ -52,11 +58,6 @@
     {
       "field":"title",
       "description":"News story title",
-      "type":"string"
-    },
-    {
-      "field":"site",
-      "description":"News site slug",
       "type":"string"
     },
     {

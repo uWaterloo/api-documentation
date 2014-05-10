@@ -1,0 +1,315 @@
+{
+  "method_id":1567,
+  "method_url":"events/{site}/{id}.{format}",
+  "method_name":"Get Events for Site given id",
+  "service_id":271,
+  "service_name":"events",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"Realtime",
+  "cache_time_s":0,
+  "data_type":"Database",
+  "data_source":[
+    "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
+  ],
+  "method_description":[
+    "This method returns a specific event's information given a site slug and the unique id"
+  ],
+  "additional_notes":[
+    "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
+  ],
+  "information_steward":"Each individual site's data steward",
+  "request_examples":[
+    "https://api.uwaterloo.ca/v2/events/engineering/1701.json",
+    "https://api.uwaterloo.ca/v2/events/engineering/1701.xml",
+    "https://api.uwaterloo.ca/v2/events/engineering/1701.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"key",
+      "description":"Valid API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"site",
+      "description":"Valid site slug from /resources/sites",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"id",
+      "description":"Valid event id",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"id",
+      "description":"Unique event id",
+      "type":"integer"
+    },
+    {
+      "field":"title",
+      "description":"Event title",
+      "type":"string"
+    },
+    {
+      "field":"description",
+      "description":"Event description",
+      "type":"string"
+    },
+    {
+      "field":"description_raw",
+      "description":"Raw event description (includes HTML markup)",
+      "type":"string"
+    },
+    {
+      "field":"times",
+      "description":"The event's times",
+      "type":"list",
+      "children":[
+        {
+          "field":"start",
+          "description":"ISO 8601 formatted start date",
+          "type":"date"
+        },
+        {
+          "field":"end",
+          "description":"ISO 8601 formatted end date",
+          "type":"date"
+        },
+        {
+          "field":"start_day",
+          "description":"Full name of day of week for start day",
+          "type":"string"
+        },
+        {
+          "field":"start_date",
+          "description":"YYYY-MM-DD formatted start date",
+          "type":"sate"
+        },
+        {
+          "field":"start_time",
+          "description":"HH:MM:SS 24 formatted start time",
+          "type":"sate"
+        },
+        {
+          "field":"end_day",
+          "description":"Full name of day of week for end day",
+          "type":"string"
+        },
+        {
+          "field":"end_date",
+          "description":"YYYY-MM-DD formatted end date",
+          "type":"string"
+        },
+        {
+          "field":"end_time",
+          "description":"HH:MM:SS 24 formatted end time",
+          "type":"string"
+        }
+      ]
+    },
+    {
+      "field":"cost",
+      "description":"Cost of event",
+      "type":"string"
+    },
+    {
+      "field":"audience",
+      "description":"Audience targeted by event",
+      "type":"list"
+    },
+    {
+      "field":"tags",
+      "description":"Tags related to event",
+      "type":"list"
+    },
+    {
+      "field":"type",
+      "description":"Type of event",
+      "type":"list"
+    },
+    {
+      "field":"website",
+      "description":"The event's website for more information",
+      "type":"object",
+      "children":[
+        {
+          "field":"title",
+          "description":"Title of the link",
+          "type":"string"
+        },
+        {
+          "field":"url",
+          "description":"URL of the link",
+          "type":"string"
+        }
+      ]
+    },
+    {
+      "field":"host",
+      "description":"The event's host",
+      "type":"object",
+      "children":[
+        {
+          "field":"title",
+          "description":"Title of the link",
+          "type":"string"
+        },
+        {
+          "field":"url",
+          "description":"URL of the link",
+          "type":"string"
+        }
+      ]
+    },
+    {
+      "field":"image",
+      "description":"Image representing the event",
+      "type":"object",
+      "children":[
+        {
+          "field":"id",
+          "description":"Unique id of image",
+          "type":"integer"
+        },
+        {
+          "field":"file",
+          "description":"Relative link to image file path in filename.{format}",
+          "type":"string"
+        },
+        {
+          "field":"alt",
+          "description":"Image alternate text",
+          "type":"string"
+        },
+        {
+          "field":"mime",
+          "description":"Image MIME type in \"string/{format}\"",
+          "type":"string"
+        },
+        {
+          "field":"size",
+          "description":"Image file size in bytes",
+          "type":"integer"
+        },
+        {
+          "field":"width",
+          "description":"Image width in pixels",
+          "type":"integer"
+        },
+        {
+          "field":"height",
+          "description":"Image height in pixels",
+          "type":"integer"
+        },
+        {
+          "field":"url",
+          "description":"Full link to image resource",
+          "type":"string"
+        }
+      ]
+    },
+    {
+      "field":"location",
+      "description":"Location of the event",
+      "type":"object",
+      "children":[
+        {
+          "field":"id",
+          "description":"Unique id of location",
+          "type":"integer"
+        },
+        {
+          "field":"name",
+          "description":"Name of location",
+          "type":"string"
+        },
+        {
+          "field":"street",
+          "description":"Street address of location",
+          "type":"string"
+        },
+        {
+          "field":"additional",
+          "description":"Additional information regarding street address of location",
+          "type":"string"
+        },
+        {
+          "field":"city",
+          "description":"Name of city",
+          "type":"string"
+        },
+        {
+          "field":"province",
+          "description":"Name of province in two-letter short form",
+          "type":"string"
+        },
+        {
+          "field":"postal_code",
+          "description":"Postal code \"in L#L #L#\" format",
+          "type":"string"
+        },
+        {
+          "field":"country",
+          "description":"Full name of country",
+          "type":"string"
+        },
+        {
+          "field":"latitude",
+          "description":"Event location latitude",
+          "type":"number"
+        },
+        {
+          "field":"longitude",
+          "description":"Event location longitude",
+          "type":"number"
+        }
+      ]
+    },
+    {
+      "field":"site_name",
+      "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    },
+    {
+      "field":"site_id",
+      "description":"Site slug as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    },
+    {
+      "field":"revision_id",
+      "description":"Unique id of revision of event",
+      "type":"integer"
+    },
+    {
+      "field":"link",
+      "description":"URL of event link",
+      "type":"string"
+    },
+    {
+      "field":"link_calendar",
+      "description":"iCal feed of event",
+      "type":"string"
+    },
+    {
+      "field":"updated",
+      "description":"ISO 8601 formatted updated date",
+      "type":"date"
+    }
+  ]
+}

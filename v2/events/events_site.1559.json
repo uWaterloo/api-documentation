@@ -1,7 +1,7 @@
 {
-  "method_id":1693,
-  "method_url":"/events.{format}",
-  "method_name":"Get Events from All Sites",
+  "method_id":1559,
+  "method_url":"/events/{site}.{format}",
+  "method_name":"Get Events for Site",
   "service_id":271,
   "service_name":"events",
   "request_protocol":"GET",
@@ -14,16 +14,16 @@
     "Crawled from all WMCS sites listed at https://api.uwaterloo.ca/v2/resources/sites.{format}"
   ],
   "method_description":[
-    "This method returns a list of the upcoming 21 University of Waterloo events as crawled from all University WCMS sites"
+    "This method returns a list of the upcoming site events given a site slug"
   ],
   "additional_notes":[
     "This is a 'realtime' feed. An item will be available on the api the second its up using Webhooks"
   ],
   "information_steward":"Each individual site's data steward",
   "request_examples":[
-    "https://api.uwaterloo.ca/v2/events.json",
-    "https://api.uwaterloo.ca/v2/events.xml",
-    "https://api.uwaterloo.ca/v2/events.json?callback=myResponse"
+    "https://api.uwaterloo.ca/v2/events/engineering.json",
+    "https://api.uwaterloo.ca/v2/events/science.xml",
+    "https://api.uwaterloo.ca/v2/events/engineering.json.json?callback=myResponse"
   ],
   "response_formats":[
     "json",
@@ -35,6 +35,12 @@
       "description":"Valid API key",
       "is_required":true,
       "type":"filter"
+    },
+    {
+      "parameter":"site",
+      "description":"Valid site slug from /resources/sites",
+      "is_required":true,
+      "type":"input"
     },
     {
       "parameter":"callback",
@@ -50,18 +56,13 @@
       "type":"integer"
     },
     {
-      "field":"site",
-      "description":"Site slug from /resources/sites",
-      "type":"string"
-    },
-    {
       "field":"title",
-      "description":"Event title",
+      "description":"event title",
       "type":"string"
     },
     {
       "field":"times",
-      "description":"The event's times",
+      "description":"The outlet menu list",
       "type":"array",
       "children":[
         {
