@@ -62,7 +62,7 @@
     {
       "field":"times",
       "description":"The event's times",
-      "type":"object",
+      "type":"array",
       "children":[
         {
           "field":"start",

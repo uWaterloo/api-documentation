@@ -2,7 +2,7 @@
   "method_id":1699,
   "method_url":"news/{site}.{format}",
   "method_name":"Get Events for Site",
-  "service_id":271,
+  "service_id":307,
   "service_name":"news",
   "request_protocol":"GET",
   "is_authenticated":true,

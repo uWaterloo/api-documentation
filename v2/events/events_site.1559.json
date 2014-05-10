@@ -1,6 +1,6 @@
 {
   "method_id":1559,
-  "method_url":"events/{site}.{format}",
+  "method_url":"/events/{site}.{format}",
   "method_name":"Get Events for Site",
   "service_id":271,
   "service_name":"events",
@@ -63,7 +63,7 @@
     {
       "field":"times",
       "description":"The outlet menu list",
-      "type":"object",
+      "type":"array",
       "children":[
         {
           "field":"start",

@@ -79,7 +79,7 @@
     {
       "field":"times",
       "description":"The event's times",
-      "type":"object",
+      "type":"list",
       "children":[
         {
           "field":"start",
@@ -134,7 +134,7 @@
       "type":"list"
     },
     {
-      "field":"Tags",
+      "field":"tags",
       "description":"Tags related to event",
       "type":"list"
     },
