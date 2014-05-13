@@ -124,6 +124,11 @@ GET /events.{format}
     <td>Site slug from /resources/sites</td>
   </tr>
   <tr>
+    <td><b>site_name</b></td>
+    <td>string</td>
+    <td>Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}</td>
+  </tr>
+  <tr>
     <td><b>title</b></td>
     <td>string</td>
     <td>Event title</td>
@@ -172,8 +177,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":490,
-    "timestamp":1399701984,
+    "requests":6983,
+    "timestamp":1400010395,
     "status":200,
     "message":"Request successful",
     "method_id":1693,
@@ -183,365 +188,9 @@ Any value can be `null`
   },
   "data":[
     {
-      "id":2382,
-      "site":"alumni",
-      "title":"San Francisco Bay Area Alumni Chapter \u2013  Meet-up at Polyvore",
-      "times":[
-        {
-          "start":"2014-05-09T04:30:00-04:00",
-          "end":"2014-05-09T06:30:00-04:00"
-        }
-      ],
-      "type":[
-        "Reception"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/alumni\/events\/san-francisco-bay-area-alumni-chapter-meet-polyvore",
-      "updated":"2014-04-04T15:44:35-04:00"
-    },
-    {
-      "id":791,
-      "site":"housing",
-      "title":"Community Breakfast",
-      "times":[
-        {
-          "start":"2014-05-09T12:00:00-04:00",
-          "end":"2014-05-09T13:00:00-04:00"
-        },
-        {
-          "start":"2014-05-23T12:00:00-04:00",
-          "end":"2014-05-23T13:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/housing\/events\/community-breakfast-3",
-      "updated":"2014-05-01T10:25:32-04:00"
-    },
-    {
-      "id":795,
-      "site":"housing",
-      "title":"CLV-North Orientation Session",
-      "times":[
-        {
-          "start":"2014-05-09T13:00:00-04:00",
-          "end":"2014-05-09T14:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/housing\/events\/clv-north-orientation-session",
-      "updated":"2014-05-01T10:23:57-04:00"
-    },
-    {
-      "id":1002,
-      "site":"electrical-computer-engineering",
-      "title":"PhD defence - Cecille Freeman",
-      "times":[
-        {
-          "start":"2014-05-09T14:00:00-04:00",
-          "end":"2014-05-09T14:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/electrical-computer-engineering\/events\/phd-defence-cecille-freeman",
-      "updated":"2014-05-02T14:20:48-04:00"
-    },
-    {
-      "id":921,
-      "site":"biology",
-      "title":"Dr. Robert Beiko - Dalhousie University",
-      "times":[
-        {
-          "start":"2014-05-09T14:00:00-04:00",
-          "end":"2014-05-09T14:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/biology\/events\/dr-robert-beiko-dalhousie-university",
-      "updated":"2014-05-05T09:56:40-04:00"
-    },
-    {
-      "id":1762,
-      "site":"events",
-      "title":"Social+Capital Partnership Employer Information Session",
-      "times":[
-        {
-          "start":"2014-05-09T15:30:00-04:00",
-          "end":"2014-05-09T17:30:00-04:00"
-        }
-      ],
-      "type":[
-        "Information session"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/events\/events\/socialcapital-partnership-employer-information-session",
-      "updated":"2014-04-30T15:29:50-04:00"
-    },
-    {
-      "id":1759,
-      "site":"engineering",
-      "title":"Chamath Palihapitiya: The Unconventional Venture Capitalist",
-      "times":[
-        {
-          "start":"2014-05-09T15:30:00-04:00",
-          "end":"2014-05-09T17:30:00-04:00"
-        }
-      ],
-      "type":[
-        "Information session"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/engineering\/events\/chamath-palihapitiya-unconventional-venture-capitalist",
-      "updated":"2014-05-09T09:50:42-04:00"
-    },
-    {
-      "id":193,
-      "site":"partnerships-in-dementia-care",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-09T16:00:00-04:00",
-          "end":"2014-05-09T16:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/partnerships-in-dementia-care\/events\/cracked-new-light-dementia-play",
-      "updated":"2014-04-15T10:12:52-04:00"
-    },
-    {
-      "id":835,
-      "site":"applied-health-sciences",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-09T16:00:00-04:00",
-          "end":"2014-05-16T00:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/applied-health-sciences\/events\/cracked-new-light-dementia-play",
-      "updated":"2014-05-08T09:50:36-04:00"
-    },
-    {
-      "id":1815,
-      "site":"events",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-09T16:00:00-04:00",
-          "end":"2014-05-09T16:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/events\/events\/cracked-new-light-dementia-play",
-      "updated":"2014-05-08T09:53:18-04:00"
-    },
-    {
-      "id":295,
-      "site":"chemical-engineering",
-      "title":"Graduate Tutorial - Symbolic Math using Python",
-      "times":[
-        {
-          "start":"2014-05-09T16:30:00-04:00",
-          "end":"2014-05-09T16:30:00-04:00"
-        }
-      ],
-      "type":[
-        "Seminar"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/chemical-engineering\/events\/graduate-tutorial-symbolic-math-using-python",
-      "updated":"2014-05-01T11:45:28-04:00"
-    },
-    {
-      "id":687,
-      "site":"chemistry",
-      "title":"M.Sc. Thesis Defence:  Joshua Williams",
-      "times":[
-        {
-          "start":"2014-05-09T17:00:00-04:00",
-          "end":"2014-05-09T17:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/chemistry\/events\/msc-thesis-defence-joshua-williams",
-      "updated":"2014-04-28T09:33:02-04:00"
-    },
-    {
-      "id":692,
-      "site":"chemistry",
-      "title":"M.Sc. Thesis Defence:  Wei Yi",
-      "times":[
-        {
-          "start":"2014-05-09T17:30:00-04:00",
-          "end":"2014-05-09T17:30:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/chemistry\/events\/msc-thesis-defence-wei-yi",
-      "updated":"2014-04-30T11:54:06-04:00"
-    },
-    {
-      "id":914,
-      "site":"biology",
-      "title":"MSc Thesis Defense - Sara Victoria Coyotzi Alcaraz",
-      "times":[
-        {
-          "start":"2014-05-09T18:00:00-04:00",
-          "end":"2014-05-09T18:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/biology\/events\/msc-thesis-defense-sara-victoria-coyotzi-alcaraz",
-      "updated":"2014-04-25T14:19:48-04:00"
-    },
-    {
-      "id":1009,
-      "site":"electrical-computer-engineering",
-      "title":"Seminar - Professor Sebastien Roy",
-      "times":[
-        {
-          "start":"2014-05-09T18:30:00-04:00",
-          "end":"2014-05-09T18:30:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/electrical-computer-engineering\/events\/seminar-professor-sebastien-roy",
-      "updated":"2014-05-05T15:35:01-04:00"
-    },
-    {
-      "id":710,
-      "site":"psychology",
-      "title":"Ziva Kunda Memorial Lecture",
-      "times":[
-        {
-          "start":"2014-05-09T19:00:00-04:00",
-          "end":"2014-05-09T19:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Lecture"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/psychology\/events\/ziva-kunda-memorial-lecture",
-      "updated":"2014-05-01T09:02:57-04:00"
-    },
-    {
-      "id":204,
-      "site":"partnerships-in-dementia-care",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-10T20:00:00-04:00",
-          "end":"2014-05-10T20:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/partnerships-in-dementia-care\/events\/cracked-new-light-dementia-play-0",
-      "updated":"2014-04-15T10:13:17-04:00"
-    },
-    {
-      "id":1816,
-      "site":"events",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-10T20:00:00-04:00",
-          "end":"2014-05-10T20:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/events\/events\/cracked-new-light-dementia-play-0",
-      "updated":"2014-05-08T09:56:18-04:00"
-    },
-    {
-      "id":1007,
-      "site":"environment",
-      "title":"Kinomaagwinan Maamwaye",
-      "times":[
-        {
-          "start":"2014-05-11T13:00:00-04:00",
-          "end":"2014-05-11T20:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/environment\/events\/kinomaagwinan-maamwaye",
-      "updated":"2014-04-30T13:01:57-04:00"
-    },
-    {
-      "id":99,
-      "site":"university-club",
-      "title":"Mothers Day",
-      "times":[
-        {
-          "start":"2014-05-11T15:00:00-04:00",
-          "end":"2014-05-11T18:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/university-club\/events\/mothers-day",
-      "updated":"2014-04-01T15:10:39-04:00"
-    },
-    {
-      "id":1740,
-      "site":"engineering",
-      "title":"OCE Discovery Conference",
-      "times":[
-        {
-          "start":"2014-05-12T04:00:00-04:00",
-          "end":"2014-05-13T04:00:00-04:00"
-        }
-      ],
-      "type":[
-        "Conference",
-        "Information session"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/engineering\/events\/oce-discovery-conference",
-      "updated":"2014-04-24T11:52:52-04:00"
-    },
-    {
-      "id":1801,
-      "site":"events",
-      "title":"Electronic Arts Employer Information Session",
-      "times":[
-        {
-          "start":"2014-05-12T11:30:00-04:00",
-          "end":"2014-05-13T01:00:00-04:00"
-        }
-      ],
-      "type":[
-        
-      ],
-      "link":"https:\/\/uwaterloo.ca\/events\/events\/electronic-arts-employer-information-session",
-      "updated":"2014-05-07T10:12:12-04:00"
-    },
-    {
       "id":1270,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"CUT Research Projects Workshop (CTE146)",
       "times":[
         {
@@ -558,6 +207,7 @@ Any value can be `null`
     {
       "id":917,
       "site":"biology",
+      "site_name":"Department of Biology",
       "title":"PhD Thesis Defense - Nataliya Melnyk-Lamont",
       "times":[
         {
@@ -574,6 +224,7 @@ Any value can be `null`
     {
       "id":875,
       "site":"science",
+      "site_name":"Science",
       "title":"Mini Town Hall Meeting: Academic Programming",
       "times":[
         {
@@ -588,8 +239,26 @@ Any value can be `null`
       "updated":"2014-05-05T13:00:02-04:00"
     },
     {
+      "id":1827,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Mini Town Hall Session | Academic Programming",
+      "times":[
+        {
+          "start":"2014-05-12T18:00:00-04:00",
+          "end":"2014-05-12T19:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/mini-town-hall-session-academic-programming",
+      "updated":"2014-05-12T09:24:55-04:00"
+    },
+    {
       "id":1822,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Omar Fawzi: achieving the limits of the bounded\/noisy quantum-storage model",
       "times":[
         {
@@ -606,6 +275,7 @@ Any value can be `null`
     {
       "id":1011,
       "site":"electrical-computer-engineering",
+      "site_name":"Electrical and Computer Engineering",
       "title":"PhD defence - Ehsan Nasr Azadani",
       "times":[
         {
@@ -622,6 +292,7 @@ Any value can be `null`
     {
       "id":1271,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -638,6 +309,7 @@ Any value can be `null`
     {
       "id":1784,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Careers 601 Workshop",
       "times":[
         {
@@ -654,6 +326,7 @@ Any value can be `null`
     {
       "id":43,
       "site":"retirees-association",
+      "site_name":"Retirees Association",
       "title":"UWRA Spring Luncheon",
       "times":[
         {
@@ -670,6 +343,7 @@ Any value can be `null`
     {
       "id":1802,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Zynga Employer Information Session",
       "times":[
         {
@@ -686,6 +360,7 @@ Any value can be `null`
     {
       "id":1310,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Documenting Teaching in a Teaching Dossier (CTE914)",
       "times":[
         {
@@ -702,6 +377,7 @@ Any value can be `null`
     {
       "id":610,
       "site":"institute-nanotechnology",
+      "site_name":"Waterloo Institute for Nanotechnology",
       "title":"WIN Nano Graduate Student Seminar Series",
       "times":[
         {
@@ -753,11 +429,12 @@ Any value can be `null`
         "Seminar"
       ],
       "link":"https:\/\/uwaterloo.ca\/institute-nanotechnology\/events\/win-nano-graduate-student-seminar-series",
-      "updated":"2014-05-09T14:00:58-04:00"
+      "updated":"2014-05-12T15:24:27-04:00"
     },
     {
       "id":543,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"WCMS Web Form Creation [SEW101]",
       "times":[
         {
@@ -774,6 +451,7 @@ Any value can be `null`
     {
       "id":1272,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -790,6 +468,7 @@ Any value can be `null`
     {
       "id":214,
       "site":"international-students",
+      "site_name":"International Student Experience",
       "title":"Post-Graduation Work Permit online application workshop",
       "times":[
         {
@@ -810,6 +489,7 @@ Any value can be `null`
     {
       "id":1803,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Uken Games Employer Information Session",
       "times":[
         {
@@ -826,6 +506,7 @@ Any value can be `null`
     {
       "id":797,
       "site":"housing",
+      "site_name":"Residences",
       "title":"CLV Meet, Greet and Enjoy Tacos!",
       "times":[
         {
@@ -842,6 +523,7 @@ Any value can be `null`
     {
       "id":1804,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Palantir Technologies Employer Information Session",
       "times":[
         {
@@ -858,6 +540,7 @@ Any value can be `null`
     {
       "id":1741,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Campus Life Fair",
       "times":[
         {
@@ -875,6 +558,7 @@ Any value can be `null`
     {
       "id":1814,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Chemical Engineering Seminar by Beno\u00eet H. Lessard",
       "times":[
         {
@@ -889,8 +573,26 @@ Any value can be `null`
       "updated":"2014-05-07T16:01:40-04:00"
     },
     {
+      "id":297,
+      "site":"chemical-engineering",
+      "site_name":"Chemical Engineering",
+      "title":"Seminar - \u201cControlling Microstructure: From the Synthesis of Novel Smart Polymers to the Crystal Engineering of Phthalocyanines for use in Organic Electronics\u201d by Beno\u00eet H. Lessard, PhD, NSERC Banting Post Doctoral Fellow, University of Toronto",
+      "times":[
+        {
+          "start":"2014-05-14T15:30:00-04:00",
+          "end":"2014-05-14T15:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Seminar"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/chemical-engineering\/events\/seminar-controlling-microstructure-synthesis-novel-smart",
+      "updated":"2014-05-07T10:00:38-04:00"
+    },
+    {
       "id":1266,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Interactive Teaching Activities (CTE165)",
       "times":[
         {
@@ -907,6 +609,7 @@ Any value can be `null`
     {
       "id":1785,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Writing CVs and Cover Letters",
       "times":[
         {
@@ -923,6 +626,7 @@ Any value can be `null`
     {
       "id":872,
       "site":"science",
+      "site_name":"Science",
       "title":"Writing CVs and Cover Letters (Graduate Students and Postdocs only)",
       "times":[
         {
@@ -939,6 +643,7 @@ Any value can be `null`
     {
       "id":540,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"Writing for the Web [SEW016]",
       "times":[
         {
@@ -955,6 +660,7 @@ Any value can be `null`
     {
       "id":918,
       "site":"biology",
+      "site_name":"Department of Biology",
       "title":"PhD Thesis Defense - Oana Birceanu",
       "times":[
         {
@@ -971,6 +677,7 @@ Any value can be `null`
     {
       "id":1273,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -987,6 +694,7 @@ Any value can be `null`
     {
       "id":1786,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"David Sprott lecture by Art Owen, Stanford University",
       "times":[
         {
@@ -1001,24 +709,9 @@ Any value can be `null`
       "updated":"2014-05-05T12:48:51-04:00"
     },
     {
-      "id":206,
-      "site":"partnerships-in-dementia-care",
-      "title":"Cracked: New Light on Dementia play",
-      "times":[
-        {
-          "start":"2014-05-14T20:30:00-04:00",
-          "end":"2014-05-14T20:30:00-04:00"
-        }
-      ],
-      "type":[
-        "Performance"
-      ],
-      "link":"https:\/\/uwaterloo.ca\/partnerships-in-dementia-care\/events\/cracked-new-light-dementia-play-2",
-      "updated":"2014-04-15T10:11:34-04:00"
-    },
-    {
       "id":107,
       "site":"counselling-services",
+      "site_name":"Counselling Services",
       "title":"Mindfulness at Waterloo....for students",
       "times":[
         {
@@ -1061,8 +754,26 @@ Any value can be `null`
       "updated":"2014-04-09T10:54:51-04:00"
     },
     {
+      "id":206,
+      "site":"partnerships-in-dementia-care",
+      "site_name":"Partnerships in Dementia Care",
+      "title":"Cracked: New Light on Dementia play",
+      "times":[
+        {
+          "start":"2014-05-14T20:30:00-04:00",
+          "end":"2014-05-14T20:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Performance"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/partnerships-in-dementia-care\/events\/cracked-new-light-dementia-play-2",
+      "updated":"2014-04-15T10:11:34-04:00"
+    },
+    {
       "id":1782,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Project Management as a Career Option",
       "times":[
         {
@@ -1079,6 +790,7 @@ Any value can be `null`
     {
       "id":1805,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Bazaarvoice Employer Information Session",
       "times":[
         {
@@ -1095,6 +807,7 @@ Any value can be `null`
     {
       "id":1806,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Twitter Employer Information Session",
       "times":[
         {
@@ -1109,8 +822,26 @@ Any value can be `null`
       "updated":"2014-05-07T10:12:01-04:00"
     },
     {
+      "id":1013,
+      "site":"electrical-computer-engineering",
+      "site_name":"Electrical and Computer Engineering",
+      "title":"PhD seminar - Ahmed Gad",
+      "times":[
+        {
+          "start":"2014-05-15T14:00:00-04:00",
+          "end":"2014-05-15T14:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/electrical-computer-engineering\/events\/phd-seminar-ahmed-gad",
+      "updated":"2014-05-09T09:00:01-04:00"
+    },
+    {
       "id":1807,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"DBRS Global Technology Employer Information Session",
       "times":[
         {
@@ -1127,6 +858,7 @@ Any value can be `null`
     {
       "id":1783,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"General Application Further Education Workshop",
       "times":[
         {
@@ -1141,8 +873,26 @@ Any value can be `null`
       "updated":"2014-05-05T14:26:53-04:00"
     },
     {
+      "id":1012,
+      "site":"electrical-computer-engineering",
+      "site_name":"Electrical and Computer Engineering",
+      "title":"MASc seminar - Forhad Hasnat",
+      "times":[
+        {
+          "start":"2014-05-15T18:00:00-04:00",
+          "end":"2014-05-15T18:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/electrical-computer-engineering\/events\/masc-seminar-forhad-hasnat",
+      "updated":"2014-05-09T08:57:41-04:00"
+    },
+    {
       "id":798,
       "site":"housing",
+      "site_name":"Residences",
       "title":"Youth Ping Pong Tournament",
       "times":[
         {
@@ -1159,6 +909,7 @@ Any value can be `null`
     {
       "id":1808,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Amazon Employer Information Session",
       "times":[
         {
@@ -1175,6 +926,7 @@ Any value can be `null`
     {
       "id":1745,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Open Source Ecology: Towards the Open Source Economy",
       "times":[
         {
@@ -1191,6 +943,7 @@ Any value can be `null`
     {
       "id":1809,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Bloomberg Employer Information Session",
       "times":[
         {
@@ -1207,6 +960,7 @@ Any value can be `null`
     {
       "id":205,
       "site":"partnerships-in-dementia-care",
+      "site_name":"Partnerships in Dementia Care",
       "title":"Cracked: New Light on Dementia play",
       "times":[
         {
@@ -1218,11 +972,12 @@ Any value can be `null`
         "Performance"
       ],
       "link":"https:\/\/uwaterloo.ca\/partnerships-in-dementia-care\/events\/cracked-new-light-dementia-play-1",
-      "updated":"2014-04-15T10:13:50-04:00"
+      "updated":"2014-04-16T13:41:13-04:00"
     },
     {
       "id":1274,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -1239,6 +994,7 @@ Any value can be `null`
     {
       "id":1294,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Classroom Delivery Skills (CTE226)",
       "times":[
         {
@@ -1255,6 +1011,7 @@ Any value can be `null`
     {
       "id":1810,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Facebook Employer Information Session",
       "times":[
         {
@@ -1271,6 +1028,7 @@ Any value can be `null`
     {
       "id":48,
       "site":"aviation",
+      "site_name":"Aviation",
       "title":"WWFC Information Session",
       "times":[
         {
@@ -1285,8 +1043,26 @@ Any value can be `null`
       "updated":"2014-04-28T14:16:04-04:00"
     },
     {
+      "id":507,
+      "site":"murray-alzheimer-research-and-education-program",
+      "site_name":"Murray Alzheimer Research and Education Program",
+      "title":"Waterloo-Bordeaux &quot;Path to a privileged partnership&quot;",
+      "times":[
+        {
+          "start":"2014-05-20T04:00:00-04:00",
+          "end":"2014-05-21T04:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/murray-alzheimer-research-and-education-program\/events\/waterloo-bordeaux-path-privileged-partnership",
+      "updated":"2014-05-12T15:40:22-04:00"
+    },
+    {
       "id":545,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"WCMS for Site Managers [SEW100]",
       "times":[
         {
@@ -1307,6 +1083,7 @@ Any value can be `null`
     {
       "id":1826,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Waterloo-Bordeaux Path to Partnership | Opening Ceremony",
       "times":[
         {
@@ -1318,11 +1095,12 @@ Any value can be `null`
         
       ],
       "link":"https:\/\/uwaterloo.ca\/events\/events\/waterloo-bordeaux-path-partnership-opening-ceremony",
-      "updated":"2014-05-09T17:11:36-04:00"
+      "updated":"2014-05-09T17:11:48-04:00"
     },
     {
       "id":1267,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Teaching Dossiers (CTE113)",
       "times":[
         {
@@ -1337,8 +1115,26 @@ Any value can be `null`
       "updated":"2014-04-15T10:23:42-04:00"
     },
     {
+      "id":323,
+      "site":"international",
+      "site_name":"Waterloo International",
+      "title":"Campus France Day",
+      "times":[
+        {
+          "start":"2014-05-20T14:00:00-04:00",
+          "end":"2014-05-20T20:30:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/international\/events\/campus-france-day",
+      "updated":"2014-05-12T11:47:11-04:00"
+    },
+    {
       "id":1825,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"PDT Partners Employer Information Session",
       "times":[
         {
@@ -1355,6 +1151,7 @@ Any value can be `null`
     {
       "id":1763,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Alpha Kickoff",
       "times":[
         {
@@ -1371,6 +1168,7 @@ Any value can be `null`
     {
       "id":1790,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Alpha Kickoff",
       "times":[
         {
@@ -1387,6 +1185,7 @@ Any value can be `null`
     {
       "id":116,
       "site":"counselling-services",
+      "site_name":"Counselling Services",
       "title":"Dialectical Behavioural Therapy Group",
       "times":[
         {
@@ -1431,6 +1230,7 @@ Any value can be `null`
     {
       "id":1275,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -1447,6 +1247,7 @@ Any value can be `null`
     {
       "id":118,
       "site":"master-peace-conflict-studies",
+      "site_name":"Master of Peace and Conflict Studies",
       "title":"Bertha Von Suttner: A Life of Peace Concert and Exhibit",
       "times":[
         {
@@ -1463,6 +1264,7 @@ Any value can be `null`
     {
       "id":1899,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Bertha von Suttner; A life of Peace - Concert and Exhibit",
       "times":[
         {
@@ -1479,6 +1281,7 @@ Any value can be `null`
     {
       "id":1736,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"1914-2014 Concert with Violin and Piano",
       "times":[
         {
@@ -1495,6 +1298,7 @@ Any value can be `null`
     {
       "id":252,
       "site":"music",
+      "site_name":"Music",
       "title":"Bertha von Suttner: A life of peace concert &amp; exhibit",
       "times":[
         {
@@ -1511,6 +1315,7 @@ Any value can be `null`
     {
       "id":68,
       "site":"science-technology-society",
+      "site_name":"Science and Technology in Society",
       "title":"Science-Policy Interface: International Comparisons Workshop",
       "times":[
         {
@@ -1527,6 +1332,7 @@ Any value can be `null`
     {
       "id":1268,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Assessing Student Learning (CTE020)",
       "times":[
         {
@@ -1543,6 +1349,7 @@ Any value can be `null`
     {
       "id":1276,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -1559,6 +1366,7 @@ Any value can be `null`
     {
       "id":999,
       "site":"environment",
+      "site_name":"uWaterloo - Faculty of Environment",
       "title":"Social Innovations Within Markets Workshops",
       "times":[
         {
@@ -1575,6 +1383,7 @@ Any value can be `null`
     {
       "id":1295,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Effective Lesson Plans (CTE202)",
       "times":[
         {
@@ -1591,6 +1400,7 @@ Any value can be `null`
     {
       "id":118,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Find Books and More",
       "times":[
         {
@@ -1607,6 +1417,7 @@ Any value can be `null`
     {
       "id":165,
       "site":"peace-conflict-studies",
+      "site_name":"Peace and Conflict Studies",
       "title":"\u201cThe Loss of History: Memory, Humanity and Peace after 1971\u201d with Yasmin Saikia",
       "times":[
         {
@@ -1623,6 +1434,7 @@ Any value can be `null`
     {
       "id":1198,
       "site":"arts",
+      "site_name":"Arts",
       "title":"&quot;The Loss of History: Memory, Humanity and Peace after 1971\u201d with Yasmin Saikia",
       "times":[
         {
@@ -1639,6 +1451,7 @@ Any value can be `null`
     {
       "id":470,
       "site":"history",
+      "site_name":"History",
       "title":"\u201cThe Loss of History: Memory, Humanity and Peace after 1971\u201d with Yasmin Saikia",
       "times":[
         {
@@ -1655,6 +1468,7 @@ Any value can be `null`
     {
       "id":1732,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"&quot;The Loss of History: Memory, Humanity and Peace after 1971&quot; with Yasmin Saikia",
       "times":[
         {
@@ -1671,6 +1485,7 @@ Any value can be `null`
     {
       "id":1898,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"\u201cThe Loss of History: Memory, Humanity and Peace after 1971\u201d with Yasmin Saikia",
       "times":[
         {
@@ -1687,6 +1502,7 @@ Any value can be `null`
     {
       "id":1873,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"K-W &amp; Area Alumni Event",
       "times":[
         {
@@ -1703,6 +1519,7 @@ Any value can be `null`
     {
       "id":162,
       "site":"waterloo-summit-centre",
+      "site_name":"Waterloo Summit Centre for the Environment",
       "title":"Environment Lecture Series",
       "times":[
         {
@@ -1719,6 +1536,7 @@ Any value can be `null`
     {
       "id":293,
       "site":"chemical-engineering",
+      "site_name":"Chemical Engineering",
       "title":"Notice of PhD Comprehensive Examination - &quot;Fabrication and Characterizaton of Smart Biommimetic Micro\/Nano-Structured Adhesives&quot; by Hamed Shahsavan",
       "times":[
         {
@@ -1735,6 +1553,7 @@ Any value can be `null`
     {
       "id":1821,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"WISE public lecture series: microalgae for energy production between dream and reality",
       "times":[
         {
@@ -1751,6 +1570,7 @@ Any value can be `null`
     {
       "id":213,
       "site":"international-students",
+      "site_name":"International Student Experience",
       "title":"English Hour",
       "times":[
         {
@@ -1807,6 +1627,7 @@ Any value can be `null`
     {
       "id":792,
       "site":"housing",
+      "site_name":"Residences",
       "title":"Bike Tune Up Night",
       "times":[
         {
@@ -1823,6 +1644,7 @@ Any value can be `null`
     {
       "id":1812,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Startup Community | University of Waterloo Screening",
       "times":[
         {
@@ -1839,6 +1661,7 @@ Any value can be `null`
     {
       "id":1791,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Alpha Idea Generation",
       "times":[
         {
@@ -1855,6 +1678,7 @@ Any value can be `null`
     {
       "id":572,
       "site":"stratford-campus",
+      "site_name":"Stratford Campus",
       "title":"SocDocs 2014 Film Festival",
       "times":[
         {
@@ -1869,8 +1693,30 @@ Any value can be `null`
       "updated":"2014-04-22T09:14:13-04:00"
     },
     {
+      "id":791,
+      "site":"housing",
+      "site_name":"Residences",
+      "title":"Community Breakfast",
+      "times":[
+        {
+          "start":"2014-05-09T12:00:00-04:00",
+          "end":"2014-05-09T13:00:00-04:00"
+        },
+        {
+          "start":"2014-05-23T12:00:00-04:00",
+          "end":"2014-05-23T13:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/housing\/events\/community-breakfast-3",
+      "updated":"2014-05-01T10:25:32-04:00"
+    },
+    {
       "id":1277,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -1887,6 +1733,7 @@ Any value can be `null`
     {
       "id":371,
       "site":"knowledge-integration",
+      "site_name":"Knowledge Integration",
       "title":"You@Waterloo Day 2014",
       "times":[
         {
@@ -1903,6 +1750,7 @@ Any value can be `null`
     {
       "id":1742,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"You @ Waterloo Day",
       "times":[
         {
@@ -1919,6 +1767,7 @@ Any value can be `null`
     {
       "id":856,
       "site":"science",
+      "site_name":"Science",
       "title":"You @ Waterloo Day",
       "times":[
         {
@@ -1936,6 +1785,7 @@ Any value can be `null`
     {
       "id":1748,
       "site":"engineering",
+      "site_name":"Engineering",
       "title":"You @ Waterloo Engineering",
       "times":[
         {
@@ -1953,6 +1803,7 @@ Any value can be `null`
     {
       "id":1364,
       "site":"renison",
+      "site_name":"Renison University College",
       "title":"You @ Waterloo Day",
       "times":[
         {
@@ -1969,6 +1820,7 @@ Any value can be `null`
     {
       "id":579,
       "site":"stratford-campus",
+      "site_name":"Stratford Campus",
       "title":"You @ Waterloo Day",
       "times":[
         {
@@ -1985,6 +1837,7 @@ Any value can be `null`
     {
       "id":88,
       "site":"women-in-engineering",
+      "site_name":"Women in Engineering",
       "title":"WiE Welcomes You",
       "times":[
         {
@@ -2001,6 +1854,7 @@ Any value can be `null`
     {
       "id":1875,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Niagara Alumni Event",
       "times":[
         {
@@ -2015,8 +1869,42 @@ Any value can be `null`
       "updated":"2014-03-25T11:13:52-04:00"
     },
     {
+      "id":248,
+      "site":"earth-sciences-museum",
+      "site_name":"Earth Sciences Museum",
+      "title":"Waterloo Wellington Children&#039;s Groundwater Festival",
+      "times":[
+        {
+          "start":"2014-05-26T12:00:00-04:00",
+          "end":"2014-05-26T18:30:00-04:00"
+        },
+        {
+          "start":"2014-05-27T12:00:00-04:00",
+          "end":"2014-05-27T18:30:00-04:00"
+        },
+        {
+          "start":"2014-05-28T12:00:00-04:00",
+          "end":"2014-05-28T18:30:00-04:00"
+        },
+        {
+          "start":"2014-05-29T12:00:00-04:00",
+          "end":"2014-05-29T18:30:00-04:00"
+        },
+        {
+          "start":"2014-05-30T12:00:00-04:00",
+          "end":"2014-05-30T18:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Reception"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/earth-sciences-museum\/groundwater-festival",
+      "updated":"2014-05-12T16:51:54-04:00"
+    },
+    {
       "id":1278,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -2033,6 +1921,7 @@ Any value can be `null`
     {
       "id":1296,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Giving and Receiving Feedback (CTE106)",
       "times":[
         {
@@ -2049,6 +1938,7 @@ Any value can be `null`
     {
       "id":1348,
       "site":"institute-for-quantum-computing",
+      "site_name":"Institute for Quantum Computing",
       "title":"Xiaodong Xu: Spin and pseudospins in 2D semiconductors",
       "times":[
         {
@@ -2065,6 +1955,7 @@ Any value can be `null`
     {
       "id":1736,
       "site":"engineering",
+      "site_name":"Engineering",
       "title":"Instructional Skills Workshop",
       "times":[
         {
@@ -2081,6 +1972,7 @@ Any value can be `null`
     {
       "id":542,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"WCMS for Content Maintainers [SEW099]",
       "times":[
         {
@@ -2101,6 +1993,7 @@ Any value can be `null`
     {
       "id":546,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"Understanding Information Architecture [SEW119]",
       "times":[
         {
@@ -2117,6 +2010,7 @@ Any value can be `null`
     {
       "id":1369,
       "site":"institute-for-quantum-computing",
+      "site_name":"Institute for Quantum Computing",
       "title":"Sahel Ashhab",
       "times":[
         {
@@ -2133,6 +2027,7 @@ Any value can be `null`
     {
       "id":1789,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Science Open Lab",
       "times":[
         {
@@ -2149,6 +2044,7 @@ Any value can be `null`
     {
       "id":117,
       "site":"counselling-services",
+      "site_name":"Counselling Services",
       "title":"Procrastination Workshop",
       "times":[
         {
@@ -2193,6 +2089,7 @@ Any value can be `null`
     {
       "id":108,
       "site":"counselling-services",
+      "site_name":"Counselling Services",
       "title":"Procrastination Solutions",
       "times":[
         {
@@ -2237,6 +2134,7 @@ Any value can be `null`
     {
       "id":51,
       "site":"retirees-association",
+      "site_name":"Retirees Association",
       "title":"UWRA Annual General Meeting",
       "times":[
         {
@@ -2253,6 +2151,7 @@ Any value can be `null`
     {
       "id":796,
       "site":"housing",
+      "site_name":"Residences",
       "title":"Round the World Cooking Class - France",
       "times":[
         {
@@ -2269,6 +2168,7 @@ Any value can be `null`
     {
       "id":62,
       "site":"retirees-association",
+      "site_name":"Retirees Association",
       "title":"Political Life and the Stops Along with Way with Elizabeth Witmer",
       "times":[
         {
@@ -2285,7 +2185,8 @@ Any value can be `null`
     {
       "id":2398,
       "site":"alumni",
-      "title":"London Alumni Chapter - [Spring Networking Event]",
+      "site_name":"Alumni",
+      "title":"London, UK Alumni Chapter - Spring Networking Event",
       "times":[
         {
           "start":"2014-05-28T13:00:00-04:00",
@@ -2295,12 +2196,13 @@ Any value can be `null`
       "type":[
         
       ],
-      "link":"https:\/\/uwaterloo.ca\/alumni\/events\/london-alumni-chapter-spring-networking-event",
-      "updated":"2014-05-09T09:40:31-04:00"
+      "link":"https:\/\/uwaterloo.ca\/alumni\/events\/london-uk-alumni-chapter-spring-networking-event",
+      "updated":"2014-05-09T09:45:50-04:00"
     },
     {
       "id":121,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Citing Properly with RefWorks",
       "times":[
         {
@@ -2317,6 +2219,7 @@ Any value can be `null`
     {
       "id":1772,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Citing Properly with RefWorks",
       "times":[
         {
@@ -2333,6 +2236,7 @@ Any value can be `null`
     {
       "id":869,
       "site":"science",
+      "site_name":"Science",
       "title":"How to Start Your Own Business",
       "times":[
         {
@@ -2348,8 +2252,26 @@ Any value can be `null`
       "updated":"2014-05-05T11:15:56-04:00"
     },
     {
+      "id":1828,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Waterloo Women&#039;s Wednesdays",
+      "times":[
+        {
+          "start":"2014-05-28T20:00:00-04:00",
+          "end":"2014-05-28T22:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Lecture"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/waterloo-womens-wednesdays",
+      "updated":"2014-05-13T10:55:22-04:00"
+    },
+    {
       "id":1817,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Mind \u00adperception versus conception",
       "times":[
         {
@@ -2366,6 +2288,7 @@ Any value can be `null`
     {
       "id":1788,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Alpha What&#039;s Your Problem?",
       "times":[
         {
@@ -2382,6 +2305,7 @@ Any value can be `null`
     {
       "id":119,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Keep Current with Research Alerts",
       "times":[
         {
@@ -2398,6 +2322,7 @@ Any value can be `null`
     {
       "id":1770,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Keep Current with Research Alerts",
       "times":[
         {
@@ -2414,6 +2339,7 @@ Any value can be `null`
     {
       "id":1197,
       "site":"arts",
+      "site_name":"Arts",
       "title":"Status Quo Crisis: Global Financial Governance after the 2008 Meltdown",
       "times":[
         {
@@ -2430,6 +2356,7 @@ Any value can be `null`
     {
       "id":95,
       "site":"women-in-engineering",
+      "site_name":"Women in Engineering",
       "title":"Girls Club",
       "times":[
         {
@@ -2446,6 +2373,7 @@ Any value can be `null`
     {
       "id":41,
       "site":"toronto-mennonite-theological-centre",
+      "site_name":"Toronto Mennonite Theological Centre",
       "title":"TMTC Graduate Student Conference",
       "times":[
         {
@@ -2462,6 +2390,7 @@ Any value can be `null`
     {
       "id":442,
       "site":"centre-automotive-research",
+      "site_name":"WATCAR Waterloo Centre for Automotive Research",
       "title":"Toyota High School Electric Vehicle Challenge",
       "times":[
         {
@@ -2478,6 +2407,7 @@ Any value can be `null`
     {
       "id":81,
       "site":"sedra-student-design-centre",
+      "site_name":"Sedra Student Design Centre",
       "title":"2014 Toyota High School EV Challenge",
       "times":[
         {
@@ -2494,6 +2424,7 @@ Any value can be `null`
     {
       "id":1811,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"2014 Toyota High School Electric Vehicle Challenge",
       "times":[
         {
@@ -2510,6 +2441,7 @@ Any value can be `null`
     {
       "id":1739,
       "site":"engineering",
+      "site_name":"Engineering",
       "title":"2014 Toyota High School EV Challenge",
       "times":[
         {
@@ -2526,6 +2458,7 @@ Any value can be `null`
     {
       "id":1823,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"2014 Toyota High School EV Challenge",
       "times":[
         {
@@ -2542,6 +2475,7 @@ Any value can be `null`
     {
       "id":445,
       "site":"centre-automotive-research",
+      "site_name":"WATCAR Waterloo Centre for Automotive Research",
       "title":"IST Canada Conference",
       "times":[
         {
@@ -2558,6 +2492,7 @@ Any value can be `null`
     {
       "id":86,
       "site":"leonenko-research-group",
+      "site_name":"Leonenko Research Group",
       "title":"Canadian Chemistry Conference &amp; Exhibition 2014",
       "times":[
         {
@@ -2574,6 +2509,7 @@ Any value can be `null`
     {
       "id":1297,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Teaching Methods (CTE217)",
       "times":[
         {
@@ -2590,6 +2526,7 @@ Any value can be `null`
     {
       "id":915,
       "site":"biology",
+      "site_name":"Department of Biology",
       "title":"MSc Thesis Proposal - Che Lu",
       "times":[
         {
@@ -2606,6 +2543,7 @@ Any value can be `null`
     {
       "id":106,
       "site":"counselling-services",
+      "site_name":"Counselling Services",
       "title":"Mindfulness Based Relapse Prevention",
       "times":[
         {
@@ -2650,6 +2588,7 @@ Any value can be `null`
     {
       "id":56,
       "site":"retirees-association",
+      "site_name":"Retirees Association",
       "title":"Port Dover - A theatre of war &amp; comedy",
       "times":[
         {
@@ -2666,6 +2605,7 @@ Any value can be `null`
     {
       "id":124,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Power Search",
       "times":[
         {
@@ -2682,6 +2622,7 @@ Any value can be `null`
     {
       "id":1775,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Power Search",
       "times":[
         {
@@ -2698,6 +2639,7 @@ Any value can be `null`
     {
       "id":120,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Better Searching - Better Marks",
       "times":[
         {
@@ -2714,6 +2656,7 @@ Any value can be `null`
     {
       "id":1771,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Better Searching - Better Marks",
       "times":[
         {
@@ -2730,6 +2673,7 @@ Any value can be `null`
     {
       "id":198,
       "site":"geriatric-health-systems-research-group",
+      "site_name":"Geriatric Health Systems Research Group",
       "title":"Managing the Seams: Transitions in Health Care for Older Adults",
       "times":[
         {
@@ -2746,6 +2690,7 @@ Any value can be `null`
     {
       "id":834,
       "site":"applied-health-sciences",
+      "site_name":"Applied Health Sciences",
       "title":"Managing the Seams: Transitions in Health Care for Older Adults",
       "times":[
         {
@@ -2760,8 +2705,26 @@ Any value can be `null`
       "updated":"2014-05-07T14:45:40-04:00"
     },
     {
+      "id":1831,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Building Game Developers",
+      "times":[
+        {
+          "start":"2014-06-03T19:30:00-04:00",
+          "end":"2014-06-03T20:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Lecture"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/building-game-developers",
+      "updated":"2014-05-13T11:23:41-04:00"
+    },
+    {
       "id":446,
       "site":"centre-automotive-research",
+      "site_name":"WATCAR Waterloo Centre for Automotive Research",
       "title":"APMA Annual Conference and Exhibition",
       "times":[
         {
@@ -2778,6 +2741,7 @@ Any value can be `null`
     {
       "id":539,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"Accessible Word and PDF Files [SEW106]",
       "times":[
         {
@@ -2794,6 +2758,7 @@ Any value can be `null`
     {
       "id":874,
       "site":"science",
+      "site_name":"Science",
       "title":"Writing Successful Grant Proposals (Graduate students and Postdocs only)",
       "times":[
         {
@@ -2810,6 +2775,7 @@ Any value can be `null`
     {
       "id":538,
       "site":"web-resources",
+      "site_name":"Web Resources",
       "title":"Creating Accessible Tables [SEW112]",
       "times":[
         {
@@ -2826,6 +2792,7 @@ Any value can be `null`
     {
       "id":125,
       "site":"library\/news",
+      "site_name":"Library News",
       "title":"Introduction to ArcGIS Desktop 10.2",
       "times":[
         {
@@ -2842,6 +2809,7 @@ Any value can be `null`
     {
       "id":1776,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Introduction to ArcGIS Desktop 10.2",
       "times":[
         {
@@ -2858,6 +2826,7 @@ Any value can be `null`
     {
       "id":1818,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Intelligence, quality versus quantity",
       "times":[
         {
@@ -2874,6 +2843,7 @@ Any value can be `null`
     {
       "id":1787,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Velocity Alpha Business Model Generation",
       "times":[
         {
@@ -2890,6 +2860,7 @@ Any value can be `null`
     {
       "id":865,
       "site":"science",
+      "site_name":"Science",
       "title":"Career Exploration and Decision Making",
       "times":[
         {
@@ -2906,6 +2877,7 @@ Any value can be `null`
     {
       "id":1953,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Mennofolk Concert",
       "times":[
         {
@@ -2923,6 +2895,7 @@ Any value can be `null`
     {
       "id":256,
       "site":"music",
+      "site_name":"Music",
       "title":"Mennofolk Concert",
       "times":[
         {
@@ -2940,6 +2913,7 @@ Any value can be `null`
     {
       "id":1369,
       "site":"renison",
+      "site_name":"Renison University College",
       "title":"Barbara J. Checketts Retirement Event",
       "times":[
         {
@@ -2956,6 +2930,7 @@ Any value can be `null`
     {
       "id":1820,
       "site":"events",
+      "site_name":"Waterloo Events",
       "title":"Barbara J. Checketts retirement",
       "times":[
         {
@@ -2972,6 +2947,7 @@ Any value can be `null`
     {
       "id":556,
       "site":"optometry-vision-science",
+      "site_name":"Optometry &amp; Vision Science",
       "title":"June CE 2014",
       "times":[
         {
@@ -2988,6 +2964,7 @@ Any value can be `null`
     {
       "id":1738,
       "site":"engineering",
+      "site_name":"Engineering",
       "title":"Pan IIT Conference - Toronto 2014",
       "times":[
         {
@@ -3004,6 +2981,7 @@ Any value can be `null`
     {
       "id":1298,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Facilitating Effective Discussions (Social Sciences &amp; Humanities) (CTE228)",
       "times":[
         {
@@ -3020,6 +2998,7 @@ Any value can be `null`
     {
       "id":1312,
       "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
       "title":"Microteaching Session",
       "times":[
         {
@@ -3031,11 +3010,29 @@ Any value can be `null`
         
       ],
       "link":"https:\/\/uwaterloo.ca\/centre-for-teaching-excellence\/events\/microteaching-session-95",
-      "updated":"2014-05-09T14:00:08-04:00"
+      "updated":"2014-05-09T14:00:13-04:00"
+    },
+    {
+      "id":1737,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Sound in the Land 2014 Festival and Conference - Music and the Environment",
+      "times":[
+        {
+          "start":"2014-06-06T17:00:00-04:00",
+          "end":"2014-06-09T17:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Conference"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/sound-land-2014-festival-and-conference-music-and",
+      "updated":"2014-04-17T15:26:43-04:00"
     },
     {
       "id":982,
       "site":"environment",
+      "site_name":"uWaterloo - Faculty of Environment",
       "title":"Class of &#039;74 Planning Reunion",
       "times":[
         {
@@ -3052,6 +3049,7 @@ Any value can be `null`
     {
       "id":1954,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Sonic Convergences",
       "times":[
         {
@@ -3069,6 +3067,7 @@ Any value can be `null`
     {
       "id":257,
       "site":"music",
+      "site_name":"Music",
       "title":"Sonic Convergences",
       "times":[
         {
@@ -3086,6 +3085,7 @@ Any value can be `null`
     {
       "id":1955,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Kalahari Journey",
       "times":[
         {
@@ -3103,6 +3103,7 @@ Any value can be `null`
     {
       "id":258,
       "site":"music",
+      "site_name":"Music",
       "title":"Kalahari Journey",
       "times":[
         {
@@ -3120,6 +3121,7 @@ Any value can be `null`
     {
       "id":1956,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Dawn Concert",
       "times":[
         {
@@ -3137,6 +3139,7 @@ Any value can be `null`
     {
       "id":259,
       "site":"music",
+      "site_name":"Music",
       "title":"Dawn Concert",
       "times":[
         {
@@ -3154,6 +3157,7 @@ Any value can be `null`
     {
       "id":1957,
       "site":"grebel",
+      "site_name":"Conrad Grebel University College",
       "title":"Choral Concert",
       "times":[
         {
@@ -3171,6 +3175,7 @@ Any value can be `null`
     {
       "id":260,
       "site":"music",
+      "site_name":"Music",
       "title":"Choral Concert",
       "times":[
         {
@@ -3184,6 +3189,299 @@ Any value can be `null`
       ],
       "link":"https:\/\/uwaterloo.ca\/music\/events\/choral-concert",
       "updated":"2014-05-05T12:40:27-04:00"
+    },
+    {
+      "id":1299,
+      "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
+      "title":"Effective Lesson Plans (CTE202)",
+      "times":[
+        {
+          "start":"2014-06-09T13:30:00-04:00",
+          "end":"2014-06-09T15:30:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/centre-for-teaching-excellence\/events\/effective-lesson-plans-cte202-9",
+      "updated":"2014-04-30T14:39:22-04:00"
+    },
+    {
+      "id":798,
+      "site":"research",
+      "site_name":"Research",
+      "title":"Information session: CIHR\u2019s new foundation scheme",
+      "times":[
+        {
+          "start":"2014-06-09T14:30:00-04:00",
+          "end":"2014-06-09T14:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Information session"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/research\/events\/information-session-cihrs-new-foundation-scheme",
+      "updated":"2014-05-08T09:09:02-04:00"
+    },
+    {
+      "id":312,
+      "site":"management-sciences",
+      "site_name":"Management Sciences",
+      "title":"Management Sciences Seminar Series: Kory W. Hedman",
+      "times":[
+        {
+          "start":"2014-06-09T16:00:00-04:00",
+          "end":"2014-06-09T17:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/management-sciences\/events\/management-sciences-seminar-series-kory-w-hedman",
+      "updated":"2014-05-13T15:35:48-04:00"
+    },
+    {
+      "id":1313,
+      "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
+      "title":"Microteaching Session",
+      "times":[
+        {
+          "start":"2014-06-09T18:00:00-04:00",
+          "end":"2014-06-09T20:30:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/centre-for-teaching-excellence\/events\/microteaching-session-96",
+      "updated":"2014-05-09T14:00:36-04:00"
+    },
+    {
+      "id":1314,
+      "site":"centre-for-teaching-excellence",
+      "site_name":"Centre for Teaching Excellence",
+      "title":"Microteaching Session",
+      "times":[
+        {
+          "start":"2014-06-10T13:30:00-04:00",
+          "end":"2014-06-10T16:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/centre-for-teaching-excellence\/events\/microteaching-session-97",
+      "updated":"2014-05-09T14:00:41-04:00"
+    },
+    {
+      "id":122,
+      "site":"library\/news",
+      "site_name":"Library News",
+      "title":"Citing Properly with RefWorks",
+      "times":[
+        {
+          "start":"2014-06-10T17:00:00-04:00",
+          "end":"2014-06-10T19:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/library\/news\/events\/citing-properly-refworks-1",
+      "updated":"2014-05-02T16:53:51-04:00"
+    },
+    {
+      "id":1773,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Citing Properly with RefWorks",
+      "times":[
+        {
+          "start":"2014-06-10T17:00:00-04:00",
+          "end":"2014-06-10T19:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/citing-properly-refworks-9",
+      "updated":"2014-05-02T09:25:44-04:00"
+    },
+    {
+      "id":215,
+      "site":"international-students",
+      "site_name":"International Student Experience",
+      "title":"Study Permit online application workshop",
+      "times":[
+        {
+          "start":"2014-06-10T18:30:00-04:00",
+          "end":"2014-06-10T20:00:00-04:00"
+        },
+        {
+          "start":"2014-07-08T18:30:00-04:00",
+          "end":"2014-07-08T20:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/international-students\/events\/study-permit-online-application-workshop",
+      "updated":"2014-04-24T15:48:26-04:00"
+    },
+    {
+      "id":1003,
+      "site":"environment",
+      "site_name":"uWaterloo - Faculty of Environment",
+      "title":"Spring 2014 Faculty of Environment Convocation Ceremony",
+      "times":[
+        {
+          "start":"2014-06-10T18:30:00-04:00",
+          "end":"2014-06-10T20:30:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/environment\/events\/spring-2014-faculty-environment-convocation-ceremony",
+      "updated":"2014-04-23T14:46:21-04:00"
+    },
+    {
+      "id":1002,
+      "site":"environment",
+      "site_name":"uWaterloo - Faculty of Environment",
+      "title":"Spring 2014 Grad Receptions",
+      "times":[
+        {
+          "start":"2014-06-10T20:30:00-04:00",
+          "end":"2014-06-10T22:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Reception"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/environment\/events\/spring-2014-grad-receptions",
+      "updated":"2014-04-23T14:31:27-04:00"
+    },
+    {
+      "id":364,
+      "site":"knowledge-integration",
+      "site_name":"Knowledge Integration",
+      "title":"Convocation",
+      "times":[
+        {
+          "start":"2014-06-10T21:22:00-04:00",
+          "end":"2014-06-10T21:22:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/knowledge-integration\/events\/convocation",
+      "updated":"2014-03-03T17:25:45-05:00"
+    },
+    {
+      "id":268,
+      "site":"planning",
+      "site_name":"School of Planning",
+      "title":"School of Planning Graduation Ceremony",
+      "times":[
+        {
+          "start":"2014-06-11T03:30:00-04:00",
+          "end":"2014-06-11T03:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Reception"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/planning\/events\/school-planning-graduation-ceremony",
+      "updated":"2014-05-07T15:20:50-04:00"
+    },
+    {
+      "id":537,
+      "site":"web-resources",
+      "site_name":"Web Resources",
+      "title":"Creating Accessible Web Graphics [SEW108]",
+      "times":[
+        {
+          "start":"2014-06-11T14:30:00-04:00",
+          "end":"2014-06-11T16:00:00-04:00"
+        }
+      ],
+      "type":[
+        
+      ],
+      "link":"https:\/\/uwaterloo.ca\/web-resources\/events\/creating-accessible-web-graphics-sew108-5",
+      "updated":"2014-04-29T13:47:41-04:00"
+    },
+    {
+      "id":126,
+      "site":"library\/news",
+      "site_name":"Library News",
+      "title":"SketchUp: 3D Modeling Made Easy",
+      "times":[
+        {
+          "start":"2014-06-11T18:00:00-04:00",
+          "end":"2014-06-11T20:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/library\/news\/events\/sketchup-3d-modeling-made-easy",
+      "updated":"2014-05-02T17:04:29-04:00"
+    },
+    {
+      "id":1777,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"SketchUp: 3D Modeling Made Easy",
+      "times":[
+        {
+          "start":"2014-06-11T18:00:00-04:00",
+          "end":"2014-06-11T20:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/sketchup-3d-modeling-made-easy",
+      "updated":"2014-05-02T09:25:34-04:00"
+    },
+    {
+      "id":1819,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Wisdom, learning versus knowledge",
+      "times":[
+        {
+          "start":"2014-06-11T21:00:00-04:00",
+          "end":"2014-06-11T22:30:00-04:00"
+        }
+      ],
+      "type":[
+        "Seminar"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/wisdom-learning-versus-knowledge",
+      "updated":"2014-05-08T11:19:39-04:00"
+    },
+    {
+      "id":1767,
+      "site":"events",
+      "site_name":"Waterloo Events",
+      "title":"Velocity Alpha: Do People Want Your Stuff",
+      "times":[
+        {
+          "start":"2014-06-11T23:30:00-04:00",
+          "end":"2014-06-12T01:00:00-04:00"
+        }
+      ],
+      "type":[
+        "Workshop"
+      ],
+      "link":"https:\/\/uwaterloo.ca\/events\/events\/velocity-alpha-do-people-want-your-stuff",
+      "updated":"2014-05-01T12:55:11-04:00"
     }
   ]
 }
