@@ -54,7 +54,7 @@
       "type":"string"
     }
   ],
-  "response_fields_data:[
+  "response_fields_data":[
     {
       "field":"id",
       "description":"Unique event id",
