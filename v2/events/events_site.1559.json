@@ -47,13 +47,13 @@
       "type":"filter"
     }
   ],
-  "response_fields_meta_method":[
+  "response_fields_meta":[
     {
       "field":"site_name",
       "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
       "type":"string"
     }
-  ]
+  ],
   "response_fields_data:[
     {
       "field":"id",
