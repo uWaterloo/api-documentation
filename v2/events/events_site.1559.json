@@ -47,7 +47,14 @@
       "type":"filter"
     }
   ],
-  "response_fields":[
+  "response_fields_meta_method":[
+    {
+      "field":"site_name",
+      "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    }
+  ]
+  "response_fields_data:[
     {
       "field":"id",
       "description":"Unique event id",
