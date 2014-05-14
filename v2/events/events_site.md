@@ -113,7 +113,7 @@ GET /events/{site}.{format}
 
 ## Response
 
-### meta.method
+### meta
 <table>
   <tr>
     <td><b>Field Name</b></td>
