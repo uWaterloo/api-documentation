@@ -53,6 +53,11 @@
       "type":"string"
     },
     {
+      "field":"site_name",
+      "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    },
+    {
       "field":"title",
       "description":"Event title",
       "type":"string"

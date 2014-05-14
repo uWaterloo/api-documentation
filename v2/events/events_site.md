@@ -113,6 +113,21 @@ GET /events/{site}.{format}
 
 ## Response
 
+### meta
+<table>
+  <tr>
+    <td><b>Field Name</b></td>
+    <td><b>Type</b></td>
+    <td><b>Value Description</b></td>
+  </tr>
+  <tr>
+    <td><b>site_name</b></td>
+    <td>string</td>
+    <td>Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}</td>
+  </tr>
+</table>
+
+### data
 <table>
   <tr>
     <td><b>Field Name</b></td>
@@ -173,13 +188,13 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":491,
-    "timestamp":1399701998,
+    "requests":6988,
+    "timestamp":1400035710,
     "status":200,
     "message":"Request successful",
     "method_id":1559,
     "method":{
-      
+      "site_name":"Engineering"
     }
   },
   "data":[
