@@ -21,9 +21,9 @@
    ],
    "information_steward":"Food Services",
    "request_examples":[
-      "http://api.uwaterloo.ca/v2/foodservices/notes.json",
-      "http://api.uwaterloo.ca/v2/foodservices/notes.xml",
-      "http://api.uwaterloo.ca/v2/foodservices/notes.json?callback=myResponse"
+      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json",
+      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.xml",
+      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
@@ -36,6 +36,18 @@
          "is_required":true,
          "type":"filter"
       },
+    {
+      "parameter":"year",
+      "description":"Number representing year",
+      "is_required":true,
+      "type":"input"
+    },
+    {
+      "parameter":"week",
+      "description":"Number representing week",
+      "is_required":true,
+      "type":"input"
+    },
       {
          "parameter":"callback",
          "description":"JSONP callback format",

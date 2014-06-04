@@ -83,6 +83,18 @@ GET /foodservices/announcements.{format}
     <td>Your API key</td>
   </tr>
   <tr>
+    <td><b>year</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing year</td>
+  </tr>
+  <tr>
+    <td><b>week</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing week</td>
+  </tr>
+  <tr>
     <td><b>callback</b></td>
     <td>filter</td>
     <td><i>no</i></td>
@@ -102,9 +114,9 @@ GET /foodservices/announcements.{format}
 GET /foodservices/announcements.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/announcements.json**
-- **http://api.uwaterloo.ca/v2/foodservices/announcements.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/announcements.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json?callback=myResponse**
 
 
 ## Response
@@ -137,18 +149,20 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":139,
-    "timestamp":1381961705,
-    "status":204,
-    "message":"No data returned",
-    "method_id":2,
-    "version":2.07,
+    "requests":7140,
+    "timestamp":1401908828,
+    "status":200,
+    "message":"Request successful",
+    "method_id":1301,
     "method":{
       
     }
   },
   "data":[
-    
+    {
+      "date":"2013-01-07",
+      "ad_text":"Try our newest dining concept on campus...The Chili Pepper - Tex Mex Cuisine."
+    }
   ]
 }
 ```

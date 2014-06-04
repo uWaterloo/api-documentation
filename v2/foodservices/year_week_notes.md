@@ -1,12 +1,12 @@
-# Food Services Menu Notes
+# Food Services Menu Announcements
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/announcements.{format}
 ```
 
 ## Description
 
-> This method returns additional notes regarding food served in the current week
+> This method returns additional announcements regarding food served in the current week
 
 ## Summary
 
@@ -25,7 +25,7 @@ GET /foodservices/notes.{format}
   </tr>
   <tr>
     <td><b>Method ID</b></td>
-    <td>1297</td>
+    <td>1301</td>
     <td><b>Enabled</b></td>
     <td>Yes</td>
   </tr>
@@ -66,7 +66,7 @@ GET /foodservices/notes.{format}
 ## Parameters
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/announcements.{format}
 ```
 
 <table>
@@ -81,6 +81,18 @@ GET /foodservices/notes.{format}
     <td>filter</td>
     <td><i>yes</i></td>
     <td>Your API key</td>
+  </tr>
+  <tr>
+    <td><b>year</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing year</td>
+  </tr>
+  <tr>
+    <td><b>week</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing week</td>
   </tr>
   <tr>
     <td><b>callback</b></td>
@@ -99,12 +111,12 @@ GET /foodservices/notes.{format}
 ## Examples
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/announcements.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/notes.json**
-- **http://api.uwaterloo.ca/v2/foodservices/notes.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/notes.json?callback=myResponse**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.xml**
+- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json?callback=myResponse**
 
 
 ## Response
@@ -118,22 +130,12 @@ GET /foodservices/notes.{format}
   <tr>
     <td><b>date</b></td>
     <td>object</td>
-    <td>Menu date object</td>
+    <td>Advertisement date object</td>
   </tr>
   <tr>
-    <td><b>outlet_name</b></td>
+    <td><b>ad_text</b></td>
     <td>string</td>
-    <td>Outlet name as per /foodservices/outlets</td>
-  </tr>
-  <tr>
-    <td><b>outlet_id</b></td>
-    <td>integer</td>
-    <td>Outlet ID as per /foodservices/outlets</td>
-  </tr>
-  <tr>
-    <td><b>note</b></td>
-    <td>object</td>
-    <td>Note</td>
+    <td>Advertisement text</td>
   </tr>
 </table>
 
@@ -147,58 +149,19 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":138,
-    "timestamp":1381961643,
+    "requests":7141,
+    "timestamp":1401908858,
     "status":200,
     "message":"Request successful",
-    "method_id":2,
-    "version":2.07,
+    "method_id":1301,
     "method":{
       
     }
   },
   "data":[
     {
-      "date":"2013-10-14",
-      "outlet_name":"REVelation",
-      "outlet_id":7,
-      "note":"Closed \"Happy Thanksgiving\""
-    },
-    {
-      "date":"2013-10-15",
-      "outlet_name":"Festival Fare",
-      "outlet_id":6,
-      "note":"Daily Fish"
-    },
-    {
-      "date":"2013-10-16",
-      "outlet_name":"Mudie's",
-      "outlet_id":5,
-      "note":"\"Oktoberfest Dinner\""
-    },
-    {
-      "date":"2013-10-16",
-      "outlet_name":"Festival Fare",
-      "outlet_id":6,
-      "note":"Daily Fish"
-    },
-    {
-      "date":"2013-10-17",
-      "outlet_name":"Mudie's",
-      "outlet_id":5,
-      "note":"\"Don's Do Dinner\""
-    },
-    {
-      "date":"2013-10-17",
-      "outlet_name":"REVelation",
-      "outlet_id":7,
-      "note":"\"Don's Do Dinner\""
-    },
-    {
-      "date":"2013-10-18",
-      "outlet_name":"Festival Fare",
-      "outlet_id":6,
-      "note":"Daily Fish"
+      "date":"2013-01-07",
+      "ad_text":"Try our newest dining concept on campus...The Chili Pepper - Tex Mex Cuisine."
     }
   ]
 }
