@@ -1,7 +1,7 @@
 {
    "method_id":1297,
-   "method_url":"/foodservices/notes.{format}",
-   "method_name":"Food Services Menu Notes",
+   "method_url":"/foodservices/{year}/{week}/notes.{format}",
+   "method_name":"Food Services Menu Notes Filtered by Week",
    "service_id":269,
    "service_name":"foodservices",
    "request_protocol":"GET",
@@ -13,17 +13,17 @@
    "data_source":[
       "https://uwaterloo.ca/food-services/"
    ],
-   "method_description":"This method returns additional notes regarding food served in the current week",
+   "method_description":"This method returns additional notes regarding food served in the week specified",
    "additional_notes":[
-      "Usage won't increase if there is not data returned",
+      "Usage won't increase if there is no data returned",
       "We cannot modify the data from this method",
-      "The results are only for this current week (where the week starts on Monday)"
+      "The results are only for the week specified (where the week starts on Monday)"
    ],
    "information_steward":"Food Services",
    "request_examples":[
-      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json",
-      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.xml",
-      "http://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json",
+      "https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.xml",
+      "https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json?callback=myResponse"
    ],
    "response_formats":[
       "json",

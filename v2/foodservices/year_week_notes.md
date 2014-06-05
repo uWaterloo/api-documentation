@@ -1,12 +1,12 @@
-# Food Services Menu Announcements
+# Food Services Menu Notes Filtered by Week
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
 ## Description
 
-> This method returns additional announcements regarding food served in the current week
+> This method returns additional notes regarding food served in the week specified
 
 ## Summary
 
@@ -25,7 +25,7 @@ GET /foodservices/announcements.{format}
   </tr>
   <tr>
     <td><b>Method ID</b></td>
-    <td>1301</td>
+    <td>1297</td>
     <td><b>Enabled</b></td>
     <td>Yes</td>
   </tr>
@@ -52,9 +52,9 @@ GET /foodservices/announcements.{format}
 
 ### Notes
 
-- Usage won't increase if there is not data returned
+- Usage won't increase if there is no data returned
 - We cannot modify the data from this method
-- The results are only for this current week (where the week starts on Monday)
+- The results are only for the week specified (where the week starts on Monday)
 - Any value can be `null`
 
 
@@ -66,7 +66,7 @@ GET /foodservices/announcements.{format}
 ## Parameters
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
 <table>
@@ -111,12 +111,12 @@ GET /foodservices/announcements.{format}
 ## Examples
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json**
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.xml**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json?callback=myResponse**
 
 
 ## Response
@@ -130,12 +130,22 @@ GET /foodservices/announcements.{format}
   <tr>
     <td><b>date</b></td>
     <td>object</td>
-    <td>Advertisement date object</td>
+    <td>Menu date object</td>
   </tr>
   <tr>
-    <td><b>ad_text</b></td>
+    <td><b>outlet_name</b></td>
     <td>string</td>
-    <td>Advertisement text</td>
+    <td>Outlet name as per /foodservices/outlets</td>
+  </tr>
+  <tr>
+    <td><b>outlet_id</b></td>
+    <td>integer</td>
+    <td>Outlet ID as per /foodservices/outlets</td>
+  </tr>
+  <tr>
+    <td><b>note</b></td>
+    <td>object</td>
+    <td>Note</td>
   </tr>
 </table>
 
@@ -149,19 +159,57 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":7141,
-    "timestamp":1401908858,
+    "requests":7151,
+    "timestamp":1401973635,
     "status":200,
     "message":"Request successful",
-    "method_id":1301,
+    "method_id":1297,
     "method":{
       
     }
   },
   "data":[
     {
-      "date":"2013-01-07",
-      "ad_text":"Try our newest dining concept on campus...The Chili Pepper - Tex Mex Cuisine."
+      "date":"2014-01-06",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-07",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-08",
+      "outlet_name":"Mudie's",
+      "outlet_id":5,
+      "note":"\"Welcome Back Dinner\""
+    },
+    {
+      "date":"2014-01-08",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-08",
+      "outlet_name":"REVelation",
+      "outlet_id":7,
+      "note":"\"Welcome Back Dinner\"\nLobster Bisque, Apple Blossoms and Ice Cream\nDads Rootbeer, Orangina"
+    },
+    {
+      "date":"2014-01-09",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-10",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
     }
   ]
 }

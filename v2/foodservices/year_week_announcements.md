@@ -1,12 +1,12 @@
-# Food Services Menu Announcements
+# Food Services Menu Announcements Filtered by Week
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/announcements.{format}
 ```
 
 ## Description
 
-> This method returns additional announcements regarding food served in the current week
+> This method returns additional announcements regarding food served in the week specified
 
 ## Summary
 
@@ -52,9 +52,9 @@ GET /foodservices/announcements.{format}
 
 ### Notes
 
-- Usage won't increase if there is not data returned
+- Usage won't increase if there is no data returned
 - We cannot modify the data from this method
-- The results are only for this current week (where the week starts on Monday)
+- The results are only for the week specified (where the week starts on Monday)
 - Any value can be `null`
 
 
@@ -66,7 +66,7 @@ GET /foodservices/announcements.{format}
 ## Parameters
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/announcements.{format}
 ```
 
 <table>
@@ -111,12 +111,12 @@ GET /foodservices/announcements.{format}
 ## Examples
 
 ```
-GET /foodservices/announcements.{format}
+GET /foodservices/{year}/{week}/announcements.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json**
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json**
+- **https://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.xml**
+- **https://api.uwaterloo.ca/v2/foodservices/2013/2/announcements.json?callback=myResponse**
 
 
 ## Response
@@ -149,8 +149,8 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":7140,
-    "timestamp":1401908828,
+    "requests":7149,
+    "timestamp":1401973581,
     "status":200,
     "message":"Request successful",
     "method_id":1301,
