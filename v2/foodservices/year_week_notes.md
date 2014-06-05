@@ -1,12 +1,12 @@
-# Food Services Menu Notes
+# Food Services Menu Notes Filtered by Week
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
 ## Description
 
-> This method returns additional notes regarding food served in the current week
+> This method returns additional notes regarding food served in the week specified
 
 ## Summary
 
@@ -52,9 +52,9 @@ GET /foodservices/notes.{format}
 
 ### Notes
 
-- Usage won't increase if there is not data returned
+- Usage won't increase if there is no data returned
 - We cannot modify the data from this method
-- The results are only for this current week (where the week starts on Monday)
+- The results are only for the week specified (where the week starts on Monday)
 - Any value can be `null`
 
 
@@ -66,7 +66,7 @@ GET /foodservices/notes.{format}
 ## Parameters
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
 <table>
@@ -81,6 +81,18 @@ GET /foodservices/notes.{format}
     <td>filter</td>
     <td><i>yes</i></td>
     <td>Your API key</td>
+  </tr>
+  <tr>
+    <td><b>year</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing year</td>
+  </tr>
+  <tr>
+    <td><b>week</b></td>
+    <td>input</td>
+    <td><i>yes</i></td>
+    <td>Number representing week</td>
   </tr>
   <tr>
     <td><b>callback</b></td>
@@ -99,12 +111,12 @@ GET /foodservices/notes.{format}
 ## Examples
 
 ```
-GET /foodservices/notes.{format}
+GET /foodservices/{year}/{week}/notes.{format}
 ```
 
-- **http://api.uwaterloo.ca/v2/foodservices/notes.json**
-- **http://api.uwaterloo.ca/v2/foodservices/notes.xml**
-- **http://api.uwaterloo.ca/v2/foodservices/notes.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.xml**
+- **https://api.uwaterloo.ca/v2/foodservices/2014/2/notes.json?callback=myResponse**
 
 
 ## Response
@@ -147,55 +159,54 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":138,
-    "timestamp":1381961643,
+    "requests":7151,
+    "timestamp":1401973635,
     "status":200,
     "message":"Request successful",
-    "method_id":2,
-    "version":2.07,
+    "method_id":1297,
     "method":{
       
     }
   },
   "data":[
     {
-      "date":"2013-10-14",
-      "outlet_name":"REVelation",
-      "outlet_id":7,
-      "note":"Closed \"Happy Thanksgiving\""
-    },
-    {
-      "date":"2013-10-15",
+      "date":"2014-01-06",
       "outlet_name":"Festival Fare",
       "outlet_id":6,
       "note":"Daily Fish"
     },
     {
-      "date":"2013-10-16",
-      "outlet_name":"Mudie's",
-      "outlet_id":5,
-      "note":"\"Oktoberfest Dinner\""
-    },
-    {
-      "date":"2013-10-16",
+      "date":"2014-01-07",
       "outlet_name":"Festival Fare",
       "outlet_id":6,
       "note":"Daily Fish"
     },
     {
-      "date":"2013-10-17",
+      "date":"2014-01-08",
       "outlet_name":"Mudie's",
       "outlet_id":5,
-      "note":"\"Don's Do Dinner\""
+      "note":"\"Welcome Back Dinner\""
     },
     {
-      "date":"2013-10-17",
+      "date":"2014-01-08",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-08",
       "outlet_name":"REVelation",
       "outlet_id":7,
-      "note":"\"Don's Do Dinner\""
+      "note":"\"Welcome Back Dinner\"\nLobster Bisque, Apple Blossoms and Ice Cream\nDads Rootbeer, Orangina"
     },
     {
-      "date":"2013-10-18",
+      "date":"2014-01-09",
+      "outlet_name":"Festival Fare",
+      "outlet_id":6,
+      "note":"Daily Fish"
+    },
+    {
+      "date":"2014-01-10",
       "outlet_name":"Festival Fare",
       "outlet_id":6,
       "note":"Daily Fish"
