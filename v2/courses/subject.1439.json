@@ -14,7 +14,7 @@
       "http://ugradcalendar.uwaterloo.ca/",
       "http://gradcalendar.uwaterloo.ca/"
    ],
-   "method_description":"This method returns all the coures offered under a given subject",
+   "method_description":"This method returns all the courses offered under a given subject",
    "additional_notes":[
    ],
    "information_steward":"Registrar",

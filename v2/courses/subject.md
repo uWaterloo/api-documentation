@@ -6,7 +6,7 @@ GET /courses/{subject}.{format}
 
 ## Description
 
-> This method returns all the coures offered under a given subject
+> This method returns all the courses offered under a given subject
 
 ## Summary
 

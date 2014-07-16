@@ -85,7 +85,7 @@ GET /courses/{class_number}/schedule.{format}
     <td><b>catalog_number</b></td>
     <td>input</td>
     <td><i>yes</i></td>
-    <td>Valid uWaterloo coure number</td>
+    <td>Valid uWaterloo course number</td>
   </tr>
   <tr>
     <td><b>format</b></td>
