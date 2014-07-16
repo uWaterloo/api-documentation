@@ -37,7 +37,7 @@
       },
       {
          "parameter":"catalog_number",
-         "description":"Valid uWaterloo coure number",
+         "description":"Valid uWaterloo course number",
          "is_required":true,
          "type":"input"
       },
