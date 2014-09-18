@@ -161,7 +161,7 @@ Any value can be `null`
     },
     {
       "abbreviation":"J",
-      "description":"Summer; first half; August"
+      "description":"Summer; first half; July"
     },
     {
       "abbreviation":"A",
