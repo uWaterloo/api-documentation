@@ -23,6 +23,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ## Client Libraries
 
 * [UWaterlooAPI](https://bitbucket.org/amjoconn/uwaterlooapi) (Python)
+* [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
 
 ## Endpoints
 
