@@ -76,10 +76,10 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Terms
 
 - **[/terms/list](v2/terms/list.md)**
-- **[/terms/{term_id}/examschedule](v2/terms/term_examschedule.md)**
-- **[/terms/{term_id}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
-- **[/terms/{term_id}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
-- **[/terms/{term_id}/infosessions](v2/terms/term_infosessions.md)**
+- **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
+- **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
+- **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
+- **[/terms/{term}/infosessions](v2/terms/term_infosessions.md)**
 
 
 ### Resources
@@ -100,8 +100,8 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Building
 
 - **[/buildings/list](v2/buildings/list.md)**
-- **[/buildings/{building_acronym}](v2/buildings/building_acronym.md)**
-- **[/buildings/{building_acronym}/{room_number}/courses](v2/buildings/building_acronym_room_number_courses.md)**
+- **[/buildings/{building_code}](v2/buildings/building_acronym.md)**
+- **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
 
 ### API
 
