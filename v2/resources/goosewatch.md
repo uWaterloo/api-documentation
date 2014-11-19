@@ -65,7 +65,7 @@ GET /resoruces/goosewatch.{format}
 ## Parameters
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 <table>
