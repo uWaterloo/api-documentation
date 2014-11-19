@@ -1,7 +1,7 @@
 # List of geese nests
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 ## Description
