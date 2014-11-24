@@ -117,7 +117,7 @@ GET /foodservices/locations.{format}
   <tr>
     <td><b>outlet_id</b></td>
     <td>integer</td>
-    <td>Outlet ID number (not always same as outets.json method). Can be null</td>
+    <td>Outlet ID number (not always same as outlets.json method). Can be null</td>
   </tr>
   <tr>
     <td><b>outlet_name</b></td>
@@ -132,7 +132,7 @@ GET /foodservices/locations.{format}
   <tr>
     <td><b>logo</b></td>
     <td>string</td>
-    <td>URL of the ouetlet logo (size varies)</td>
+    <td>URL of the outlet logo (size varies)</td>
   </tr>
   <tr>
     <td><b>latitude</b></td>
@@ -152,7 +152,7 @@ GET /foodservices/locations.{format}
   <tr>
     <td><b>notice</b></td>
     <td>string</td>
-    <td>Outlet specific anouncements</td>
+    <td>Outlet-specific announcement</td>
   </tr>
   <tr>
     <td><b>is_open_now</b></td>
@@ -170,7 +170,7 @@ GET /foodservices/locations.{format}
   <tr>
     <td><b>opening_hour</b></td>
     <td>time</td>
-    <td>Locationns opening time (H:i format)</td>
+    <td>Location's opening time (H:i format)</td>
   </tr>
   <tr>
     <td><b>closing_hour</b></td>

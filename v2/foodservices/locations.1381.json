@@ -45,7 +45,7 @@
    "response_fields":[
       {
          "field":"outlet_id",
-         "description":"Outlet ID number (not always same as outets.json method). Can be null",
+         "description":"Outlet ID number (not always same as outlets.json method). Can be null",
          "type":"integer"
       },
       {
@@ -60,7 +60,7 @@
       },
       {
          "field":"logo",
-         "description":"URL of the ouetlet logo (size varies)",
+         "description":"URL of the outlet logo (size varies)",
          "type":"string"
       },
       {
@@ -80,7 +80,7 @@
       },
       {
          "field":"notice",
-         "description":"Outlet specific anouncements",
+         "description":"Outlet-specific announcements",
          "type":"string"
       },
       {
@@ -100,7 +100,7 @@
              "children" : [
                {
                  "field" : "opening_hour",
-                 "description" : "Locationns opening time (H:i format)",
+                 "description" : "Location's opening time (H:i format)",
                  "type" : "time"
                },
                {

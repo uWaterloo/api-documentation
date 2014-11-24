@@ -192,7 +192,7 @@ GET /foodservices/products/{product_id}.{format}
   <tr>
     <td><b>sodium_mg</b></td>
     <td>integer</td>
-    <td>Sodiumm in milligrams</td>
+    <td>Sodium in milligrams</td>
   </tr>
   <tr>
     <td><b>sodium_percent</b></td>
@@ -257,7 +257,7 @@ GET /foodservices/products/{product_id}.{format}
   <tr>
     <td><b>tips</b></td>
     <td>string</td>
-    <td>Any eating tips for the imte</td>
+    <td>Any eating tips for the item</td>
   </tr>
   <tr>
     <td><b>diet_id</b></td>

@@ -6,7 +6,7 @@ GET /courses/{subject}/{catalog_number}/prerequisites.{format}
 
 ## Description
 
-> This method returns parsed and raw representation of prerequsites for a given course
+> This method returns parsed and raw representation of prerequisites for a given course
 
 ## Summary
 

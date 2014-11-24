@@ -189,7 +189,7 @@ Any value can be `null`
     },
     {
       "subject":"AFM",
-      "description":"Accounting and Financial Managment",
+      "description":"Accounting and Financial Management",
       "unit":"ACC"
     },
     {
@@ -934,7 +934,7 @@ Any value can be `null`
     },
     {
       "subject":"PS",
-      "description":"Public Serivce",
+      "description":"Public Service",
       "unit":"ARTSDEAN"
     },
     {
