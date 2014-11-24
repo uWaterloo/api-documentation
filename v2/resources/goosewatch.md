@@ -1,7 +1,7 @@
 # List of geese nests
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 ## Description
@@ -65,7 +65,7 @@ GET /resoruces/goosewatch.{format}
 ## Parameters
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 <table>
@@ -104,7 +104,7 @@ GET /resoruces/goosewatch.{format}
 ## Examples
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/goosewatch.json**

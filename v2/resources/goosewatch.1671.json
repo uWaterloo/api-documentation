@@ -1,6 +1,6 @@
 {
    "method_id":1671,
-   "method_url":"/resoruces/goosewatch.{format}",
+   "method_url":"/resources/goosewatch.{format}",
    "method_name":"List of geese nests",
    "service_id":229,
    "service_name":"resources",

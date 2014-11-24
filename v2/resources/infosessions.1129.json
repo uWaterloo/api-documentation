@@ -1,6 +1,6 @@
 {
    "method_id":1129,
-   "method_url":"/resoruces/infosessions.{format}",
+   "method_url":"/resources/infosessions.{format}",
    "method_name":"List of coop infosessions",
    "service_id":229,
    "service_name":"resources",

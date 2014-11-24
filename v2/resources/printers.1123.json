@@ -1,6 +1,6 @@
 {
    "method_id":1123,
-   "method_url":"/resoruces/printers.{format}",
+   "method_url":"/resources/printers.{format}",
    "method_name":"List of Campus Printer",
    "service_id":229,
    "service_name":"resources",
