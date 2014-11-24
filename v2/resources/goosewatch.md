@@ -104,7 +104,7 @@ GET /resources/goosewatch.{format}
 ## Examples
 
 ```
-GET /resoruces/goosewatch.{format}
+GET /resources/goosewatch.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/goosewatch.json**

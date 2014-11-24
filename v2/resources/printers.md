@@ -1,7 +1,7 @@
 # List of Campus Printer
 
 ```
-GET /resoruces/printers.{format}
+GET /resources/printers.{format}
 ```
 
 ## Description
@@ -65,7 +65,7 @@ GET /resoruces/printers.{format}
 ## Parameters
 
 ```
-GET /resoruces/printers.{format}
+GET /resources/printers.{format}
 ```
 
 <table>
@@ -98,7 +98,7 @@ GET /resoruces/printers.{format}
 ## Examples
 
 ```
-GET /resoruces/printers.{format}
+GET /resources/printers.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/printers.json**

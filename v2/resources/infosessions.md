@@ -1,7 +1,7 @@
 # List of coop infosessions
 
 ```
-GET /resoruces/infosessions.{format}
+GET /resources/infosessions.{format}
 ```
 
 ## Description
@@ -65,7 +65,7 @@ GET /resoruces/infosessions.{format}
 ## Parameters
 
 ```
-GET /resoruces/infosessions.{format}
+GET /resources/infosessions.{format}
 ```
 
 <table>
@@ -98,7 +98,7 @@ GET /resoruces/infosessions.{format}
 ## Examples
 
 ```
-GET /resoruces/infosessions.{format}
+GET /resources/infosessions.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/infosessions.json**
