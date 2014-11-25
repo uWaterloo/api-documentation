@@ -13,7 +13,7 @@
    "data_source":[
       "https://api.uwaterloo.ca"
    ],
-   "method_description":"This method returns time information about the srver",
+   "method_description":"This method returns time information about the server",
    "additional_notes":[
       "Calling this method does not affect usage"
    ],

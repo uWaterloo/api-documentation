@@ -140,7 +140,7 @@ GET /api/services.{format}
   <tr>
     <td><b>method_url</b></td>
     <td>string</td>
-    <td>API assigned method endpoint udner service</td>
+    <td>API assigned method endpoint under service</td>
   </tr>
 </table>
 </td>

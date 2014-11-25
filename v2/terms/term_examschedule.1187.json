@@ -11,7 +11,7 @@
    "cache_time_s":0,
    "data_type":"CSV",
    "data_source":[
-      "https://github.com/uWaterloo/Datasets/blob/master/ExamSchedule/1139ExamSchedule.csv"
+      "https://github.com/uWaterloo/Datasets/tree/master/ExamSchedule"
    ],
    "method_description":"This method returns a given term's exam schedule",
    "additional_notes":[

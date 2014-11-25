@@ -120,7 +120,7 @@
       },
       {
          "field":"sodium_mg",
-         "description":"Sodiumm in milligrams",
+         "description":"Sodium in milligrams",
          "type":"integer"
       },
       {
@@ -185,7 +185,7 @@
       },
       {
          "field":"tips",
-         "description":"Any eating tips for the imte",
+         "description":"Any eating tips for the item",
          "type":"string"
       },
       {

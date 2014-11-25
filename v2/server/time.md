@@ -6,7 +6,7 @@ GET /server/time.{format}
 
 ## Description
 
-> This method returns time information about the srver
+> This method returns time information about the server
 
 ## Summary
 
