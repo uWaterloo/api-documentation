@@ -115,7 +115,7 @@ GET /codes/terms.{format}
     <td><b>Value Description</b></td>
   </tr>
   <tr>
-    <td><b>term</b></td>
+    <td><b>abbreviation</b></td>
     <td>string</td>
     <td>Term</td>
   </tr>
