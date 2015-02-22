@@ -1,6 +1,6 @@
 {
    "method_id":1481,
-   "method_url":"/v2/resources/tutors.{format}",
+   "method_url":"/resources/tutors.{format}",
    "method_name":"List of student tutors available",
    "service_id":229,
    "service_name":"resources",
