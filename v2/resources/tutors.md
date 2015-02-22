@@ -1,7 +1,7 @@
 # List of student tutors available
 
 ```
-GET /v2/resources/tutors.{format}
+GET /resources/tutors.{format}
 ```
 
 ## Description
@@ -63,7 +63,7 @@ GET /v2/resources/tutors.{format}
 ## Parameters
 
 ```
-GET /v2/resources/tutors.{format}
+GET /resources/tutors.{format}
 ```
 
 <table>
@@ -96,7 +96,7 @@ GET /v2/resources/tutors.{format}
 ## Examples
 
 ```
-GET /v2/resources/tutors.{format}
+GET /resources/tutors.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/tutors.json**
