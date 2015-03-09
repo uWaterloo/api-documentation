@@ -166,12 +166,12 @@ GET events/{site}/{id}.{format}
   </tr>
   <tr>
     <td><b>start_date</b></td>
-    <td>sate</td>
+    <td>date</td>
     <td>YYYY-MM-DD formatted start date</td>
   </tr>
   <tr>
     <td><b>start_time</b></td>
-    <td>sate</td>
+    <td>date</td>
     <td>HH:MM:SS 24 formatted start time</td>
   </tr>
   <tr>
