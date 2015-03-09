@@ -97,12 +97,12 @@
         {
           "field":"start_date",
           "description":"YYYY-MM-DD formatted start date",
-          "type":"sate"
+          "type":"date"
         },
         {
           "field":"start_time",
           "description":"HH:MM:SS 24 formatted start time",
-          "type":"sate"
+          "type":"date"
         },
         {
           "field":"end_day",
