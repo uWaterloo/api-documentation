@@ -1,6 +1,6 @@
 {
   "method_id":1223,
-  "method_url":"/v2/buildings/{building}/{room}/courses.{format}",
+  "method_url":"/buildings/{building}/{room}/courses.{format}",
   "method_name":"Courses in a Classroom",
   "service_id":257,
   "service_name":"buildings",
