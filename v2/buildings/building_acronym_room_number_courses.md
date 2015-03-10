@@ -1,7 +1,7 @@
 # Courses in a Classroom
 
 ```
-GET /v2/buildings/{building}/{room}/courses.{format}
+GET /buildings/{building}/{room}/courses.{format}
 ```
 
 ## Description
@@ -65,7 +65,7 @@ GET /v2/buildings/{building}/{room}/courses.{format}
 ## Parameters
 
 ```
-GET /v2/buildings/{building}/{room}/courses.{format}
+GET /buildings/{building}/{room}/courses.{format}
 ```
 
 <table>
@@ -116,7 +116,7 @@ GET /v2/buildings/{building}/{room}/courses.{format}
 ## Examples
 
 ```
-GET /v2/buildings/{building}/{room}/courses.{format}
+GET /buildings/{building}/{room}/courses.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/buildings/MC/2038/courses.json**
