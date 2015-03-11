@@ -184,7 +184,7 @@ Any value can be `null`
     }
   },
   "data":{
-    "building_id":23,
+    "building_id":"23",
     "building_code":"MHR",
     "building_name":"Minota Hagey Residence",
     "alternate_names":[
