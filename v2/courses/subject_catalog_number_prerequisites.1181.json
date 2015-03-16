@@ -79,7 +79,7 @@
       {
          "field":"prerequisites",
          "description":"Raw listing of course prerequisites",
-         "type":"number"
+         "type":"string"
       },
       {
          "field":"prerequisites_parsed",
