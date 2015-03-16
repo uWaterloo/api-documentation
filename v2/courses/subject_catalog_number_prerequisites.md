@@ -149,7 +149,7 @@ GET /courses/{subject}/{catalog_number}/prerequisites.{format}
   </tr>
   <tr>
     <td><b>prerequisites</b></td>
-    <td>number</td>
+    <td>string</td>
     <td>Raw listing of course prerequisites</td>
   </tr>
   <tr>
