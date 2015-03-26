@@ -1,6 +1,6 @@
 {
   "method_id":1567,
-  "method_url":"events/{site}/{id}.{format}",
+  "method_url":"/events/{site}/{id}.{format}",
   "method_name":"Get Events for Site given id",
   "service_id":271,
   "service_name":"events",
