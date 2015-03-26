@@ -1,7 +1,7 @@
 # Get Events for Site given id
 
 ```
-GET events/{site}/{id}.{format}
+GET /events/{site}/{id}.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET events/{site}/{id}.{format}
 ## Parameters
 
 ```
-GET events/{site}/{id}.{format}
+GET /events/{site}/{id}.{format}
 ```
 
 <table>
@@ -109,7 +109,7 @@ GET events/{site}/{id}.{format}
 ## Examples
 
 ```
-GET events/{site}/{id}.{format}
+GET /events/{site}/{id}.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/events/engineering/1701.json**
