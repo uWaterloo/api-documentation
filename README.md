@@ -71,7 +71,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Services
 
-- **[/services/{site}](v2/news/services_site.md)**
+- **[/services/{site}](v2/services/services_site.md)**
 
 ### Weather
 
