@@ -69,6 +69,9 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/news/{site}](v2/news/news_site.md)**
 - **[/news/{site}/{id}](v2/news/news_site_id.md)**
 
+### Services
+
+- **[/services/{site}](v2/news/services_site.md)**
 
 ### Weather
 
