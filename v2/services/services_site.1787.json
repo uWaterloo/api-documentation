@@ -1,0 +1,268 @@
+{
+   "method_id":1787,
+   "method_url":"/v2/services/[site].{format}",
+   "method_name":"Get Services for Site",
+   "service_id": 331,
+   "service_name":"services",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Proxy via WCMS",
+   "data_source":[
+      "https://uwaterloo.ca/[slug]/services"
+   ],
+   "method_description":"This method returns a sites associated services.",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "If you find issues with the data, submit a request [here](https://rt.uwaterloo.ca/SelfService/Forms/IST-General/)."
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "http://api.uwaterloo.ca/v2/services/arts-computing.json",
+      "http://api.uwaterloo.ca/v2/services/arts-computing.xml",
+      "http://api.uwaterloo.ca/v2/services/arts-computing.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"site",
+         "description":"Valid site slug from /resources/sites",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Service ID number. Can be null",
+         "type":"integer"
+      },
+      {
+         "field":"name",
+         "description":"Service name",
+         "type":"string"
+      },
+      {
+         "field": "description",
+         "description":"Description of service",
+         "type":"string"
+      },
+      {
+         "field": "cost",
+         "description":"Description of cost of service",
+         "type":"string"
+      },
+      {
+         "field":"is_open_now",
+         "description":"Predicts if the location is currently open by taking the current time into account",
+         "type":"boolean"
+      },
+      {
+         "field":"contact_information",
+         "description":"Free form text regarding who to contact for service",
+         "type":"string"
+      },
+      {
+         "field":"notice",
+         "description":"Service-specific announcements",
+         "type":"string"
+      },
+      {
+         "field":"services_available",
+         "description":"List of services available",
+         "type":"list"
+      },
+      {
+         "field":"request_info",
+         "description":"Information on how to request the service",
+         "type":"object",
+         "children" : [
+            {
+               "field":"procedure",
+               "description":"Procedure for requesting the service",
+               "type":"string"
+            },
+            {
+               "field":"completion_time",
+               "description":"Information about how long it take for a service to be completed",
+               "type":"string"
+            },
+            {
+               "field":"minimum_notice",
+               "description":"Information about lead time required for a service to be completed",
+               "type":"string"
+            }
+         ]
+      },
+      {
+         "field":"opening_hours",
+         "description":"Weekly operating hours data",
+         "type":"object",
+         "children" : [
+            {
+             "field" : "{day_of_the_week}",
+             "description" : "Hours for all days of the week",
+             "type" : "object",
+             "children" : [
+               {
+                 "field" : "opening_hour",
+                 "description" : "Service's opening time (H:i format)",
+                 "type" : "time"
+               },
+               {
+                 "field" : "closing_hour",
+                 "description" : "Service's closing time (H:i format)",
+                 "type" : "time"
+               },
+               {
+                 "field" : "is_closed",
+                 "description" : "If the service is not operating on that day",
+                 "type" : "boolean"
+               }
+             ]
+           }
+         ]
+      },
+      {
+         "field":"special_hours",
+         "description":"Special cases for service hours",
+         "type":"list",
+         "children" : [
+           {
+             "field" : "date",
+             "description" : "Y-m-d format date for the special case",
+             "type" : "date"
+           },
+           {
+             "field" : "opening_hour",
+             "description" : "Service's opening time (H:i format)",
+             "type" : "time"
+           },
+           {
+             "field" : "closing_hour",
+             "description" : "Service's closing time (H:i format)",
+             "type" : "time"
+           }
+         ]
+      },
+      {
+         "field":"dates_closed",
+         "description":"Y-m-d format list of dates the service is nonoperational",
+         "type":"list"
+      },  
+     {
+      "field":"location",
+      "description":"Location of service delivery",
+      "type":"object",
+      "children":[
+        {
+          "field":"id",
+          "description":"Unique id of location",
+          "type":"integer"
+        },
+        {
+          "field":"name",
+          "description":"Name of location",
+          "type":"string"
+        },
+        {
+          "field":"street",
+          "description":"Street address of location",
+          "type":"string"
+        },
+        {
+          "field":"additional",
+          "description":"Additional information regarding street address of location",
+          "type":"string"
+        },
+        {
+          "field":"city",
+          "description":"Name of city",
+          "type":"string"
+        },
+        {
+          "field":"province",
+          "description":"Name of province in two-letter short form",
+          "type":"string"
+        },
+        {
+          "field":"postal_code",
+          "description":"Postal code \"in L#L #L#\" format",
+          "type":"string"
+        },
+        {
+          "field":"country",
+          "description":"Full name of country",
+          "type":"string"
+        },
+        {
+          "field":"latitude",
+          "description":"Service location latitude",
+          "type":"number"
+        },
+        {
+          "field":"longitude",
+          "description":"Service location longitude",
+          "type":"number"
+        }
+      ]
+    },
+    {
+      "field":"category",
+      "description":"Categories related to service",
+      "type":"string"
+    },
+    {
+      "field":"audience",
+      "description":"Audience targeted by service",
+      "type":"list"
+    },
+    {
+      "field":"site_name",
+      "description":"Full site name as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    },
+    {
+      "field":"site_id",
+      "description":"Site slug as from https://api.uwaterloo.ca/v2/resources/sites.{format}",
+      "type":"string"
+    },
+    {
+      "field":"revision_id",
+      "description":"Unique id of revision of service",
+      "type":"integer"
+    },
+    {
+      "field":"additional",
+      "description":"Additional information about service",
+      "type":"string"
+    },
+    {
+      "field":"link",
+      "description":"URL of service link",
+      "type":"string"
+    },
+    {
+      "field":"updated",
+      "description":"ISO 8601 formatted updated date",
+      "type":"date"
+    }
+   ]
+}
