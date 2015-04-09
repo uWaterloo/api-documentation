@@ -59,7 +59,7 @@ GET /v2/services/[site].{format}
 
 ### Sources
 
-- https://uwaterloo.ca/[slug]/services
+- https://uwaterloo.ca/[site]/services
 
 
 ## Parameters

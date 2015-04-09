@@ -11,7 +11,7 @@
    "cache_time_s":0,
    "data_type":"Proxy via WCMS",
    "data_source":[
-      "https://uwaterloo.ca/[slug]/services"
+      "https://uwaterloo.ca/[site]/services"
    ],
    "method_description":"This method returns a sites associated services.",
    "additional_notes":[
