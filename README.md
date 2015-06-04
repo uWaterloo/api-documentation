@@ -26,6 +26,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 * [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
 * [UWaterlooAPI](https://github.com/RobinsonMann/UWaterlooApi) (C#)
+* [UWAPI.go](https://github.com/SaintDako/uwAPI.go) (Golang)
 
 ## Endpoints
 
