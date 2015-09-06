@@ -27,6 +27,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
 * [UWaterlooAPI](https://github.com/RobinsonMann/UWaterlooApi) (C#)
 * [UWAPI.go](https://github.com/SaintDako/uwAPI.go) (Golang)
+* [UW-Open-Data-API](https://github.com/zainh96/UW-Open-Data-API) (Java)
 
 ## Endpoints
 
