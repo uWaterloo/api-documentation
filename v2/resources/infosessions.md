@@ -202,7 +202,7 @@ Any value can be `null`
       "website":"",
       "audience":"3rd and 4th year Students",
       "programs":"Mathematics, Engineering, Computer Science",
-      "description":"This event will be a preface to the fall information session.  We are offering you an opportunity to connect one-on-one with a Technology Consulting Analyst and the Executive Sponsor of the campus recruitment program.  You are welcome to ask questions pertaining to careers at Accenture, the day in the life of a Consulting Analyst, how to best prepare for a career with us, and any other questions you may have. Please register for a 15 minute session by contacting Andrew Davidson at abdavidson@uwaterloo.ca."
+      "description":"This event will be a preface to the fall information session.  We are offering you an opportunity to connect one-on-one with a Technology Consulting Analyst and the Executive Sponsor of the campus recruitment program.  You are welcome to ask questions pertaining to careers at Accenture, the day in the life of a Consulting Analyst, how to best prepare for a career with us, and any other questions you may have. Please register for a 15 minute session by contacting Andrew Davidson at abdavidson@uwaterloo.ca.",
       "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2116"
     },
     {
@@ -215,7 +215,7 @@ Any value can be `null`
       "website":"http:\/\/mckinsey.com\/careers",
       "audience":"Co-op and Graduating Students",
       "programs":"MASTERS - Management Sciences, MASTERS - Civil Engineering, Info Tech , Engineering, Business",
-      "description":""
+      "description":"",
       "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2093"
     },
     {
@@ -228,7 +228,7 @@ Any value can be `null`
       "website":"http:\/\/www.hulu.com",
       "audience":"Co-op and Graduating Students",
       "programs":"Applied Mathematics, Computer Engineering, Computer Science, Software Engineering, Systems Design Engineering",
-      "description":""
+      "description":"",
       "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2082"
     },
     {
@@ -241,7 +241,7 @@ Any value can be `null`
       "website":"http:\/\/freshbooks.com\/careers",
       "audience":"Co-op and Graduating Students",
       "programs":"Mathematics, Engineering",
-      "description":""
+      "description":"",
       "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2107"
     },
     {
@@ -254,7 +254,7 @@ Any value can be `null`
       "website":"http:\/\/walmartoncampus.ca",
       "audience":"Graduating Students",
       "programs":"Accounting and Financial Management, Business, Financial Management",
-      "description":""
+      "description":"",
       "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2006"
     }
   ]
