@@ -167,7 +167,7 @@ GET /resources/infosessions.{format}
     <tr>
     <td><b>link</b></td>
     <td>string</td>
-    <td>Link to CECA's schedule about the info session</td>
+    <td>Link to CECA's schedule of the info session</td>
   </tr>
 </table>
 
