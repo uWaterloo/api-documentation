@@ -1,0 +1,88 @@
+{
+   "method_id":1823,
+   "method_url":"/v2/parking/watpark.{format}",
+   "method_name":"WATPark",
+   "service_id":293,
+   "service_name":"parking",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"JSON Feed",
+   "data_source":[
+      "http://watpark.com"
+   ],
+   "method_description":"This method returns real-time parking counts in select parking lots across campus.",
+   "additional_notes":[
+      "Usage won't increase if there is no data returned",
+      "We cannot modify the data from this method"
+   ],
+   "information_steward":"WATPark",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/parking/watpark.json",
+      "https://api.uwaterloo.ca/v2/parking/watpark.xml",
+      "https://api.uwaterloo.ca/v2/parking/watpark.json.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"lot_name",
+         "description":"Name of the parking lot",
+         "type":"string"
+      },
+      {
+         "field":"latitude",
+         "description":"Latitude of the parking lot",
+         "type":"float"
+      },
+      {
+         "field":"longitude",
+         "description":"Longitude of the parking lot",
+         "type":"float"
+      },
+      {
+         "field":"capacity",
+         "description":"Capacity of the parking lot",
+         "type":"integer"
+      },
+      {
+         "field":"current_count",
+         "description":"Current count of the number of cars in the parking lot",
+         "type":"integer"
+      },
+      {
+         "field":"percent_filled",
+         "description":"Percentage of which the parking lot is filled, rounded to the nearest integer",
+         "type":"integer"
+      },
+      {
+         "field":"last_update",
+         "description":"Time which the `current_count` was last updated",
+         "type":"string"
+      }
+   ]
+}

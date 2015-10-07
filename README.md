@@ -110,6 +110,10 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/buildings/{building_code}](v2/buildings/building_acronym.md)**
 - **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
 
+### Parking
+
+- **[/parking/watpark](v2/parking/watpark.md)**
+
 ### API
 
 - **[/api/usage](v2/api/usage.md)**
