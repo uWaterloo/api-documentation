@@ -1,0 +1,109 @@
+{
+   "method_id":1873,
+   "method_url":"/terms/{term}/{subject}/enrollment.{format}",
+   "method_name":"Course enrollment by subject term",
+   "service_id":241,
+   "service_name":"terms",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every hour",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://ugradcalendar.uwaterloo.ca/",
+      "http://gradcalendar.uwaterloo.ca/"
+   ],
+   "method_description":"This method returns enrollment numbers for all courses in a subject for a single term",
+   "additional_notes":[
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/terms/1159/ITAL/enrollment.json",
+      "https://api.uwaterloo.ca/v2/terms/1159/ITAL/enrollment.xml",
+      "https://api.uwaterloo.ca/v2/terms/1159/ITAL/enrollment.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+     {
+        "parameter":"term",
+        "description":"Four digit term representation",
+        "is_required":true,
+        "type":"input"
+     },
+     {
+         "parameter":"subject",
+         "description":"Valid uWaterloo subject name",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"subject",
+         "description":"Requested subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Registrar assigned class number",
+         "type":"string"
+      },
+      {
+         "field":"class_number",
+         "description":"Associated term specific class enrollment number",
+         "type":"integer"
+      },
+      {
+         "field":"section",
+         "description":"Class instruction and number",
+         "type":"string"
+      },
+      {
+         "field":"enrollment_capacity",
+         "description":"Class enrollment capacity",
+         "type":"integer"
+      },
+      {
+         "field":"enrollment_total",
+         "description":"Total current class enrollment",
+         "type":"integer"
+      },
+      {
+         "field":"waiting_capacity",
+         "description":"Class waiting capacity",
+         "type":"integer"
+      },
+      {
+         "field":"waiting_total",
+         "description":"Total current waiting students",
+         "type":"string"
+      },
+      {
+         "field":"last_updated",
+         "description":"ISO8601 timestamp of when the data was last updated",
+         "type":"string"
+      }
+   ]
+}

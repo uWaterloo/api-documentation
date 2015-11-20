@@ -86,6 +86,8 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
 - **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
 - **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
+- **[/terms/{term}/enrollment](v2/terms/term_enrollment.md)**
+- **[/terms/{term}/{subject}/enrollment](v2/terms/term_subject_enrollment.md)**
 - **[/terms/{term}/infosessions](v2/terms/term_infosessions.md)**
 
 
