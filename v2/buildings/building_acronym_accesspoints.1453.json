@@ -1,0 +1,95 @@
+{
+  "method_id":1453,
+  "method_url":"/buildings/{building_code}/accesspoints.{format}",
+  "method_name":"Building WiFi Access Points",
+  "service_id":257,
+  "service_name":"buildings",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"Once a day",
+  "cache_time_s":0,
+  "data_type":"CSV",
+  "data_source":[
+  ],
+  "method_description":"This method returns list of all access points in that given building",
+  "additional_notes":[
+    "Lat/Long information is not available for every endpoint"
+  ],
+  "information_steward":"Institution of Analysis & Planning (IAP)",
+  "request_examples":[
+    "http://api.uwaterloo.ca/v2/buildings/MC/accesspoints.json",
+    "http://api.uwaterloo.ca/v2/buildings/MC/accesspoints.xml",
+    "http://api.uwaterloo.ca/v2/buildings/MHR/accesspoints.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"key",
+      "description":"Your API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"ap_name",
+      "description":"Name of the Access Point",
+      "type":"string"
+    },
+    {
+      "field":"aruba_ap_model",
+      "description":"Model number of the Aruba AP",
+      "type":"string"
+    },
+    {
+      "field":"ip_address",
+      "description":"IP Address of the AP",
+      "type":"string"
+    },
+    {
+      "field":"mac_address",
+      "description":"MAC Address of the AP",
+      "type":"string"
+    },
+    {
+      "field":"ssid",
+      "description":"Wifi SSID of the AP",
+      "type":"string"
+    },
+    {
+      "field":"building_code",
+      "description":"Building Acronym",
+      "type":"string"
+    },
+    {
+      "field":"mac_address_secondary",
+      "description":"Secondary Address of the AP",
+      "type":"string"
+    },
+    {
+      "field":"latitude",
+      "description":"AP's latitude",
+      "type":"float"
+    },
+    {
+      "field":"longitude",
+      "description":"AP's longitude",
+      "type":"float"
+    },
+    {
+      "field":"floor",
+      "description":"Floor location of the API",
+      "type":"number"
+    }
+  ]
+}

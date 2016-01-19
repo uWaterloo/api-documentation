@@ -1,0 +1,160 @@
+{
+   "method_id":1721,
+   "method_url":"/feds/locations.{format}",
+   "method_name":"FEDS Locations and Hours",
+   "service_id":311,
+   "service_name":"feds",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "http://www.feds.ca/operations/"
+   ],
+   "method_description":"This method returns a list of all outlets and their operating hour data",
+   "additional_notes":[
+      "Usage won't increase if there is not data returned",
+      "We cannot modify the data from this method"
+   ],
+   "information_steward":"Food Services",
+   "request_examples":[
+      "http://api.uwaterloo.ca/v2/feds/locations.json",
+      "http://api.uwaterloo.ca/v2/feds/locations.xml",
+      "http://api.uwaterloo.ca/v2/feds/locations.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"outlet_id",
+         "description":"Outlet ID number (not always same as outlets.json method). Can be null",
+         "type":"integer"
+      },
+      {
+         "field":"outlet_name",
+         "description":"Outlet name",
+         "type":"string"
+      },
+      {
+         "field": "building",
+         "description":"Name of the building the outlet is located",
+         "type":"string"
+      },
+      {
+         "field":"logo",
+         "description":"URL of the outlet logo (size varies)",
+         "type":"string"
+      },
+      {
+         "field":"latitude",
+         "description":"Location latitude coordinate",
+         "type":"float"
+      },
+      {
+         "field":"longitude",
+         "description":"Location longitude coordinate",
+         "type":"float"
+      },
+      {
+         "field":"description",
+         "description":"Location blurb",
+         "type":"string"
+      },
+      {
+         "field":"notice",
+         "description":"Outlet-specific announcements",
+         "type":"string"
+      },
+      {
+         "field":"is_open_now",
+         "description":"Predicts if the location is currently open by taking the current time into account",
+         "type":"boolean"
+      },
+      {
+         "field":"opening_hours",
+         "description":"Weekly operating hours data",
+         "type":"object",
+         "children" : [
+           {
+             "field" : "{day_of_the_week}",
+             "description" : "Hours for all days of the week",
+             "type" : "object",
+             "children" : [
+               {
+                 "field" : "opening_hour",
+                 "description" : "Location's opening time (H:i format)",
+                 "type" : "time"
+               },
+               {
+                 "field" : "closing_hour",
+                 "description" : "Location's closing time (H:i format)",
+                 "type" : "time"
+               },
+               {
+                 "field" : "is_closed",
+                 "description" : "If the location is closed on that day",
+                 "type" : "boolean"
+               }
+             ]
+           }
+         ]
+      },
+      {
+         "field":"special_hours",
+         "description":"Special cases for operating hours",
+         "type":"list",
+         "children" : [
+           {
+             "field" : "date",
+             "description" : "Y-m-d format date for the special case",
+             "type" : "date"
+           },
+           {
+             "field" : "opening_hour",
+             "description" : "Location's opening time (H:i format)",
+             "type" : "time"
+           },
+           {
+             "field" : "closing_hour",
+             "description" : "Location's closing time (H:i format)",
+             "type" : "time"
+           }
+         ]
+      },
+      {
+         "field":"dates_closed",
+         "description":"Y-m-d format list of dates the outlet is closed",
+         "type":"list"
+      },
+      {
+         "field":"additional",
+         "description":"Key values for any additional data",
+         "type":"object",
+         "children" : [
+            {
+             "field" : "menu_url",
+             "description" : "URL of the menu, if available",
+             "type" : "string"
+           }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,95 @@
+{
+   "method_id":1789,
+   "method_url":"/blogs/{site}.{format}",
+   "method_name":"List blog posts for a given site",
+   "service_id":337,
+   "service_name":"blogs",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+   ],
+   "method_description":"This method returns a list of all blog posts for a given site", 
+   "additional_notes":[
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/blogs/student-success.json",
+      "https://api.uwaterloo.ca/v2/blogs/student-success.xml",
+      "https://api.uwaterloo.ca/v2/blogs/student-success.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"site",
+         "description":"Site ID",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Post id",
+         "type":"integer"
+      },
+      {
+         "field":"title",
+         "description":"Blog post title",
+         "type":"string"
+      },
+      {
+         "field":"teaser_raw",
+         "description":"Blog post excerpt with HTML",
+         "type":"string"
+      },
+      {
+         "field":"teaser",
+         "description":"Blog post excerpt",
+         "type":"string"
+      },
+      {
+         "field":"publisher",
+         "description":"Author name",
+         "type":"string"
+      },
+      {
+         "field":"delegated_author",
+         "description":"Delegated author's name",
+         "type":"string"
+      },
+      {
+         "field":"link",
+         "description":"Blog post URL",
+         "type":"string"
+      },
+      {
+         "field":"published",
+         "description":"Date published",
+         "type":"datetime"
+      },
+      {
+         "field":"updated",
+         "description":"Last updated",
+         "type":"datetime"
+      }
+   ]
+}

@@ -1,0 +1,85 @@
+{
+   "method_id":1861,
+   "method_url":"/opportunities.{format}",
+   "method_name":"List all open opportunities on campus",
+   "service_id":347,
+   "service_name":"opportunities",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+   ],
+   "method_description":"This method returns a list of all opportunities available on campus", 
+   "additional_notes":[
+      "The returned items are all UW admistered opportunities"
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/opportunities.json",
+      "https://api.uwaterloo.ca/v2/opportunities.xml",
+      "https://api.uwaterloo.ca/v2/opportunities.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Post id",
+         "type":"integer"
+      },
+      {
+         "field":"title",
+         "description":"Position title",
+         "type":"string"
+      },
+      {
+         "field":"site",
+         "description":"Site/department/faculty name",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Job Description",
+         "type":"string"
+      },
+      {
+         "field":"type",
+         "description":"Position type (fulltime/paid/volunteer etc)",
+         "type":"string"
+      },
+      {
+         "field":"link",
+         "description":"Post URL",
+         "type":"string"
+      },
+      {
+         "field":"posted",
+         "description":"Date posted",
+         "type":"datetime"
+      },
+      {
+         "field":"updated",
+         "description":"Last updated",
+         "type":"datetime"
+      }
+   ]
+}

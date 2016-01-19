@@ -1,0 +1,92 @@
+{
+   "method_id":1201,
+   "method_url":"/directory/{user_id}.{format}",
+   "method_name":"UWaterloo Whitepages Directory Search",
+   "service_id":251,
+   "service_name":"directory",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Realtime LDAP lookup",
+   "cache_time_s":0,
+   "data_type":"LDAP Database",
+   "data_source":[
+      "http://watiam.uwaterloo.ca/search/app/"
+   ],
+   "method_description":"This method returns user information for a given WatIAM ID",
+   "additional_notes":[
+      "All calls on this endpoint are logged as a security measure",
+      "Reverse searching or indexing this catalogue is not permitted"
+   ],
+   "information_steward":"IST Department",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/directory/ktalwar.json",
+      "https://api.uwaterloo.ca/v2/directory/kartik.talwar.xml",
+      "https://api.uwaterloo.ca/v2/directory/lwsmith.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"full_name",
+         "description":"Full Name",
+         "type":"string"
+      },
+      {
+         "field":"given_name",
+         "description":"Given Name",
+         "type":"string"
+      },
+      {
+         "field":"last_name",
+         "description":"Last Name",
+         "type":"string"
+      },
+      {
+         "field":"user_id",
+         "description":"User's WatIAM user ID",
+         "type":"string"
+      },
+      {
+         "field":"department",
+         "description":"User's Department/Faculty Association",
+         "type":"string"
+      },
+      {
+         "field":"common_names",
+         "description":"Other names of the user",
+         "type":"list"
+      },
+      {
+         "field":"offices",
+         "description":"Office(s) of the user",
+         "type":"list"
+      },
+      {
+         "field":"telephone_numbers",
+         "description":"All telephone numbers of the user with phone extension",
+         "type":"list"
+      },
+      {
+         "field":"homepage",
+         "description":"User's personal/department website from their profile",
+         "type":"string"
+      }
+   ]
+}

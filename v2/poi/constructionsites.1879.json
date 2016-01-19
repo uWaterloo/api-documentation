@@ -1,0 +1,78 @@
+{
+   "method_id":1879,
+   "method_url":"/v2/poi/constructionsites.{format}",
+   "method_name":"List of construction sites",
+   "service_id":349,
+   "service_name":"poi",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Upon pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "http://github.com/uWaterloo/datasets"
+   ],
+   "method_description":"This method returns list of construction sites across campus.",
+   "additional_notes":[
+   ],
+   "information_steward":"Campus Map Team",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/poi/constructionsites.json",
+      "https://api.uwaterloo.ca/v2/poi/constructionsites.geojson",
+      "https://api.uwaterloo.ca/v2/poi/constructionsites.xml",
+      "https://api.uwaterloo.ca/v2/poi/constructionsites.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "geojson",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"name",
+         "description":"Name of the location",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Location description",
+         "type":"string"
+      },
+      {
+         "field":"note",
+         "description":"Any additional notes",
+         "type":"string"
+      },
+      {
+         "field":"latitude",
+         "description":"Latitude of the parking lot",
+         "type":"float"
+      },
+      {
+         "field":"longitude",
+         "description":"Longitude of the parking lot",
+         "type":"float"
+      }
+   ]
+}

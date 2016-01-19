@@ -1,0 +1,171 @@
+{
+   "method_id":1811,
+   "method_url":"/opportunities/{site}/{id}.{format}",
+   "method_name":"List all open opportunities for a given id",
+   "service_id":347,
+   "service_name":"opportunities",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+   ],
+   "method_description":"This method returns a the job description for a given opportunity", 
+   "additional_notes":[
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/opportunities/planning/455.json",
+      "https://api.uwaterloo.ca/v2/opportunities/planning/455.xml",
+      "https://api.uwaterloo.ca/v2/opportunities/planning/455.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"site",
+         "description":"Site ID",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"id",
+         "description":"Job ID",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Post id",
+         "type":"integer"
+      },
+      {
+         "field":"site_id",
+         "description":"Site id",
+         "type":"string"
+      },
+      {
+         "field":"site_name",
+         "description":"Site name",
+         "type":"string"
+      },
+      {
+         "field":"title",
+         "description":"Position title",
+         "type":"string"
+      },
+      {
+         "field":"job_id",
+         "description":"Job ID (currently not implemented)",
+         "type":"string"
+      },
+      {
+         "field":"title",
+         "description":"Position title",
+         "type":"string"
+      },
+      {
+         "field":"pay",
+         "description":"Pay amount",
+         "type":"string"
+      },
+      {
+         "field":"pay_type",
+         "description":"Type of pay (salary, hourly etc)",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Job Description",
+         "type":"string"
+      },
+      {
+         "field":"department",
+         "description":"Hiring department",
+         "type":"string"
+      },
+      {
+         "field":"description_raw",
+         "description":"Position description with HTML",
+         "type":"string"
+      },
+      {
+         "field":"type",
+         "description":"Position type (fulltime/paid/volunteer etc)",
+         "type":"string"
+      },
+      {
+         "field":"application_deadline",
+         "description":"Deadline to apply",
+         "type":"date"
+      },
+      {
+         "field":"start_date",
+         "description":"Job start date",
+         "type":"date"
+      },
+      {
+         "field":"end_date",
+         "description":"Job end date",
+         "type":"date"
+      },
+      {
+         "field":"number_of_positions",
+         "description":"Number of positions available",
+         "type":"string"
+      },
+      {
+         "field":"application_link",
+         "description":"Link to directly apply for the job",
+         "type":"string"
+      },
+      {
+         "field":"reports_to",
+         "description":"Employee's direct report",
+         "type":"string"
+      },
+      {
+         "field":"published_by",
+         "description":"Watiam id of the publisher",
+         "type":"string"
+      },
+      {
+         "field":"link",
+         "description":"Post URL",
+         "type":"string"
+      },
+      {
+         "field":"posted",
+         "description":"Date posted",
+         "type":"datetime"
+      },
+      {
+         "field":"revision_id",
+         "description":"Job description revision id",
+         "type":"integer"
+      },
+      {
+         "field":"updated",
+         "description":"Last updated",
+         "type":"datetime"
+      }
+   ]
+}

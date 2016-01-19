@@ -1,0 +1,84 @@
+{
+   "method_id":1427,
+   "method_url":"/resources/sunshinelist.{format}",
+   "method_name":"List of UW employees with salaries more than $100k/yr",
+   "service_id":229,
+   "service_name":"resources",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"When updated by pull request",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+      "https://github.com/uWaterloo/Datasets/tree/master/Salaries",
+      "http://www.fin.gov.on.ca/en/publications/salarydisclosure/pssd/"
+   ],
+   "method_description":"This method returns a list of all UW employees that earn more than $100k/yr", 
+   "additional_notes":[
+      "Currently the data exists for all years: 1996-2014",
+      "This endpoint contains the University's salary disclosures (as required by the Public Sector Salary Disclosure Act, 1996). It does not include any addendum data."
+   ],
+   "information_steward":"IAP",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/resources/sunshinelist.json",
+      "https://api.uwaterloo.ca/v2/resources/sunshinelist.xml",
+      "https://api.uwaterloo.ca/v2/resources/sunshinelist.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter" : "year",
+         "description" : "Four digit year representation",
+         "is_required" : false,
+         "type" : "filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"employer",
+         "description":"Name of Employer (UW)",
+         "type":"string"
+      },
+      {
+         "field":"surname",
+         "description":"Last name of the employee",
+         "type":"string"
+      },
+      {
+         "field":"given_name",
+         "description":"Given name of the employee",
+         "type":"string"
+      },
+      {
+         "field":"position",
+         "description":"Employee's position at the University",
+         "type":"string"
+      },
+      {
+         "field":"salary_paid",
+         "description":"Salary paid per annum in dollars",
+         "type":"number"
+      },
+      {
+         "field":"taxable_benefits",
+         "description":"Employee's taxable benefits in dollars",
+         "type":"number"
+      }
+   ]
+}
