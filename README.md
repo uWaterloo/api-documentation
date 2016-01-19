@@ -68,7 +68,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - [See **Codes** endpoint for subject listings](https://github.com/uWaterloo/api-documentation#definitions-and-codes)
 
 
-### Awards
+### Awards/Scholarships
 
 - **[/awards/graduate](v2/awards/graduate.md)**
 - **[/awards/undergraduate](v2/awards/undergraduate.md)**
