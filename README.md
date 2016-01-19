@@ -82,7 +82,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/events/holidays](v2/events/holidays.md)**
 
 
-## Blogs
+### Blogs
 
 - **[/blogs/{site}](v2/blogs/blogs_site.md)**
 - **[/blogs/{site}/{id}](v2/blogs/blogs_site_id.md)**
@@ -95,7 +95,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/news/{site}/{id}](v2/news/news_site_id.md)**
 
 
-## Opportunities/Jobs
+### Opportunities/Jobs
 
 - **[/opportunities](v2/opportunities/opportunities.md)**
 - **[/opportunities/{site}](v2/opportunities/opportunities_site.md)**
@@ -151,7 +151,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/buildings/{building_code}/vendingmachines](v2/buildings/building_acronym_vendingmachines.md)**
 
 
-## Points of Interest
+### Points of Interest
 
 
 - **[/poi/atms](v2/poi/atm.md)**
@@ -177,7 +177,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/parking/lots/motorcycle](v2/parking/motorcycle.md)**
 
 
-## Transit
+### Transit
 
 - **[/transit/grt](v2/transit/grt.md)**
 - **[/transit/grt/stops](v2/transit/agency_stops.md)**
