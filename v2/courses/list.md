@@ -157,28 +157,28 @@ Any value can be `null`
   },
   "data":[
     {
-      course_id: "011672",
-      subject: "ACC",
-      catalog_number: "604",
-      title: "Statutory Interpretation"
+      "course_id": "011672",
+      "subject": "ACC",
+      "catalog_number": "604",
+      "title": "Statutory Interpretation"
     },
     {
-      course_id: "011673",
-      subject: "ACC",
-      catalog_number: "605",
-      title: "International Tax"
+      "course_id": "011673",
+      "subject": "ACC",
+      "catalog_number": "605",
+      "title": "International Tax"
     },
     {
-      course_id: "011674",
-      subject: "ACC",
-      catalog_number: "606",
-      title: "Business Valuations"
+      "course_id": "011674",
+      "subject": "ACC",
+      "catalog_number": "606",
+      "title": "Business Valuations"
     },
     {
-      course_id: "011675",
-      subject: "ACC",
-      catalog_number: "607",
-      title: "Tax Issues Integration"
+      "course_id": "011675",
+      "subject": "ACC",
+      "catalog_number": "607",
+      "title": "Tax Issues Integration"
     }
   ]
 }
