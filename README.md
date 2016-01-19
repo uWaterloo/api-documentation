@@ -49,9 +49,9 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### FEDS
 
-- **[/feds/locations](v2/feds/locations.md)**
 - **[/feds/events](v2/feds/events.md)**
 - **[/feds/events/{id}](v2/feds/events_id.md)**
+- **[/feds/locations](v2/feds/locations.md)**
 
 
 ### Course
@@ -146,22 +146,22 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 - **[/buildings/list](v2/buildings/list.md)**
 - **[/buildings/{building_code}](v2/buildings/building_acronym.md)**
+- **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
 - **[/buildings/{building_code}/accesspoints](v2/buildings/building_acronym_accesspoints.md)**
 - **[/buildings/{building_code}/vendingmachines](v2/buildings/building_acronym_vendingmachines.md)**
-- **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
 
 
 ## Points of Interest
 
 
-- **[/poi/atms](v2/poi/automatedtellermachines.md)**
-- **[/poi/accessibleentrances](v2/poi/accessibleentrances.md)**
-- **[/poi/automaticexternaldefibrillators](v2/poi/automaticexternaldefibrillators.md)**
-- **[/poi/constructionsites](v2/poi/constructionsites.md)**
+- **[/poi/atms](v2/poi/atm.md)**
 - **[/poi/greyhound](v2/poi/greyhound.md)**
 - **[/poi/helplines](v2/poi/helplines.md)**
 - **[/poi/libraries](v2/poi/libraries.md)**
 - **[/poi/photospheres](v2/poi/photospheres.md)**
+- **[/poi/defibrillators](v2/poi/defibrillators.md)**
+- **[/poi/constructionsites](v2/poi/constructionsites.md)**
+- **[/poi/accessibleentrances](v2/poi/accessibleentrances.md)**
 - **[/poi/visitorinformation](v2/poi/visitorinformation.md)**
 
 
@@ -169,12 +169,12 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Parking
 
 - **[/parking/watpark](v2/parking/watpark.md)**
-- **[/parking/lots/accessible](v2/parking/accessible.md)**
 - **[/parking/lots/meter](v2/parking/meter.md)**
-- **[/parking/lots/motorcycle](v2/parking/motorcycle.md)**
 - **[/parking/lots/permit](v2/parking/permit.md)**
-- **[/parking/lots/shortterm](v2/parking/shortterm.md)**
 - **[/parking/lots/visitor](v2/parking/visitor.md)**
+- **[/parking/lots/shortterm](v2/parking/shortterm.md)**
+- **[/parking/lots/accessible](v2/parking/accessible.md)**
+- **[/parking/lots/motorcycle](v2/parking/motorcycle.md)**
 
 
 ## Transit
