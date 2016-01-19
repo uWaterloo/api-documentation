@@ -154,7 +154,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 ### Points of Interest
 
 
-- **[/poi/atms](v2/poi/atm.md)**
+- **[/poi/atms](v2/poi/atms.md)**
 - **[/poi/greyhound](v2/poi/greyhound.md)**
 - **[/poi/helplines](v2/poi/helplines.md)**
 - **[/poi/libraries](v2/poi/libraries.md)**
