@@ -46,8 +46,17 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/foodservices/{year}/{week}/notes](v2/foodservices/year_week_notes.md)**
 - **[/foodservices/{year}/{week}/announcements](v2/foodservices/year_week_announcements.md)**
 
+
+### FEDS
+
+- **[/feds/events](v2/feds/events.md)**
+- **[/feds/events/{id}](v2/feds/events_id.md)**
+- **[/feds/locations](v2/feds/locations.md)**
+
+
 ### Course
 
+- **[/courses/list](v2/courses/list.md)**
 - **[/courses/{subject}](v2/courses/subject.md)**
 - **[/courses/{course_id}](v2/courses/course_id.md)**
 - **[/courses/{class_number}/schedule](v2/courses/class_number_schedule.md)**
@@ -58,6 +67,13 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - [See **Terms** endpoint for bulk data](https://github.com/uWaterloo/api-documentation#terms)
 - [See **Codes** endpoint for subject listings](https://github.com/uWaterloo/api-documentation#definitions-and-codes)
 
+
+### Awards
+
+- **[/awards/graduate](v2/awards/graduate.md)**
+- **[/awards/undergraduate](v2/awards/undergraduate.md)**
+
+
 ### Events
 
 - **[/events](v2/events/events.md)**
@@ -66,23 +82,40 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/events/holidays](v2/events/holidays.md)**
 
 
+## Blogs
+
+- **[/blogs/{site}](v2/blogs/blogs_site.md)**
+- **[/blogs/{site}/{id}](v2/blogs/blogs_site_id.md)**
+
+
 ### News
 
 - **[/news](v2/news/news.md)**
 - **[/news/{site}](v2/news/news_site.md)**
 - **[/news/{site}/{id}](v2/news/news_site_id.md)**
 
+
+## Opportunities/Jobs
+
+- **[/opportunities](v2/opportunities/opportunities.md)**
+- **[/opportunities/{site}](v2/opportunities/opportunities_site.md)**
+- **[/opportunities/{site}/{id}](v2/opportunities/opportunities_site_id.md)**
+
+
 ### Services
 
 - **[/services/{site}](v2/services/services_site.md)**
+
 
 ### Weather
 
 - **[/weather/current](v2/weather/current.md)**
 
+
 ### Terms
 
 - **[/terms/list](v2/terms/list.md)**
+- **[/terms/{term}/courses](v2/terms/term_courses.md)**
 - **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
 - **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
 - **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
@@ -97,6 +130,8 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/resources/printers](v2/resources/printers.md)**
 - **[/resources/infosessions](v2/resources/infosessions.md)**
 - **[/resources/goosewatch](v2/resources/goosewatch.md)**
+- **[/resources/sunshinelist](v2/resources/sunshinelist.md)**
+
 
 ### Definitions and Codes
 
@@ -106,15 +141,52 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/codes/subjects](v2/codes/subjects.md)**
 - **[/codes/instructions](v2/codes/instructions.md)**
 
+
 ### Building
 
 - **[/buildings/list](v2/buildings/list.md)**
 - **[/buildings/{building_code}](v2/buildings/building_acronym.md)**
 - **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
+- **[/buildings/{building_code}/accesspoints](v2/buildings/building_acronym_accesspoints.md)**
+- **[/buildings/{building_code}/vendingmachines](v2/buildings/building_acronym_vendingmachines.md)**
+
+
+## Points of Interest
+
+
+- **[/poi/atms](v2/poi/atm.md)**
+- **[/poi/greyhound](v2/poi/greyhound.md)**
+- **[/poi/helplines](v2/poi/helplines.md)**
+- **[/poi/libraries](v2/poi/libraries.md)**
+- **[/poi/photospheres](v2/poi/photospheres.md)**
+- **[/poi/defibrillators](v2/poi/defibrillators.md)**
+- **[/poi/constructionsites](v2/poi/constructionsites.md)**
+- **[/poi/accessibleentrances](v2/poi/accessibleentrances.md)**
+- **[/poi/visitorinformation](v2/poi/visitorinformation.md)**
+
+
 
 ### Parking
 
 - **[/parking/watpark](v2/parking/watpark.md)**
+- **[/parking/lots/meter](v2/parking/meter.md)**
+- **[/parking/lots/permit](v2/parking/permit.md)**
+- **[/parking/lots/visitor](v2/parking/visitor.md)**
+- **[/parking/lots/shortterm](v2/parking/shortterm.md)**
+- **[/parking/lots/accessible](v2/parking/accessible.md)**
+- **[/parking/lots/motorcycle](v2/parking/motorcycle.md)**
+
+
+## Transit
+
+- **[/transit/grt](v2/transit/grt.md)**
+- **[/transit/grt/stops](v2/transit/agency_stops.md)**
+
+
+### People Directory Search
+
+- **[/directory/{user_id}](v2/directory/search.md)**
+
 
 ### API
 
@@ -123,6 +195,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 - **[/api/methods](v2/api/methods.md)**
 - **[/api/versions](v2/api/versions.md)**
 - **[/api/changelog](v2/api/changelog.md)**
+
 
 ### Server
 
@@ -148,9 +221,8 @@ If you would like to offer your suggestions or report any misfindings regarding 
 
 ### Usage
 
-Currently, the API requests are restricted to **25,000** calls per month for a given key. This number may increase in the future.
+The API is now free to use with unlimited calls!
 
-*If your implementation of the API requires additional requests, feel free to contact us regarding the removal of your limit.*
 
 ### Data
 
