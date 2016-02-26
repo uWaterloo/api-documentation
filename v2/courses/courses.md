@@ -1,12 +1,12 @@
 # List of all courses
 
 ```
-GET /courses/list.{format}
+GET /courses.{format}
 ```
 
 ## Description
 
-> This method returns a list of all courses (currently offered, historically offered) from the opendata database
+> This method returns a list of all courses (currently and historically offered) from the opendata database
 
 ## Summary
 
@@ -65,7 +65,7 @@ GET /courses/list.{format}
 ## Parameters
 
 ```
-GET /courses/list.{format}
+GET /courses.{format}
 ```
 
 <table>
@@ -98,12 +98,12 @@ GET /courses/list.{format}
 ## Examples
 
 ```
-GET /courses/list.{format}
+GET /courses.{format}
 ```
 
-- **https://api.uwaterloo.ca/v2/courses/list.json**
-- **https://api.uwaterloo.ca/v2/courses/list.xml**
-- **https://api.uwaterloo.ca/v2/courses/list.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/courses.json**
+- **https://api.uwaterloo.ca/v2/courses.xml**
+- **https://api.uwaterloo.ca/v2/courses.json?callback=myResponse**
 
 
 ## Response
@@ -115,19 +115,19 @@ GET /courses/list.{format}
     <td><b>Value Description</b></td>
   </tr>
   <tr>
-    <td><b>class_number</b></td>
-    <td>integer</td>
-    <td>Associated term specific class enrollment number</td>
-  </tr>
-  <tr>
-    <td><b>catalog_number</b></td>
+    <td><b>course_id</b></td>
     <td>string</td>
-    <td>Registrar assigned class number</td>
+    <td>Registrar assigned course ID</td>
   </tr>
   <tr>
     <td><b>subject</b></td>
     <td>string</td>
     <td>Requested subject acronym</td>
+  </tr>
+  <tr>
+    <td><b>catalog_number</b></td>
+    <td>string</td>
+    <td>Registrar assigned class number</td>
   </tr>
   <tr>
     <td><b>title</b></td>
@@ -146,41 +146,34 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":796875,
-    "timestamp":1452281864,
-    "status":204,
-    "message":"No data returned",
-    "method_id":1439,
+    "requests":835287,
+    "timestamp":1456502387,
+    "status":200,
+    "message":"Request successful",
+    "method_id":1471,
     "method":{
       
     }
   },
   "data":[
     {
-      "course_id": "011672",
-      "subject": "ACC",
-      "catalog_number": "604",
-      "title": "Statutory Interpretation"
+      "course_id":"011672",
+      "subject":"ACC",
+      "catalog_number":"604",
+      "title":"Statutory Interpretation"
     },
     {
-      "course_id": "011673",
-      "subject": "ACC",
-      "catalog_number": "605",
-      "title": "International Tax"
+      "course_id":"011673",
+      "subject":"ACC",
+      "catalog_number":"605",
+      "title":"International Tax"
     },
     {
-      "course_id": "011674",
-      "subject": "ACC",
-      "catalog_number": "606",
-      "title": "Business Valuations"
-    },
-    {
-      "course_id": "011675",
-      "subject": "ACC",
-      "catalog_number": "607",
-      "title": "Tax Issues Integration"
+      "course_id":"011674",
+      "subject":"ACC",
+      "catalog_number":"606",
+      "title":"Business Valuations"
     }
   ]
 }
 ```
-
