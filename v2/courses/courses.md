@@ -98,7 +98,7 @@ GET /courses.{format}
 ## Examples
 
 ```
-GET /courses/list.{format}
+GET /courses.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/courses.json**
