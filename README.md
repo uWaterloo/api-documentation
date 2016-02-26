@@ -56,7 +56,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ### Course
 
-- **[/courses/list](v2/courses/list.md)**
+- **[/courses](v2/courses/courses.md)**
 - **[/courses/{subject}](v2/courses/subject.md)**
 - **[/courses/{course_id}](v2/courses/course_id.md)**
 - **[/courses/{class_number}/schedule](v2/courses/class_number_schedule.md)**
