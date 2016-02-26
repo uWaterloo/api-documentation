@@ -173,10 +173,7 @@ Any value can be `null`
       "subject":"ACC",
       "catalog_number":"606",
       "title":"Business Valuations"
-    },
-```
-...
-```json
+    }
   ]
 }
 ```
