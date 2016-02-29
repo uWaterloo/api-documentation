@@ -1,0 +1,77 @@
+{
+   "method_id":1483,
+   "method_url":"/foodservices/vendingmachines.{format}",
+   "method_name":"Food Services Vending Machines",
+   "service_id":269,
+   "service_name":"foodservices",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every request (live)",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+      "https://uwaterloo.ca/food-services/"
+   ],
+   "method_description":"This method returns list of vending machines available in a given building",
+   "additional_notes":[
+   ],
+   "information_steward":"Food Services",
+   "request_examples":[
+      "http://api.uwaterloo.ca/v2/foodservices/vendingmachines.json",
+      "http://api.uwaterloo.ca/v2/foodservices/vendingmachines.xml",
+      "http://api.uwaterloo.ca/v2/foodservices/vendingmachines.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"building_name",
+         "description":"Name of the Building",
+         "type":"string"
+      },
+      {
+         "field":"building_acronym",
+         "description":"Building Acronym",
+         "type":"string"
+      },
+      {
+         "field":"vending_machines",
+         "description":"Machines list",
+         "type":"list",
+         "children":[
+            {
+               "field":"location",
+               "description":"Relative machine location inside the bulding",
+               "type":"string"
+            },
+            {
+               "field":"machines",
+               "description":"Total machines in that given location",
+               "type":"number"
+            },
+            {
+               "field":"products",
+               "description":"List of products/machine type",
+               "type":"list"
+            }
+         ]
+      }
+   ]
+}

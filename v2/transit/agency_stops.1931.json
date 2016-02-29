@@ -1,0 +1,97 @@
+{
+   "method_id":1913,
+   "method_url":"/v2/transit/grt/stops.{format}",
+   "method_name":"List of GRT bus stops",
+   "service_id":349,
+   "service_name":"poi",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Every day",
+   "cache_time_s":0,
+   "data_type":"CSV",
+   "data_source":[
+   ],
+   "method_description":"This method returns list of all GRT bus stops",
+   "additional_notes":[
+   ],
+   "information_steward":"GTFS data from agency",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/transit/grt/stops.json",
+      "https://api.uwaterloo.ca/v2/transit/grt/stops.geojson",
+      "https://api.uwaterloo.ca/v2/transit/grt/stops.xml",
+      "https://api.uwaterloo.ca/v2/transit/grt/stops.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "geojson",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"format",
+         "description":"The format of the output",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Stop id",
+         "type":"string"
+      },
+      {
+         "field":"name",
+         "description":"Stop name",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Stop description",
+         "type":"string"
+      },
+      {
+         "field":"parent",
+         "description":"Stop parent id",
+         "type":"string"
+      },
+      {
+         "field":"zone_id",
+         "description":"Stop zone id",
+         "type":"string"
+      },
+      {
+         "field":"location_type",
+         "description":"Location type (stop, etc)",
+         "type":"string"
+      },
+      {
+         "field":"url",
+         "description":"Stop URL (if applicable)",
+         "type":"string"
+      },
+      {
+         "field":"latitude",
+         "description":"Stop latitude",
+         "type":"float"
+      },
+      {
+         "field":"longitude",
+         "description":"Stop longitude",
+         "type":"float"
+      }
+   ]
+}

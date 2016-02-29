@@ -92,6 +92,7 @@ GET /foodservices/locations.{format}
 **Output Formats**
 
 - json
+- geojson
 - xml
 
 
@@ -102,6 +103,7 @@ GET /foodservices/locations.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/foodservices/locations.json**
+- **https://api.uwaterloo.ca/v2/foodservices/locations.geojson**
 - **https://api.uwaterloo.ca/v2/foodservices/locations.xml**
 - **https://api.uwaterloo.ca/v2/foodservices/locations.json?callback=myResponse**
 

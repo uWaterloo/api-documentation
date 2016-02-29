@@ -57,6 +57,11 @@
          "field":"unit",
          "description":"Subjects parent unit",
          "type":"string"
+      },
+      {
+         "field":"group",
+         "description":"Subjects parent group",
+         "type":"string"
       }
    ]
 }

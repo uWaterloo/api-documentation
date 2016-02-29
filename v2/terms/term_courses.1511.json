@@ -1,0 +1,66 @@
+{
+   "method_id":1511,
+   "method_url":"/terms/{term_id}.courses.{format}",
+   "method_name":"Course listings by term",
+   "service_id":241,
+   "service_name":"terms",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every term",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://ugradcalendar.uwaterloo.ca/",
+      "http://gradcalendar.uwaterloo.ca/"
+   ],
+   "method_description":"This method returns a list of all courses offered for the given term from the opendata database",
+   "additional_notes":[
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/terms/1161/courses.json",
+      "https://api.uwaterloo.ca/v2/terms/1161/courses.xml",
+      "https://api.uwaterloo.ca/v2/terms/1161/courses.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"units",
+         "description":"Course credits/units",
+         "type":"float"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Registrar assigned class number",
+         "type":"string"
+      },
+      {
+         "field":"subject",
+         "description":"Requested subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"title",
+         "description":"Class name and title",
+         "type":"string"
+      }
+   ]
+}

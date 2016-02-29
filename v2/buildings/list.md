@@ -98,6 +98,7 @@ GET /buildings/list.{format}
 **Output Formats**
 
 - json
+- geojson
 - xml
 
 
@@ -108,6 +109,7 @@ GET /buildings/list.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/buildings/list.json**
+- **https://api.uwaterloo.ca/v2/buildings/list.geojson**
 - **https://api.uwaterloo.ca/v2/buildings/list.xml**
 - **https://api.uwaterloo.ca/v2/buildings/list.json?callback=myResponse**
 

@@ -21,11 +21,13 @@
   "information_steward":"Institution of Analysis & Planning (IAP)",
   "request_examples":[
     "https://api.uwaterloo.ca/v2/buildings/list.json",
+    "https://api.uwaterloo.ca/v2/buildings/list.geojson",
     "https://api.uwaterloo.ca/v2/buildings/list.xml",
     "https://api.uwaterloo.ca/v2/buildings/list.json?callback=myResponse"
   ],
   "response_formats":[
     "json",
+    "geojson",
     "xml"
   ],
   "method_parameters":[

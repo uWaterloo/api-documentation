@@ -1,9 +1,9 @@
 {
-   "method_id":1381,
-   "method_url":"/foodservices/locations.{format}",
-   "method_name":"Food Services Locations and Hours",
-   "service_id":269,
-   "service_name":"foodservices",
+   "method_id":1721,
+   "method_url":"/feds/locations.{format}",
+   "method_name":"FEDS Locations and Hours",
+   "service_id":311,
+   "service_name":"feds",
    "request_protocol":"GET",
    "is_authenticated":true,
    "is_enabled" : true,
@@ -11,7 +11,7 @@
    "cache_time_s":0,
    "data_type":"Direct DB Connection",
    "data_source":[
-      "https://uwaterloo.ca/food-services/"
+      "http://www.feds.ca/operations/"
    ],
    "method_description":"This method returns a list of all outlets and their operating hour data",
    "additional_notes":[
@@ -20,14 +20,12 @@
    ],
    "information_steward":"Food Services",
    "request_examples":[
-      "http://api.uwaterloo.ca/v2/foodservices/locations.json",
-      "http://api.uwaterloo.ca/v2/foodservices/locations.geojson",
-      "http://api.uwaterloo.ca/v2/foodservices/locations.xml",
-      "http://api.uwaterloo.ca/v2/foodservices/locations.json?callback=myResponse"
+      "http://api.uwaterloo.ca/v2/feds/locations.json",
+      "http://api.uwaterloo.ca/v2/feds/locations.xml",
+      "http://api.uwaterloo.ca/v2/feds/locations.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
-      "geojson",
       "xml"
    ],
    "method_parameters":[
@@ -145,6 +143,18 @@
          "field":"dates_closed",
          "description":"Y-m-d format list of dates the outlet is closed",
          "type":"list"
+      },
+      {
+         "field":"additional",
+         "description":"Key values for any additional data",
+         "type":"object",
+         "children" : [
+            {
+             "field" : "menu_url",
+             "description" : "URL of the menu, if available",
+             "type" : "string"
+           }
+         ]
       }
    ]
 }

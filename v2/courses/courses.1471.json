@@ -1,0 +1,68 @@
+{
+   "method_id":1471,
+   "method_url":"/courses.{format}",
+   "method_name":"List of all courses",
+   "service_id":239,
+   "service_name":"courses",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Every term",
+   "cache_time_s":0,
+   "data_type":"Scraped",
+   "data_source":[
+      "http://ugradcalendar.uwaterloo.ca/",
+      "http://gradcalendar.uwaterloo.ca/"
+   ],
+   "method_description":"This method returns a list of all courses (currently and historically offered) from the opendata database",
+   "additional_notes":[
+     "This endpoint returns over 6000 courses!"
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/courses.json",
+      "https://api.uwaterloo.ca/v2/courses.xml",
+      "https://api.uwaterloo.ca/v2/courses.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"course_id",
+         "description":"Registrar assigned course ID",
+         "type":"string"
+      },
+      {
+         "field":"subject",
+         "description":"Requested subject acronym",
+         "type":"string"
+      },
+      {
+         "field":"catalog_number",
+         "description":"Registrar assigned class number",
+         "type":"string"
+      },
+
+      {
+         "field":"title",
+         "description":"Class name and title",
+         "type":"string"
+      }
+   ]
+}

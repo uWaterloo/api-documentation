@@ -1,0 +1,158 @@
+{
+  "method_id":1777,
+  "method_url":"/awards/graduate.{format}",
+  "method_name":"Get all graduate awards and scholarships",
+  "service_id":317,
+  "service_name":"awards",
+  "request_protocol":"GET",
+  "is_authenticated":true,
+  "is_enabled":true,
+  "update_frequency":"Realtime",
+  "cache_time_s":0,
+  "data_type":"Database",
+  "data_source":[
+  ],
+  "method_description":"This method returns a a list of all graduate awards, bursaries and scholarships available to students",
+  "additional_notes":[
+  ],
+  "information_steward":"Each individual site's data steward",
+  "request_examples":[
+    "https://api.uwaterloo.ca/v2/awards/graduate.json",
+    "https://api.uwaterloo.ca/v2/awards/graduate.xml",
+    "https://api.uwaterloo.ca/v2/awards/graduate.json?callback=myResponse"
+  ],
+  "response_formats":[
+    "json",
+    "xml"
+  ],
+  "method_parameters":[
+    {
+      "parameter":"key",
+      "description":"Valid API key",
+      "is_required":true,
+      "type":"filter"
+    },
+    {
+      "parameter":"callback",
+      "description":"JSONP callback format",
+      "is_required":false,
+      "type":"filter"
+    }
+  ],
+  "response_fields":[
+    {
+      "field":"id",
+      "description":"Unique award id",
+      "type":"integer"
+    },
+    {
+      "field":"title",
+      "description":"Award name",
+      "type":"string"
+    },
+    {
+      "field":"status",
+      "description":"Award status",
+      "type":"string"
+    },
+    {
+      "field":"value",
+      "description":"Award's monetary value",
+      "type":"string"
+    },
+    {
+      "field":"type",
+      "description":"Type of award (scholarship, bursary, grant etc)",
+      "type":"list"
+    },
+    {
+      "field":"description",
+      "description":"Award description and criteria",
+      "type":"string"
+    },
+    {
+      "field":"citizenship",
+      "description":"Citizenship requirements and eligibility for the award",
+      "type":"list"
+    },
+    {
+      "field":"program",
+      "description":"List of academic programs eligible for the award",
+      "type":"list"
+    },
+    {
+      "field":"application",
+      "description":"Application requirement object",
+      "type":"object",
+      "children" : [
+        {
+          "field":"type",
+          "description":"Clarification on how to apply (eg: automatically considered or application required)",
+          "type":"list"
+        },
+        {
+          "field":"enrollment_year",
+          "description":"Student's enrollment eligibility criteria",
+          "type":"list"
+        },
+        {
+          "field":"eligibility",
+          "description":"Award eligibility details",
+          "type":"list"
+        },
+        {
+          "field":"instructions",
+          "description":"Instructions on applying for the award",
+          "type":"list"
+        },
+        {
+          "field":"additional",
+          "description":"Additional information on the application process",
+          "type":"list"
+        }
+      ]
+    },
+    {
+      "field" : "deadlines",
+      "description" : "Award deadlines",
+      "type" : "object",
+      "children" : [
+        {
+          "field":"term",
+          "description":"List of terms that the award is offered",
+          "type":"list"
+        },
+        {
+          "field":"application",
+          "description":"Application deadline for the given term",
+          "type":"list"
+        },
+        {
+          "field":"extended",
+          "description":"Any additional extended deadline (if applicable)",
+          "type":"date"
+        }
+      ]
+    },
+    {
+      "field":"links",
+      "description":"Additional links for more information",
+      "type":"list"
+    },
+    {
+      "field":"contact",
+      "description":"Contact information regarding the award and application",
+      "type":"string"
+    },
+    {
+      "field":"vid",
+      "description":"Award description revision id",
+      "type":"integer"
+    },
+    {
+      "field":"link",
+      "description":"URL to the award page",
+      "type":"string"
+    }
+  ]
+}

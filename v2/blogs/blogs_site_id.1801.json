@@ -1,0 +1,136 @@
+{
+   "method_id":1801,
+   "method_url":"/blogs/{site}/{id}.{format}",
+   "method_name":"List blog posts details for a given id",
+   "service_id":337,
+   "service_name":"blogs",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled" : true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Direct DB Connection",
+   "data_source":[
+   ],
+   "method_description":"This method returns a blog posts details for a post id", 
+   "additional_notes":[
+   ],
+   "information_steward":"Each individual site's data steward",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/blogs/student-success/7721.json",
+      "https://api.uwaterloo.ca/v2/blogs/student-success/7721.xml",
+      "https://api.uwaterloo.ca/v2/blogs/student-success/7721.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Your API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"site",
+         "description":"Site ID",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"id",
+         "description":"Post ID",
+         "is_required":true,
+         "type":"input"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Post id",
+         "type":"integer"
+      },
+      {
+         "field":"title",
+         "description":"Blog post title",
+         "type":"string"
+      },
+      {
+         "field":"description_raw",
+         "description":"Blog post content with HTML",
+         "type":"string"
+      },
+      {
+         "field":"description",
+         "description":"Blog post content",
+         "type":"string"
+      },
+      {
+         "field":"publisher",
+         "description":"Author name",
+         "type":"string"
+      },
+      {
+         "field":"audience",
+         "description":"Blog post audience tags",
+         "type":"list"
+      },
+      {
+         "field":"delegated_author",
+         "description":"Delegated author's name",
+         "type":"string"
+      },
+      {
+         "field":"podcast_url",
+         "description":"URL of the podcast audio file (if applicable)",
+         "type":"string"
+      },
+      {
+         "field":"transcript_url",
+         "description":"Audio transcript url (if applicable)",
+         "type":"string"
+      },
+      {
+         "field":"publisher",
+         "description":"Author watiam id",
+         "type":"string"
+      },
+      {
+         "field":"site_id",
+         "description":"Blog post site's id",
+         "type":"string"
+      },
+      {
+         "field":"site_name",
+         "description":"Blog post site's name",
+         "type":"string"
+      },
+      {
+         "field":"revision_id",
+         "description":"Blog post revision identifier",
+         "type":"integer"
+      },
+      {
+         "field":"link",
+         "description":"Blog post URL",
+         "type":"string"
+      },
+      {
+         "field":"published",
+         "description":"Date published",
+         "type":"datetime"
+      },
+      {
+         "field":"updated",
+         "description":"Last updated",
+         "type":"datetime"
+      }
+   ]
+}
