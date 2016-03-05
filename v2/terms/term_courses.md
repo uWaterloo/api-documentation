@@ -1,7 +1,7 @@
 # Course listings by term
 
 ```
-GET /terms/{term_id}.courses.{format}
+GET /terms/{term_id}/courses.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET /terms/{term_id}.courses.{format}
 ## Parameters
 
 ```
-GET /terms/{term_id}.courses.{format}
+GET /terms/{term_id}/courses.{format}
 ```
 
 <table>
