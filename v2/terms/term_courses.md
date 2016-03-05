@@ -64,7 +64,7 @@ GET /terms/{term_id}.courses.{format}
 ## Parameters
 
 ```
-GET /terms/{term_id}.courses.{format}
+GET /terms/{term_id}/courses.{format}
 ```
 
 <table>
@@ -97,7 +97,7 @@ GET /terms/{term_id}.courses.{format}
 ## Examples
 
 ```
-GET /terms/{term_id}.courses.{format}
+GET /terms/{term_id}/courses.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/terms/1161/courses.json**
