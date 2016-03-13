@@ -127,22 +127,22 @@ GET /resources/infosessions.{format}
   <tr>
     <td><b>date</b></td>
     <td>string</td>
-    <td>Session date</td>
+    <td>Session date in yyyy/mm/dd format</td>
   </tr>
   <tr>
     <td><b>start_time</b></td>
     <td>string</td>
-    <td>Session start time</td>
+    <td>Session start time in hh:mm 24 hour format</td>
   </tr>
   <tr>
     <td><b>end_time</b></td>
     <td>string</td>
-    <td>Session end time</td>
+    <td>Session end time in hh:mm 24 hour format</td>
   </tr>
-  <tr>
-    <td><b>location</b></td>
+    <tr>
+    <td><b>description</b></td>
     <td>string</td>
-    <td>Session campus location</td>
+    <td>Information about the session</td>
   </tr>
   <tr>
     <td><b>website</b></td>
@@ -150,19 +150,48 @@ GET /resources/infosessions.{format}
     <td>Employer's website</td>
   </tr>
   <tr>
+    <td><b>building</b></td>
+    <td>object</td>
+    <td>
+      Infosession location data<br>
+      <table>
+        <tr>
+          <td><b>code</b></td>
+          <td>string</td>
+          <td>Building code</td>
+        </tr>
+        <tr>
+          <td><b>name</b></td>
+          <td>string</td>
+          <td>Name of building</td>
+        </tr>
+        <tr>
+          <td><b>room</b></td>
+          <td>string</td>
+          <td>Room within building</td>
+        </tr>
+        <tr>
+          <td><b>latitude</b></td>
+          <td>float</td>
+          <td>Location latitude coordinate</td>
+        </tr>
+        <tr>
+          <td><b>longitude</b></td>
+          <td>float</td>
+          <td>Location longitude coordinate</td>
+        </tr>
+        <tr>
+          <td><b>map_url</b></td>
+          <td>string</td>
+          <td>URL to uwaterloo map with infosession location</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
     <td><b>audience</b></td>
-    <td>string</td>
-    <td>Intended student audience</td>
-  </tr>
-  <tr>
-    <td><b>programs</b></td>
-    <td>string</td>
-    <td>Intended programs for student audience</td>
-  </tr>
-  <tr>
-    <td><b>description</b></td>
-    <td>string</td>
-    <td>Information about the session</td>
+    <td>list</td>
+    <td>List of intended programs for student audience</td>
   </tr>
   <tr>
     <td><b>link</b></td>
@@ -181,83 +210,104 @@ Any value can be `null`
 ```json
 {
   "meta":{
-    "requests":148,
-    "timestamp":1382028148,
+    "requests":31454,
+    "timestamp":1456706180,
     "status":200,
     "message":"Request successful",
     "method_id":1129,
-    "version":2.07,
     "method":{
       
     }
   },
   "data":[
     {
-      "id":"2116",
-      "employer":"Accenture (Registration Needed to Attend)",
-      "date":"September 5, 2013",
-      "start_time":"09:30 AM",
-      "end_time":"1:00 PM",
-      "location":"TBD",
-      "website":"",
-      "audience":"3rd and 4th year Students",
-      "programs":"Mathematics, Engineering, Computer Science",
-      "description":"This event will be a preface to the fall information session.  We are offering you an opportunity to connect one-on-one with a Technology Consulting Analyst and the Executive Sponsor of the campus recruitment program.  You are welcome to ask questions pertaining to careers at Accenture, the day in the life of a Consulting Analyst, how to best prepare for a career with us, and any other questions you may have. Please register for a 15 minute session by contacting Andrew Davidson at abdavidson@uwaterloo.ca.",
-      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2116"
+      "id":3681,
+      "employer":"Google",
+      "date":"2016-01-05",
+      "day":"January",
+      "start_time":"17:00",
+      "end_time":"19:00",
+      "description":"Info session to discuss options at Google for majors outside of Computer Science.",
+      "website":"http:\/\/www.google.com\/careers\/students",
+      "building":{
+        "code":"FED",
+        "name":"Federation Hall",
+        "room":"Main Hall",
+        "latitude":43.4732,
+        "longitude":-80.5485,
+        "map_url":"https:\/\/uwaterloo.ca\/map\/FED?basemap=D#map=17\/43.4732\/-80.5485"
+      },
+      "audience":[
+        "ENG - Computer",
+        "ENG - Electrical",
+        "ENG - Mechatronics",
+        "ENG - Software",
+        "ENG - System Design",
+        "MATH - Combinatorics & Optimization",
+        "MATH - Computer Science",
+        "MATH - Pure Mathematics"
+      ],
+      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id=3681"
     },
     {
-      "id":"2093",
-      "employer":"McKinsey & Company",
-      "date":"September 5, 2013",
-      "start_time":"7:30 PM",
-      "end_time":"9:00 PM",
-      "location":"TC 2218",
-      "website":"http:\/\/mckinsey.com\/careers",
-      "audience":"Co-op and Graduating Students",
-      "programs":"MASTERS - Management Sciences, MASTERS - Civil Engineering, Info Tech , Engineering, Business",
-      "description":"",
-      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2093"
+      "id":3739,
+      "employer":"Mattermost Inc.",
+      "date":"2016-01-05",
+      "day":"January",
+      "start_time":"11:30",
+      "end_time":"13:30",
+      "description":"Mattermost, Inc. is Y Combinator-funded company behind Mattermost, an open source messaging platform available from http:\/\/mattermost.org. Here you'll write thoughtful, high-quality, open source code that's seen, used, shared and extended around the world.",
+      "website":"mattermost.org",
+      "building":{
+        "code":"DC",
+        "name":"William G. Davis Computer Research Centre",
+        "room":"Corporate Lounge 1301",
+        "latitude":43.4727,
+        "longitude":-80.5421,
+        "map_url":"https:\/\/uwaterloo.ca\/map\/DC?basemap=D#map=17\/43.4727\/-80.5421"
+      },
+      "audience":[
+        "ENG - Computer",
+        "ENG - Nanotechnology",
+        "ENG - Software",
+        "ENG - System Design",
+        "MATH - Applied Mathematics",
+        "MATH - Computer Science",
+        "MATH - Information Technology Management",
+        "MATH - Statistics"
+      ],
+      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id=3739"
     },
     {
-      "id":"2082",
-      "employer":"Hulu",
-      "date":"September 9, 2013",
-      "start_time":"11:30 AM",
-      "end_time":"1:30 PM",
-      "location":"TC 2218",
-      "website":"http:\/\/www.hulu.com",
-      "audience":"Co-op and Graduating Students",
-      "programs":"Applied Mathematics, Computer Engineering, Computer Science, Software Engineering, Systems Design Engineering",
-      "description":"",
-      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2082"
-    },
-    {
-      "id":"2107",
-      "employer":"FreshBooks",
-      "date":"September 9, 2013",
-      "start_time":"3:00 PM",
-      "end_time":"4:30 PM",
-      "location":"TC 2218",
-      "website":"http:\/\/freshbooks.com\/careers",
-      "audience":"Co-op and Graduating Students",
-      "programs":"Mathematics, Engineering",
-      "description":"",
-      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2107"
-    },
-    {
-      "id":"2006",
-      "employer":"Wal-mart",
-      "date":"September 9, 2013",
-      "start_time":"5:00 PM",
-      "end_time":"7:00 PM",
-      "location":"TC 2218",
-      "website":"http:\/\/walmartoncampus.ca",
-      "audience":"Graduating Students",
-      "programs":"Accounting and Financial Management, Business, Financial Management",
-      "description":"",
-      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id2006"
+      "id":3758,
+      "employer":"Deloitte",
+      "date":"2016-01-05",
+      "day":"January",
+      "start_time":"19:30",
+      "end_time":"21:30",
+      "description":"Want to know what makes Deloitte different? Join us at our upcoming campus information session to learn more about our firm, our work and our culture. You'll have the opportunity to ask your most pressing questions and to meet professionals who were once in your shoes. Find out how to launch your career and why so many people come to Deloitte for the big opportunities, but stay for the people.",
+      "website":"deloitte.ca\/campus",
+      "building":{
+        "code":"FED",
+        "name":"Federation Hall",
+        "room":"Columbia Room A & B",
+        "latitude":43.4732,
+        "longitude":-80.5485,
+        "map_url":"https:\/\/uwaterloo.ca\/map\/FED?basemap=D#map=17\/43.4732\/-80.5485"
+      },
+      "audience":[
+        "ENG - Computer",
+        "ENG - Software",
+        "ENG - System Design",
+        "MATH - Computational Mathematics",
+        "MATH - Computer Science",
+        "MATH - Computing & Financial Management",
+        "MATH - Financial Analysis & Risk Management",
+        "MATH - Information Technology Management"
+      ],
+      "link":"http:\/\/www.ceca.uwaterloo.ca\/students\/hiresessions_details.php?id=3758"
     }
-  ]
-}
+   ]
+  }
 ```
 
