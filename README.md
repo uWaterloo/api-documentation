@@ -1,4 +1,4 @@
-[![] (https://api.uwaterloo.ca/static/banner.png)](https://api.uwaterloo.ca)
+[![] (https://api.uwaterloo.ca/static/banner.png)](https://uwaterloo.ca/api/)
 
 
 The University of Waterloo API allows anyone to build applications using data from the uWaterloo websites.
@@ -17,7 +17,7 @@ All calls are made to the following URL with the required parameters for a given
 ```
 https://api.uwaterloo.ca/v2/
 ```
-In order to make an API call, you must have a valid [API Key](https://api.uwaterloo.ca/#!/keygen).
+In order to make an API call, you must have a valid [API Key](https://uwaterloo.ca/api/register).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
 ## Client Libraries
@@ -233,7 +233,7 @@ Private data such as student specific information is out of the API's scope.
 
 ## Contact ##
 
-If you have any inquiries or suggestions, please feel free to contact us at [opendata.api@uwaterloo.ca](mailto:opendata.api@uwaterloo.ca).
+If you have any inquiries or suggestions, please feel free to contact us at [https://uwaterloo.ca/api/contact-us](https://uwaterloo.ca/api/contact-us).
 
 Please consider subscribing to our [mailing list](https://lists.uwaterloo.ca/mailman/listinfo/opendata) in order to receive updates on the API and follow discussions.
 
