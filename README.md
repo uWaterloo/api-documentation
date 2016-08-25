@@ -20,7 +20,7 @@ https://api.uwaterloo.ca/v2/
 In order to make an API call, you must have a valid [API Key](https://uwaterloo.ca/api/register).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
-## Client Libraries
+## Client Libraries (Community-Supported)
 
 * [UWaterlooAPI](https://bitbucket.org/amjoconn/uwaterlooapi) (Python)
 * [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
