@@ -20,8 +20,8 @@ https://api.uwaterloo.ca/v2/
 In order to make an API call, you must have a valid [API Key](https://uwaterloo.ca/api/register).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
-## Client Libraries (Community-Supported)
-
+## Client Libraries (Community supported)
+Please address any customer service issues regarding client libraries to the community developers of the libraries. If you would like your library to be added, please make a pull request.
 * [UWaterlooAPI](https://bitbucket.org/amjoconn/uwaterlooapi) (Python)
 * [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
@@ -207,7 +207,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ## Contributing
 
-If you would like to offer your suggestions or report any misfindings regarding the API data, simply create a new issue on the **issues** tab of the **[OpenData Repository](https://github.com/uWaterloo/OpenData/issues)** and assign it an appropriate label.
+If you would like to offer your suggestions or report any problems regarding the API, simply create a new issue on the **issues** tab of the **[OpenData Repository](https://github.com/uWaterloo/OpenData/issues)** and assign it an appropriate label.
 
 
 
