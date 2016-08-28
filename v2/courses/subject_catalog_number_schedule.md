@@ -382,7 +382,7 @@ Any value can be `null`
       ],
       "classes":[
         {
-          "dates":{
+          "date":{
             "start_time":"16:00",
             "end_time":"17:20",
             "weekdays":"TTh",

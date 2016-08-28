@@ -1,7 +1,7 @@
 # Course listings by term
 
 ```
-GET /terms/{term_id}.courses.{format}
+GET /terms/{term_id}/courses.{format}
 ```
 
 ## Description
