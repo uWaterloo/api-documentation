@@ -37,173 +37,173 @@ Please address any customer service issues regarding client libraries to the com
 
 ### Food Services
 
-- **[/foodservices/menu](v2/foodservices/menu.md)**
-- **[/foodservices/notes](v2/foodservices/notes.md)**
-- **[/foodservices/diets](v2/foodservices/diets.md)**
-- **[/foodservices/outlets](v2/foodservices/outlets.md)**
-- **[/foodservices/locations](v2/foodservices/locations.md)**
-- **[/foodservices/watcard](v2/foodservices/watcard.md)**
-- **[/foodservices/announcements](v2/foodservices/announcements.md)**
-- **[/foodservices/products/{product_id}](v2/foodservices/products_product_id.md)**
-- **[/foodservices/{year}/{week}/menu](v2/foodservices/year_week_menu.md)**
-- **[/foodservices/{year}/{week}/notes](v2/foodservices/year_week_notes.md)**
-- **[/foodservices/{year}/{week}/announcements](v2/foodservices/year_week_announcements.md)**
+- **[/foodservices/menu](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/menu.md)**
+- **[/foodservices/notes](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/notes.md)**
+- **[/foodservices/diets](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/diets.md)**
+- **[/foodservices/outlets](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/outlets.md)**
+- **[/foodservices/locations](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/locations.md)**
+- **[/foodservices/watcard](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/watcard.md)**
+- **[/foodservices/announcements](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/announcements.md)**
+- **[/foodservices/products/{product_id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/products_product_id.md)**
+- **[/foodservices/{year}/{week}/menu](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/year_week_menu.md)**
+- **[/foodservices/{year}/{week}/notes](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/year_week_notes.md)**
+- **[/foodservices/{year}/{week}/announcements](https://github.com/uWaterloo/api-documentation/blob/master/v2/foodservices/year_week_announcements.md)**
 
 
 ### FEDS
 
-- **[/feds/events](v2/feds/events.md)**
-- **[/feds/events/{id}](v2/feds/events_id.md)**
-- **[/feds/locations](v2/feds/locations.md)**
+- **[/feds/events](https://github.com/uWaterloo/api-documentation/blob/master/v2/feds/events.md)**
+- **[/feds/events/{id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/feds/events_id.md)**
+- **[/feds/locations](https://github.com/uWaterloo/api-documentation/blob/master/v2/feds/locations.md)**
 
 
 ### Course
 
-- **[/courses](v2/courses/courses.md)**
-- **[/courses/{subject}](v2/courses/subject.md)**
-- **[/courses/{course_id}](v2/courses/course_id.md)**
-- **[/courses/{class_number}/schedule](v2/courses/class_number_schedule.md)**
-- **[/courses/{subject}/{catalog_number}](v2/courses/subject_catalog_number.md)**
-- **[/courses/{subject}/{catalog_number}/schedule](v2/courses/subject_catalog_number_schedule.md)**
-- **[/courses/{subject}/{catalog_number}/prerequisites](v2/courses/subject_catalog_number_prerequisites.md)**
-- **[/courses/{subject}/{catalog_number}/examschedule](v2/courses/subject_catalog_number_examschedule.md)**
+- **[/courses](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/courses.md)**
+- **[/courses/{subject}](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/subject.md)**
+- **[/courses/{course_id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/course_id.md)**
+- **[/courses/{class_number}/schedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/class_number_schedule.md)**
+- **[/courses/{subject}/{catalog_number}](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/subject_catalog_number.md)**
+- **[/courses/{subject}/{catalog_number}/schedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/subject_catalog_number_schedule.md)**
+- **[/courses/{subject}/{catalog_number}/prerequisites](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/subject_catalog_number_prerequisites.md)**
+- **[/courses/{subject}/{catalog_number}/examschedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/courses/subject_catalog_number_examschedule.md)**
 - [See **Terms** endpoint for bulk data](https://github.com/uWaterloo/api-documentation#terms)
 - [See **Codes** endpoint for subject listings](https://github.com/uWaterloo/api-documentation#definitions-and-codes)
 
 
 ### Awards/Scholarships
 
-- **[/awards/graduate](v2/awards/graduate.md)**
-- **[/awards/undergraduate](v2/awards/undergraduate.md)**
+- **[/awards/graduate](https://github.com/uWaterloo/api-documentation/blob/master/v2/awards/graduate.md)**
+- **[/awards/undergraduate](https://github.com/uWaterloo/api-documentation/blob/master/v2/awards/undergraduate.md)**
 
 
 ### Events
 
-- **[/events](v2/events/events.md)**
-- **[/events/{site}](v2/events/events_site.md)**
-- **[/events/{site}/{id}](v2/events/events_site_id.md)**
-- **[/events/holidays](v2/events/holidays.md)**
+- **[/events](https://github.com/uWaterloo/api-documentation/blob/master/v2/events/events.md)**
+- **[/events/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/events/events_site.md)**
+- **[/events/{site}/{id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/events/events_site_id.md)**
+- **[/events/holidays](https://github.com/uWaterloo/api-documentation/blob/master/v2/events/holidays.md)**
 
 
 ### Blogs
 
-- **[/blogs/{site}](v2/blogs/blogs_site.md)**
-- **[/blogs/{site}/{id}](v2/blogs/blogs_site_id.md)**
+- **[/blogs/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/blogs/blogs_site.md)**
+- **[/blogs/{site}/{id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/blogs/blogs_site_id.md)**
 
 
 ### News
 
-- **[/news](v2/news/news.md)**
-- **[/news/{site}](v2/news/news_site.md)**
-- **[/news/{site}/{id}](v2/news/news_site_id.md)**
+- **[/news](https://github.com/uWaterloo/api-documentation/blob/master/v2/news/news.md)**
+- **[/news/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/news/news_site.md)**
+- **[/news/{site}/{id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/news/news_site_id.md)**
 
 
 ### Opportunities/Jobs
 
-- **[/opportunities](v2/opportunities/opportunities.md)**
-- **[/opportunities/{site}](v2/opportunities/opportunities_site.md)**
-- **[/opportunities/{site}/{id}](v2/opportunities/opportunities_site_id.md)**
+- **[/opportunities](https://github.com/uWaterloo/api-documentation/blob/master/v2/opportunities/opportunities.md)**
+- **[/opportunities/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/opportunities/opportunities_site.md)**
+- **[/opportunities/{site}/{id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/opportunities/opportunities_site_id.md)**
 
 
 ### Services
 
-- **[/services/{site}](v2/services/services_site.md)**
+- **[/services/{site}](https://github.com/uWaterloo/api-documentation/blob/master/v2/services/services_site.md)**
 
 
 ### Weather
 
-- **[/weather/current](v2/weather/current.md)**
+- **[/weather/current](https://github.com/uWaterloo/api-documentation/blob/master/v2/weather/current.md)**
 
 
 ### Terms
 
-- **[/terms/list](v2/terms/list.md)**
-- **[/terms/{term}/courses](v2/terms/term_courses.md)**
-- **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
-- **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
-- **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
-- **[/terms/{term}/enrollment](v2/terms/term_enrollment.md)**
-- **[/terms/{term}/{subject}/enrollment](v2/terms/term_subject_enrollment.md)**
-- **[/terms/{term}/infosessions](v2/terms/term_infosessions.md)**
+- **[/terms/list](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/list.md)**
+- **[/terms/{term}/courses](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_courses.md)**
+- **[/terms/{term}/examschedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_examschedule.md)**
+- **[/terms/{term}/{subject}/schedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_subject_schedule.md)**
+- **[/terms/{term}/{subject}/{catalog_number}/schedule](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_subject_catalog_number_schedule.md)**
+- **[/terms/{term}/enrollment](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_enrollment.md)**
+- **[/terms/{term}/{subject}/enrollment](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_subject_enrollment.md)**
+- **[/terms/{term}/infosessions](https://github.com/uWaterloo/api-documentation/blob/master/v2/terms/term_infosessions.md)**
 
 
 ### Resources
 
-- **[/resources/tutors](v2/resources/tutors.md)**
-- **[/resources/printers](v2/resources/printers.md)**
-- **[/resources/infosessions](v2/resources/infosessions.md)**
-- **[/resources/goosewatch](v2/resources/goosewatch.md)**
-- **[/resources/sunshinelist](v2/resources/sunshinelist.md)**
+- **[/resources/tutors](https://github.com/uWaterloo/api-documentation/blob/master/v2/resources/tutors.md)**
+- **[/resources/printers](https://github.com/uWaterloo/api-documentation/blob/master/v2/resources/printers.md)**
+- **[/resources/infosessions](https://github.com/uWaterloo/api-documentation/blob/master/v2/resources/infosessions.md)**
+- **[/resources/goosewatch](https://github.com/uWaterloo/api-documentation/blob/master/v2/resources/goosewatch.md)**
+- **[/resources/sunshinelist](https://github.com/uWaterloo/api-documentation/blob/master/v2/resources/sunshinelist.md)**
 
 
 ### Definitions and Codes
 
-- **[/codes/units](v2/codes/units.md)**
-- **[/codes/terms](v2/codes/terms.md)**
-- **[/codes/groups](v2/codes/groups.md)**
-- **[/codes/subjects](v2/codes/subjects.md)**
-- **[/codes/instructions](v2/codes/instructions.md)**
+- **[/codes/units](https://github.com/uWaterloo/api-documentation/blob/master/v2/codes/units.md)**
+- **[/codes/terms](https://github.com/uWaterloo/api-documentation/blob/master/v2/codes/terms.md)**
+- **[/codes/groups](https://github.com/uWaterloo/api-documentation/blob/master/v2/codes/groups.md)**
+- **[/codes/subjects](https://github.com/uWaterloo/api-documentation/blob/master/v2/codes/subjects.md)**
+- **[/codes/instructions](https://github.com/uWaterloo/api-documentation/blob/master/v2/codes/instructions.md)**
 
 
 ### Building
 
-- **[/buildings/list](v2/buildings/list.md)**
-- **[/buildings/{building_code}](v2/buildings/building_acronym.md)**
-- **[/buildings/{building}/{room}/courses](v2/buildings/building_acronym_room_number_courses.md)**
-- **[/buildings/{building_code}/accesspoints](v2/buildings/building_acronym_accesspoints.md)**
-- **[/buildings/{building_code}/vendingmachines](v2/buildings/building_acronym_vendingmachines.md)**
+- **[/buildings/list](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/list.md)**
+- **[/buildings/{building_code}](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/building_acronym.md)**
+- **[/buildings/{building}/{room}/courses](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/building_acronym_room_number_courses.md)**
+- **[/buildings/{building_code}/accesspoints](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/building_acronym_accesspoints.md)**
+- **[/buildings/{building_code}/vendingmachines](https://github.com/uWaterloo/api-documentation/blob/master/v2/buildings/building_acronym_vendingmachines.md)**
 
 
 ### Points of Interest
 
 
-- **[/poi/atms](v2/poi/atms.md)**
-- **[/poi/greyhound](v2/poi/greyhound.md)**
-- **[/poi/helplines](v2/poi/helplines.md)**
-- **[/poi/libraries](v2/poi/libraries.md)**
-- **[/poi/photospheres](v2/poi/photospheres.md)**
-- **[/poi/defibrillators](v2/poi/defibrillators.md)**
-- **[/poi/constructionsites](v2/poi/constructionsites.md)**
-- **[/poi/accessibleentrances](v2/poi/accessibleentrances.md)**
-- **[/poi/visitorinformation](v2/poi/visitorinformation.md)**
+- **[/poi/atms](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/atms.md)**
+- **[/poi/greyhound](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/greyhound.md)**
+- **[/poi/helplines](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/helplines.md)**
+- **[/poi/libraries](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/libraries.md)**
+- **[/poi/photospheres](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/photospheres.md)**
+- **[/poi/defibrillators](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/defibrillators.md)**
+- **[/poi/constructionsites](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/constructionsites.md)**
+- **[/poi/accessibleentrances](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/accessibleentrances.md)**
+- **[/poi/visitorinformation](https://github.com/uWaterloo/api-documentation/blob/master/v2/poi/visitorinformation.md)**
 
 
 
 ### Parking
 
-- **[/parking/watpark](v2/parking/watpark.md)**
-- **[/parking/lots/meter](v2/parking/meter.md)**
-- **[/parking/lots/permit](v2/parking/permit.md)**
-- **[/parking/lots/visitor](v2/parking/visitor.md)**
-- **[/parking/lots/shortterm](v2/parking/shortterm.md)**
-- **[/parking/lots/accessible](v2/parking/accessible.md)**
-- **[/parking/lots/motorcycle](v2/parking/motorcycle.md)**
+- **[/parking/watpark](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/watpark.md)**
+- **[/parking/lots/meter](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/meter.md)**
+- **[/parking/lots/permit](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/permit.md)**
+- **[/parking/lots/visitor](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/visitor.md)**
+- **[/parking/lots/shortterm](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/shortterm.md)**
+- **[/parking/lots/accessible](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/accessible.md)**
+- **[/parking/lots/motorcycle](https://github.com/uWaterloo/api-documentation/blob/master/v2/parking/motorcycle.md)**
 
 
 ### Transit
 
-- **[/transit/grt](v2/transit/grt.md)**
-- **[/transit/grt/stops](v2/transit/agency_stops.md)**
+- **[/transit/grt](https://github.com/uWaterloo/api-documentation/blob/master/v2/transit/grt.md)**
+- **[/transit/grt/stops](https://github.com/uWaterloo/api-documentation/blob/master/v2/transit/agency_stops.md)**
 
 
 ### People Directory Search
 
-- **[/directory/{user_id}](v2/directory/search.md)**
+- **[/directory/{user_id}](https://github.com/uWaterloo/api-documentation/blob/master/v2/directory/search.md)**
 
 
 ### API
 
-- **[/api/usage](v2/api/usage.md)**
-- **[/api/services](v2/api/services.md)**
-- **[/api/methods](v2/api/methods.md)**
-- **[/api/versions](v2/api/versions.md)**
-- **[/api/changelog](v2/api/changelog.md)**
+- **[/api/usage](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/usage.md)**
+- **[/api/services](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/services.md)**
+- **[/api/methods](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/methods.md)**
+- **[/api/versions](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/versions.md)**
+- **[/api/changelog](https://github.com/uWaterloo/api-documentation/blob/master/v2/api/changelog.md)**
 
 
 ### Server
 
-- **[/server/time](v2/server/time.md)**
-- **[/server/codes](v2/server/codes.md)**
+- **[/server/time](https://github.com/uWaterloo/api-documentation/blob/master/v2/server/time.md)**
+- **[/server/codes](https://github.com/uWaterloo/api-documentation/blob/master/v2/server/codes.md)**
 
 
 ## Contributing
