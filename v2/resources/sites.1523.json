@@ -1,6 +1,6 @@
 {
    "method_id":1523,
-   "method_url":"/v2/resources/sites.{format}",
+   "method_url":"/resources/sites.{format}",
    "method_name":"The list of all sites available via the WCMS site",
    "service_id":229,
    "service_name":"resources",
@@ -13,7 +13,7 @@
    "data_source":[
        "Datasets / Sites / sites.csv on https://github.com/uWaterloo/"
    ],
-   "method_description":"This method returns a list of all the sites available from the uwaterloo WCMS site",
+   "method_description":"This method returns a list of all the sites available from the UWaterloo WCMS site",
    "additional_notes":[
       "Usage won't increase if there is no data returned"
    ],
