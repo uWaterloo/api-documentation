@@ -18,10 +18,10 @@
    ],
    "information_steward":"Campus Map Team",
    "request_examples":[
-      "https://api.uwaterloo.ca/v2/poi/constructionsites.json",
-      "https://api.uwaterloo.ca/v2/poi/constructionsites.geojson",
-      "https://api.uwaterloo.ca/v2/poi/constructionsites.xml",
-      "https://api.uwaterloo.ca/v2/poi/constructionsites.json?callback=myResponse"
+      "https://api.uwaterloo.ca/v2/poi/greyhound.json",
+      "https://api.uwaterloo.ca/v2/poi/greyhound.geojson",
+      "https://api.uwaterloo.ca/v2/poi/greyhound.xml",
+      "https://api.uwaterloo.ca/v2/poi/greyhound.json?callback=myResponse"
    ],
    "response_formats":[
       "json",
