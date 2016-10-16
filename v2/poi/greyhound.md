@@ -106,10 +106,10 @@ GET /v2/poi/greyhound.{format}
 GET /v2/poi/greyhound.{format}
 ```
 
-- **https://api.uwaterloo.ca/v2/poi/constructionsites.json**
-- **https://api.uwaterloo.ca/v2/poi/constructionsites.geojson**
-- **https://api.uwaterloo.ca/v2/poi/constructionsites.xml**
-- **https://api.uwaterloo.ca/v2/poi/constructionsites.json?callback=myResponse**
+- **https://api.uwaterloo.ca/v2/poi/greyhound.json**
+- **https://api.uwaterloo.ca/v2/poi/greyhound.geojson**
+- **https://api.uwaterloo.ca/v2/poi/greyhound.xml**
+- **https://api.uwaterloo.ca/v2/poi/greyhound.json?callback=myResponse**
 
 
 ## Response
@@ -156,51 +156,51 @@ Any value can be `null`
 
 ```json
 {
-  "meta":{
-    "requests":811556,
-    "timestamp":1453158081,
-    "status":200,
-    "message":"Request successful",
-    "method_id":1889,
-    "method":{
+  "meta": {
+    "requests": 1328,
+    "timestamp": 1476568844,
+    "status": 200,
+    "message": "Request successful",
+    "method_id": 1889,
+    "method": {
       
     }
   },
-  "data":[
+  "data": [
     {
-      "name":"Needles Hall Expansion",
-      "description":"An addition of 38,000 gross square feet of office and meeting space to the existing building.",
-      "note":null,
-      "latitude":43.470117058891,
-      "longitude":-80.543861093073
+      "name": "University of Waterloo",
+      "description": "North of B.C. Matthews Hall (BMH)",
+      "note": "Kitchener Charles St W; Kitchener Sportsworld;  Cambridge Glc, ON;  Guelph, Guelph U Gordon & College;  Guelph Univ Centre Loop;  Guelph Kortnight & Gor; Guelph Aberfoyle Brock Rd; Toronto U & Wellington; Toronto",
+      "latitude": 43.473999090941,
+      "longitude": -80.545923308322
     },
     {
-      "name":"Science Teaching Complex",
-      "description":null,
-      "note":null,
-      "latitude":43.47052512034,
-      "longitude":-80.54339265232
+      "name": "Wilfrid Laurier University",
+      "description": null,
+      "note": null,
+      "latitude": 43.47510513598,
+      "longitude": -80.527579188632
     },
     {
-      "name":"Federation Hall Expansion",
-      "description":null,
-      "note":null,
-      "latitude":43.473291217367,
-      "longitude":-80.548426198192
+      "name": "Charles St. Transit Terminal",
+      "description": null,
+      "note": null,
+      "latitude": 43.44943789805,
+      "longitude": -80.492265104852
     },
     {
-      "name":"Schlegel-University of Waterloo Research Institute for Aging (RIA)",
-      "description":null,
-      "note":null,
-      "latitude":43.481022864069,
-      "longitude":-80.549409813317
+      "name": "Kitchener Sportsworld",
+      "description": null,
+      "note": null,
+      "latitude": 43.409977,
+      "longitude": -80.393938
     },
     {
-      "name":"Conrad Grebel University College - Academic Building Expansion",
-      "description":null,
-      "note":null,
-      "latitude":43.466210751403,
-      "longitude":-80.544980485367
+      "name": "Cambridge",
+      "description": null,
+      "note": null,
+      "latitude": 43.399403314036,
+      "longitude": -80.330365309116
     }
   ]
 }
