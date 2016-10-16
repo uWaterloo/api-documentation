@@ -56,6 +56,26 @@
          "field":"url",
          "description":"Complete Link to WCMS site",
          "type":"string"
+      },
+      {
+         "field":"group_code",
+         "description":"Unit's parent group",
+         "type":"string"
+      },
+      {
+         "field":"unit_code",
+         "description":"Organizational Unit code",
+         "type":"string"
+      },
+      {
+         "field":"unit_short_name",
+         "description":"Organizational Units short name",
+         "type":"string"
+      },
+      {
+         "field":"owner_type",
+         "description":null,
+         "type":"string"
       }
    ]
 }

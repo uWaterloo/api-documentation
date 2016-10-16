@@ -131,17 +131,17 @@ GET /resources/printers.{format}
   <tr>
     <td><b>group_code</b></td>
     <td>string</td>
-    <td></td>
+    <td>Unit's parent group</td>
   </tr>
   <tr>
     <td><b>unit_code</b></td>
     <td>string</td>
-    <td></td>
+    <td>Organizational Unit code</td>
   </tr>
   <tr>
     <td><b>unit_short_name</b></td>
     <td>string</td>
-    <td></td>
+    <td>Organizational Units short name</td>
   </tr>
   <tr>
     <td><b>owner_type</b></td>
@@ -152,6 +152,7 @@ GET /resources/printers.{format}
 
 
 Any value can be `null`
+
 
 ## Output
 
