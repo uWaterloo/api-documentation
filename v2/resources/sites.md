@@ -97,7 +97,7 @@ GET /resources/sites.{format}
 ## Examples
 
 ```
-GET /resources/printers.{format}
+GET /resources/sites.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/resources/sites.json**

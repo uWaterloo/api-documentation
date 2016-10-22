@@ -134,7 +134,6 @@ Please address any customer service issues regarding client libraries to the com
 - **[/resources/infosessions](v2/resources/infosessions.md)**
 - **[/resources/goosewatch](v2/resources/goosewatch.md)**
 - **[/resources/sunshinelist](v2/resources/sunshinelist.md)**
-- **[/resources/sites](v2/resources/sites.md)**
 
 
 ### Definitions and Codes
