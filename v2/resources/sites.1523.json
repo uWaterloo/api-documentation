@@ -1,6 +1,6 @@
 {
    "method_id":1523,
-   "method_url":"/v2/resources/sites.{format}",
+   "method_url":"/resources/sites.{format}",
    "method_name":"The list of all sites available via the WCMS site",
    "service_id":229,
    "service_name":"resources",
@@ -13,7 +13,7 @@
    "data_source":[
        "Datasets / Sites / sites.csv on https://github.com/uWaterloo/"
    ],
-   "method_description":"This method returns a list of all the sites available from the uwaterloo WCMS site",
+   "method_description":"This method returns a list of all the sites available from the UWaterloo WCMS site",
    "additional_notes":[
       "Usage won't increase if there is no data returned"
    ],
@@ -55,6 +55,26 @@
       {
          "field":"url",
          "description":"Complete Link to WCMS site",
+         "type":"string"
+      },
+      {
+         "field":"group_code",
+         "description":"Unit's parent group",
+         "type":"string"
+      },
+      {
+         "field":"unit_code",
+         "description":"Organizational Unit code",
+         "type":"string"
+      },
+      {
+         "field":"unit_short_name",
+         "description":"Organizational Units short name",
+         "type":"string"
+      },
+      {
+         "field":"owner_type",
+         "description":null,
          "type":"string"
       }
    ]
