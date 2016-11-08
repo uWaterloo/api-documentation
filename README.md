@@ -130,7 +130,6 @@ Please address any customer service issues regarding client libraries to the com
 ### Resources
 
 - **[/resources/tutors](v2/resources/tutors.md)**
-- **[/resources/printers](v2/resources/printers.md)**
 - **[/resources/infosessions](v2/resources/infosessions.md)**
 - **[/resources/goosewatch](v2/resources/goosewatch.md)**
 - **[/resources/sunshinelist](v2/resources/sunshinelist.md)**
