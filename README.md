@@ -27,6 +27,7 @@ Please address any customer service issues regarding client libraries to the com
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
 * [UWaterlooAPI](https://github.com/RobinsonMann/UWaterlooApi) (C#)
 * [UWAPI.go](https://github.com/SaintDako/uwAPI.go) (Golang)
+* [UWaterloo-API](https://github.com/endercrest/UWaterloo-API) (Java)
 * [UW-Open-Data-API](https://github.com/zainh96/UW-Open-Data-API) (Java)
 * [UWaterloo-API](https://github.com/sanchitgera/node-uwaterloo-api) (NodeJS)
 * [WatSwift](https://github.com/meteochu/WatSwift) (Swift)
