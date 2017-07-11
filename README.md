@@ -126,6 +126,7 @@ Please address any customer service issues regarding client libraries to the com
 - **[/terms/{term}/{subject}/{catalog_number}/schedule](v2/terms/term_subject_catalog_number_schedule.md)**
 - **[/terms/{term}/enrollment](v2/terms/term_enrollment.md)**
 - **[/terms/{term}/{subject}/enrollment](v2/terms/term_subject_enrollment.md)**
+- **[/terms/{term}/importantdates](v2/terms/term_importantdates.md)**
 - **[/terms/{term}/infosessions](v2/terms/term_infosessions.md)**
 
 
