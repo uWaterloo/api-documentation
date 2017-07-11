@@ -1,0 +1,130 @@
+{
+   "method_id":1188,
+   "method_url":"/terms/{term_id}/importantdates.{format}",
+   "method_name":"Important dates by term",
+   "service_id":241,
+   "service_name":"terms",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Realtime",
+   "cache_time_s":0,
+   "data_type":"Database",
+   "data_source":[
+      "https://uwaterloo.ca/quest/undergraduate-students/important-dates"
+   ],
+   "method_description":"This method returns all important dates for the requested term.",
+   "additional_notes":[
+   ],
+   "information_steward":"Registrar",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/terms/1179/importantdates.json",
+      "https://api.uwaterloo.ca/v2/terms/1179/importantdates.xml",
+      "https://api.uwaterloo.ca/v2/terms/1179/importantdates.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"id",
+         "description":"Important date ID",
+         "type":"integer"
+      },
+      {
+         "field":"title",
+         "description":"Title of the important date",
+         "type":"string"
+      },
+      {
+         "field":"body",
+         "description":"Description of the important date",
+         "type":"string"
+      },
+      {
+         "field":"body_raw",
+         "description":"Description of the important date (without HTML tags removed)",
+         "type":"string"
+      },
+      {
+         "field":"special_notes",
+         "description":"Special notes for the important date",
+         "type":"string"
+      },
+      {
+         "field":"special_notes_raw",
+         "description":"Special notes for the important date (without HTML tags removed)",
+         "type":"string"
+      },
+      {
+         "field":"audience",
+         "description":"Audience for the important date",
+         "type":"list"
+      },
+      {
+         "field":"term",
+         "description":"Term name (e.g. `\"Fall 2017\"`) that the important date applies to",
+         "type":"string"
+      },
+      {
+         "field":"term_id",
+         "description":"Term ID (e.g. `1179`) that the important date applies to",
+         "type":"integer"
+      },
+      {
+         "field":"start_date",
+         "description":"Start date of the important date",
+         "type":"string"
+      },
+      {
+         "field":"end_date",
+         "description":"End date of the important date",
+         "type":"string"
+      },
+      {
+         "field":"date_tbd",
+         "description":"If the date of the important date is *To be determined*",
+         "type":"boolean"
+      },
+      {
+         "field":"date_na",
+         "description":"If the important date is *Not Applicable* for this term",
+         "type":"boolean"
+      },
+      {
+         "field":"link",
+         "description":"Link to the WCMS page containing the important date",
+         "type":"string"
+      },
+      {
+         "field":"site",
+         "description":"Site slug representing the source of the important date",
+         "type":"string"
+      },
+      {
+         "field":"vid",
+         "description":"Version ID of the important date",
+         "type":"integer"
+      },
+      {
+         "field":"updated",
+         "description":"Timestamp of when data was last updated",
+         "type":"string"
+      }
+   ]
+}

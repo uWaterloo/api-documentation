@@ -120,6 +120,7 @@ Please address any customer service issues regarding client libraries to the com
 ### Terms
 
 - **[/terms/list](v2/terms/list.md)**
+- **[/terms/{term}/importantdates](v2/terms/term_importantdates.md)**
 - **[/terms/{term}/courses](v2/terms/term_courses.md)**
 - **[/terms/{term}/examschedule](v2/terms/term_examschedule.md)**
 - **[/terms/{term}/{subject}/schedule](v2/terms/term_subject_schedule.md)**
