@@ -1,4 +1,4 @@
-# Current wireless usage statistics
+# Current wireless rogues statistics
 
 ```
 GET /wireless/rogues.{format}
@@ -134,8 +134,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016351,
-        "timestamp": 1501094151,
+        "requests": 1016355,
+        "timestamp": 1501094454,
         "status": 200,
         "message": "Request successful",
         "method_id": 10003,

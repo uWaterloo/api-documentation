@@ -1,4 +1,4 @@
-# Current wireless usage statistics
+# Current wireless clients statistics
 
 ```
 GET /wireless/clients.{format}
@@ -144,8 +144,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016348,
-        "timestamp": 1501093988,
+        "requests": 1016357,
+        "timestamp": 1501094463,
         "status": 200,
         "message": "Request successful",
         "method_id": 10002,
