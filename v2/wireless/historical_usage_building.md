@@ -90,7 +90,13 @@ GET /wireless/usage/{building_code}.{format}
     <td><b>from</b></td>
     <td>filter</td>
     <td><i>yes</i></td>
-    <td>Timestamp of starting point (in ISO 8601 format)</td>
+    <td>Timestamp of start time (in ISO 8601 format)</td>
+  </tr>
+  <tr>
+    <td><b>to</b></td>
+    <td>filter</td>
+    <td><i>yes</i></td>
+    <td>Timestamp of end time (in ISO 8601 format)</td>
   </tr>
 </table>
 
@@ -163,8 +169,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016370,
-        "timestamp": 1501095455,
+        "requests": 1016372,
+        "timestamp": 1501095716,
         "status": 200,
         "message": "Request successful",
         "method_id": 10006,

@@ -42,7 +42,13 @@
       },
       {
          "parameter":"from",
-         "description":"Timestamp of starting point (in ISO 8601 format)",
+         "description":"Timestamp of start time (in ISO 8601 format)",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"to",
+         "description":"Timestamp of end time (in ISO 8601 format)",
          "is_required":true,
          "type":"filter"
       }
