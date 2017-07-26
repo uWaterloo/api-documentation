@@ -19,7 +19,7 @@
    ],
    "information_steward":"Information Systems & Technology",
    "request_examples":[
-      "https://api.uwaterloo.ca/v2/wireless/historical/usage.json?from=2017-06-28T160000-0040&to=2017-06-28T161500-0400",
+      "https://api.uwaterloo.ca/v2/wireless/historical/usage.json?from=2017-06-28T160000-0400&to=2017-06-28T161500-0400",
       "https://api.uwaterloo.ca/v2/wireless/historical/usage.xml",
       "https://api.uwaterloo.ca/v2/wireless/historical/usage.json?callback=myResponse"
    ],
