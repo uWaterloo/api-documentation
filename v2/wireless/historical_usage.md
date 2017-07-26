@@ -52,7 +52,7 @@ GET /wireless/usage.{format}
 
 ### Notes
 
-- Historical data is only avaialble for the past 2 months
+- Historical data is only available for the past 2 months
 - Any value can be `null`
 
 
@@ -163,8 +163,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016367,
-        "timestamp": 1501095296,
+        "requests": 1016369,
+        "timestamp": 1501095400,
         "status": 200,
         "message": "Request successful",
         "method_id": 10005,

@@ -15,7 +15,7 @@
    ],
    "method_description":"This method returns historical wireless usage statistics, by building.",
    "additional_notes":[
-      "Historical data is only avaialble for the past 2 months"
+      "Historical data is only available for the past 2 months"
    ],
    "information_steward":"Information Systems & Technology",
    "request_examples":[
