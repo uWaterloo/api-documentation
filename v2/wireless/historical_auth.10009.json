@@ -1,0 +1,75 @@
+{
+   "method_id":10009,
+   "method_url":"/wireless/historical/auth.{format}",
+   "method_name":"Historical wireless auth statistics",
+   "service_id":1000,
+   "service_name":"wireless",
+   "request_protocol":"GET",
+   "is_authenticated":true,
+   "is_enabled": true,
+   "update_frequency":"Daily",
+   "cache_time_s":0,
+   "data_type":"Database",
+   "data_source":[
+      "https://uwaterloo.ca/information-systems-technology/statistics/wifi-charts"
+   ],
+   "method_description":"This method returns historical wireless auth statistics.",
+   "additional_notes":[
+      "Historical data only available for the past 2 months."
+   ],
+   "information_steward":"Information Systems & Technology",
+   "request_examples":[
+      "https://api.uwaterloo.ca/v2/wireless/auth.json?from=2017-07-16T000000-0400&to=2017-07-19T235959-0400",
+      "https://api.uwaterloo.ca/v2/wireless/auth.xml",
+      "https://api.uwaterloo.ca/v2/wireless/auth.json?callback=myResponse"
+   ],
+   "response_formats":[
+      "json",
+      "xml"
+   ],
+   "method_parameters":[
+      {
+         "parameter":"key",
+         "description":"Valid API key",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"callback",
+         "description":"JSONP callback format",
+         "is_required":false,
+         "type":"filter"
+      },
+      {
+         "parameter":"from",
+         "description":"Timestamp of start time (in ISO 8601 format)",
+         "is_required":true,
+         "type":"filter"
+      },
+      {
+         "parameter":"to",
+         "description":"Timestamp of end time (in ISO 8601 format)",
+         "is_required":true,
+         "type":"filter"
+      }
+   ],
+   "response_fields":[
+      {
+         "field":"issues",
+         "description":"Authentication issues statistics",
+         "type":"object",
+         "children":[
+            {
+               "field":"count",
+               "description":"Number of authentication issues",
+               "type":"integer"
+            },
+            {
+               "field":"last_updated",
+               "description":"Timestamp of last collection",
+               "type":"string"
+            }
+         ]
+      }
+   ]
+}
