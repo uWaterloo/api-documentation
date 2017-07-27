@@ -1,7 +1,7 @@
 # Historical wireless building usage statistics
 
 ```
-GET /wireless/usage/{building_code}.{format}
+GET /wireless/historical/usage/{building_code}.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET /wireless/usage/{building_code}.{format}
 ## Parameters
 
 ```
-GET /wireless/usage/{building_code}.{format}
+GET /wireless/historical/usage/{building_code}.{format}
 ```
 
 <table>
@@ -109,7 +109,7 @@ GET /wireless/usage/{building_code}.{format}
 ## Examples
 
 ```
-GET /wireless/usage/{building_code}.{format}
+GET /wireless/historical/usage/{building_code}.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/wireless/historical/usage/MC.json?from=2017-06-28T160000-0400&to=2017-06-28T161500-0400**
@@ -169,8 +169,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016646,
-        "timestamp": 1501170868,
+        "requests": 1016650,
+        "timestamp": 1501171207,
         "status": 200,
         "message": "Request successful",
         "method_id": 10006,

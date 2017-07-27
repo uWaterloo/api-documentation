@@ -1,7 +1,7 @@
 # Historical wireless usage statistics
 
 ```
-GET /wireless/usage.{format}
+GET /wireless/historical/usage.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET /wireless/usage.{format}
 ## Parameters
 
 ```
-GET /wireless/usage.{format}
+GET /wireless/historical/usage.{format}
 ```
 
 <table>
@@ -109,7 +109,7 @@ GET /wireless/usage.{format}
 ## Examples
 
 ```
-GET /wireless/usage.{format}
+GET /wireless/historical/usage.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/wireless/historical/usage.json?from=2017-06-28T160000-0400&to=2017-06-28T161500-0400**
@@ -169,8 +169,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016645,
-        "timestamp": 1501170858,
+        "requests": 1016649,
+        "timestamp": 1501171197,
         "status": 200,
         "message": "Request successful",
         "method_id": 10005,
