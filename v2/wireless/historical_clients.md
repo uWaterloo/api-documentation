@@ -1,7 +1,7 @@
 # Historical wireless clients statistics
 
 ```
-GET /wireless/clients.{format}
+GET /wireless/historical/clients.{format}
 ```
 
 ## Description
@@ -64,7 +64,7 @@ GET /wireless/clients.{format}
 ## Parameters
 
 ```
-GET /wireless/clients.{format}
+GET /wireless/historical/clients.{format}
 ```
 
 <table>
@@ -109,7 +109,7 @@ GET /wireless/clients.{format}
 ## Examples
 
 ```
-GET /wireless/clients.{format}
+GET /wireless/historical/clients.{format}
 ```
 
 - **https://api.uwaterloo.ca/v2/wireless/historical/clients.json?from=2017-07-18T160000-0400&to=2017-07-19T235959-0400**
@@ -157,8 +157,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016625,
-        "timestamp": 1501169459,
+        "requests": 1016636,
+        "timestamp": 1501170401,
         "status": 200,
         "message": "Request successful",
         "method_id": 10007,
