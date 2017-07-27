@@ -1,5 +1,5 @@
 {
-   "method_id":10000,
+   "method_id":10005,
    "method_url":"/wireless/usage.{format}",
    "method_name":"Historical wireless usage statistics",
    "service_id":1000,

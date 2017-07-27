@@ -1,5 +1,5 @@
 {
-   "method_id":10002,
+   "method_id":10007,
    "method_url":"/wireless/historical/clients.{format}",
    "method_name":"Historical wireless clients statistics",
    "service_id":1000,

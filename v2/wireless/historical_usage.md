@@ -25,7 +25,7 @@ GET /wireless/usage.{format}
   </tr>
   <tr>
     <td><b>Method ID</b></td>
-    <td>10000</td>
+    <td>10005</td>
     <td><b>Enabled</b></td>
     <td>Yes</td>
   </tr>
@@ -169,8 +169,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016373,
-        "timestamp": 1501095723,
+        "requests": 1016645,
+        "timestamp": 1501170858,
         "status": 200,
         "message": "Request successful",
         "method_id": 10005,

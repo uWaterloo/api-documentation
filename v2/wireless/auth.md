@@ -43,7 +43,7 @@ GET /wireless/auth.{format}
   </tr>
   <tr>
     <td><b>Update Frequency</b></td>
-    <td>Every 15 minutes</td>
+    <td>Daily</td>
     <td><b>Cache Time</b></td>
     <td>0 seconds</td>
   </tr>
@@ -141,8 +141,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016354,
-        "timestamp": 1501094389,
+        "requests": 1016647,
+        "timestamp": 1501170900,
         "status": 200,
         "message": "Request successful",
         "method_id": 10004,
