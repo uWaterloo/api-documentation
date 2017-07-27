@@ -43,7 +43,7 @@ GET /wireless/clients.{format}
   </tr>
   <tr>
     <td><b>Update Frequency</b></td>
-    <td>Every 15 minutes</td>
+    <td>Every morning at 4am.</td>
     <td><b>Cache Time</b></td>
     <td>0 seconds</td>
   </tr>
@@ -144,8 +144,8 @@ Any value can be `null`
 ```json
 {
     "meta": {
-        "requests": 1016357,
-        "timestamp": 1501094463,
+        "requests": 1016629,
+        "timestamp": 1501169876,
         "status": 200,
         "message": "Request successful",
         "method_id": 10002,
