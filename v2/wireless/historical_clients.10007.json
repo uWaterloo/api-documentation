@@ -7,7 +7,7 @@
    "request_protocol":"GET",
    "is_authenticated":true,
    "is_enabled": true,
-   "update_frequency":"Every morning at 4am",
+   "update_frequency":"Daily",
    "cache_time_s":0,
    "data_type":"Database",
    "data_source":[
