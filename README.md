@@ -192,6 +192,18 @@ Please address any customer service issues regarding client libraries to the com
 
 - **[/directory/{user_id}](v2/directory/search.md)**
 
+### Wireless
+
+- **[/wireless/usage](v2/wireless/usage.md)**
+- **[/wireless/usage/{building_code}](v2/wireless/usage_building.md)**
+- **[/wireless/clients](v2/wireless/clients.md)**
+- **[/wireless/rogues](v2/wireless/rogues.md)**
+- **[/wireless/auth](v2/wireless/auth.md)**
+- **[/wireless/historical/usage](v2/wireless/historical_usage.md)**
+- **[/wireless/historical/usage/{building_code}](v2/wireless/historical_usage_building.md)**
+- **[/wireless/historical/clients](v2/wireless/historical_clients.md)**
+- **[/wireless/historical/rogues](v2/wireless/historical_rogues.md)**
+- **[/wireless/historical/auth](v2/wireless/historical_auth.md)**
 
 ### API
 
