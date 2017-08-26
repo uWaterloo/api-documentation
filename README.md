@@ -22,6 +22,7 @@ The data is returned in `json` and `xml` where the output format can be specifie
 
 ## Client Libraries (Community supported)
 Please address any customer service issues regarding client libraries to the community developers of the libraries. If you would like your library to be added, please make a pull request.
+* [UWaterlooDriver](https://github.com/a2bondar/UWaterlooDriver) (Python)
 * [UWaterlooAPI](https://github.com/albertoconnor/uwaterlooapi) (Python)
 * [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
