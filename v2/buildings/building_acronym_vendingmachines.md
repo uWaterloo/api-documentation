@@ -1,4 +1,4 @@
-# Building WiFi Access Points
+# Building Vending Machines
 
 ```
 GET /buildings/{building_code}/vendingmachines.{format}
