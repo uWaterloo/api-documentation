@@ -25,15 +25,16 @@ Please address any customer service issues regarding client libraries to the com
 * [UWaterlooDriver](https://github.com/a2bondar/UWaterlooDriver) (Python)
 * [UWaterlooAPI](https://github.com/albertoconnor/uwaterlooapi) (Python)
 * [UWAPI](https://www.npmjs.org/package/uwapi) (NodeJS)
+* [UWaterloo-API](https://github.com/sanchitgera/node-uwaterloo-api) (NodeJS)
 * [UWaterlooAPI](https://rubygems.org/gems/uwaterlooapi) (Ruby)
 * [UWaterlooAPI](https://github.com/RobinsonMann/UWaterlooApi) (C#)
 * [UWAPI.go](https://github.com/SaintDako/uwAPI.go) (Golang)
+* [UWDart](https://github.com/dhillondeep/uwdart) (Dart)
 * [UWaterloo-API](https://github.com/endercrest/UWaterloo-API) (Java)
 * [UW-Open-Data-API](https://github.com/zainh96/UW-Open-Data-API) (Java)
-* [UWaterloo-API](https://github.com/sanchitgera/node-uwaterloo-api) (NodeJS)
+* [uwaterloo-api](https://github.com/cdeange/uwaterloo-api) (Java)
 * [WatSwift](https://github.com/meteochu/WatSwift) (Swift)
 * [UWAPI-PHP](https://github.com/hkwu/uwapi-php) (PHP)
-* [uwaterloo-api](https://github.com/cdeange/uwaterloo-api) (Java)
 
 ## Endpoints
 
