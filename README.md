@@ -35,6 +35,7 @@ Please address any customer service issues regarding client libraries to the com
 * [uwaterloo-api](https://github.com/cdeange/uwaterloo-api) (Java)
 * [WatSwift](https://github.com/meteochu/WatSwift) (Swift)
 * [UWAPI-PHP](https://github.com/hkwu/uwapi-php) (PHP)
+* [uw-api-objc](https://github.com/daltyboy11/uw-api-objc) (Objective-C)
 
 ## Endpoints
 
