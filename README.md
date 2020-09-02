@@ -17,7 +17,7 @@ All calls are made to the following URL with the required parameters for a given
 ```
 https://api.uwaterloo.ca/v2/
 ```
-In order to make an API call, you must have a valid [API Key](https://uwaterloo.ca/api/register).
+In order to make an API call, you must have a valid API Key (at this time we are not issuing new keys pending a replacement version).
 The data is returned in `json` and `xml` where the output format can be specified in the request URL
 
 ## Client Libraries (Community supported)
