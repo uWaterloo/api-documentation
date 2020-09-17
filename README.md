@@ -10,6 +10,8 @@ If you find an error in the documentation, file an issue or send a pull request.
 
 Review the 'No Warranty' section of the University of Waterloo ODL before using this data. If building services upon this data, please inform your users of the inherent risks (as a best practice).
 
+# Version 2 (legacy) Documentation
+
 ## Accessing the API
 
 All calls are made to the following URL with the required parameters for a given service.
